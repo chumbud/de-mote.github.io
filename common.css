@@ -22,6 +22,10 @@ body {
 
 #banner {
 	height: 194px;
+	background-color: #FC2101;
+display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 
 nav {
