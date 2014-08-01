@@ -1,0 +1,164 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+
+
+html {
+	height: 100%;
+	min-width: 980px;
+}
+
+body {
+	background: #E6E6E6;
+	font-family: 'Helvetica', sans-serif;
+	color: #292929;
+	font-size: 10px;
+}
+
+#banner {
+	height: 194px;
+	background-color: #FC2101;
+display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+nav {
+	height: 34px;
+	border-bottom: 3px solid #FC2101;
+	background: #0C0C0C;
+	box-shadow: 0px 5px 8px rgba(45, 45, 45, .4);
+	font-family: Helvetica, sans-serif;
+	font-size: 10px;
+	/*padding: 8px 0px;*/
+	text-shadow: 0px 0px 3px rgba(255, 255, 255, .4);
+}
+
+nav ul {
+	height: 14px;
+	list-style: none;
+}
+
+nav li:first-child {
+	margin-left: 20%;
+	border-left: 1px solid #2A2A2A;
+}
+
+
+nav li {
+	position: relative;
+	text-align: center;
+	width: 20%;
+	margin-top: 8px;
+	height: 14px;
+	display: inline-block;
+	border-right: 1px solid #2A2A2A;
+}
+
+nav li a {
+	display: inline-block;
+	position: absolute;
+	left: 0px;
+	top: -8px;
+	height: 30px;
+	line-height: 30px;
+	width: 100%;
+	text-decoration: none;
+	color: #DBDBDB;	
+}
+
+nav a:visited {
+	color: #DBDBDB;
+}
+
+nav a:hover:after {
+	content: "\25B2";
+	font-size: 10px;
+	color: #FC2101;
+	position: absolute;
+	bottom: -14px;
+	left: 50%;
+	margin-left: -5px;
+}
+
+article {
+	margin-left: 20%;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+.sidebar {
+	float: left;
+	width: 260px;
+	min-height: 100%;
+}
+
+#categories ul {
+	margin-top: 20px;
+	list-style: none;
+}
+
+#categories li {
+	margin-bottom: 10px;
+}
+
+#categories li a {
+	font-family: 'Source Sans Pro', sans-serif;
+	text-decoration: none;
+	color: #bfb18f;
+	font-size:16px;
+	transition: color .2s ease-in-out,
+		background .2s ease-in-out;
+}
+
+#categories li a:visited {
+	color: #bfb18f;
+}
+
+#categories li a:hover {
+	color: #FC2101;
+}
+
+footer {
+	width: 100%;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #BBBBBB;
+	font-size: .8em;
+	margin-top: 10px;
+}
+
+#work {
+	margin-left: 260px;
+	overflow: hidden;
+}
+
+#main {
+	margin-left: 260px;
+	margin-right: 20%;
+}
+
+#main-title {
+	margin-right: 100%;
+	padding-bottom: 15px;
+}
+
+#grid img {
+	float: left;
+	margin: 10px;
+}
+
+#grid img:nth-child(3n+1) {
+	margin-left: 0px;
+	clear: left;
+}
+
+#about {
+	margin-left: -62%;
+	margin-right: 20%;
+}
