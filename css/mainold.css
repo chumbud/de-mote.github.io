@@ -1,0 +1,150 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    -moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+    background: #e9e4cb;
+    height: 100%;
+}
+
+body {
+    background-color: #f2efe1;
+    width: 841px;
+    font-family: "Raleway";
+    font-size: 14px;
+    color: #afaa94;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    height: auto !important;
+    margin: 0 auto -4em;
+
+}
+h1 {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 30;
+    color: #d04d43;
+}
+h2 {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 50px;
+    margin-left: 287px;
+    margin-bottom: 10px;
+}
+
+#banner {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 44px;
+    padding-top: 64px;
+    letter-spacing: 8px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#subbanner {
+    font-family: "Montserrat";
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 11px;
+}
+#triangle {
+    align-content: center;
+}
+nav {
+    margin: 10px;
+    text-align: center;
+    position: relative;
+}
+nav ul {
+    list-style: none;
+    float: left;
+    position: relative;
+}
+nav li{
+    float:left;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    height: 44px;
+    padding-top: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 267px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+nav a {
+    margin-right: auto;
+    margin-left: auto;
+    color: #f2efe1;
+    text-decoration: none;
+    position: relative;
+}
+nav a:visited {
+    color: #f2efe1;
+}
+#iconcontainer {
+    width: 267px;
+    height: 44px;
+    display: table-cell;
+    position: relative;
+    z-index: 2;
+}
+#icon{
+    width: 25px;
+    margin-bottom: 10;
+    margin-left: 0px;
+    position: relative;
+    z-index: 3;
+}
+#description {
+    margin-left: 3px;
+    margin-right: 555px; 
+    overflow: hidden;
+}
+#thumbs {
+    float: left;
+    margin: 10px;
+    margin-top: 0px;
+}
+#thumbs img:hover{
+    opacity: .7;
+}
+#thumbs img {
+    margin-bottom: 6px;
+    color: #000000;
+    transition: opacity .3s ease-in-out;
+}
+#thumbs img:nth-child(3n+2) {
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+footer {
+    font-family: "Montserrat";
+    font-size: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#profile {
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#aboutbody{
+    width: auto;
+    height: 500px;
+}
+
