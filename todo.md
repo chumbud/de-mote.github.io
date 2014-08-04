@@ -1,8 +1,5 @@
 - fix repeating banner (add transition between repeats)
-- footer not staying at the bottom
-- fucking scrollbar extending past bottom of page
 - make previews of works
 - find propic of me
 - add contact
-- maybe find a way to make it more responsive by collapsing the fixed 3 columns to 2 columns on page resolution
 - add dot to current page
