@@ -102,7 +102,7 @@ h2 {
 nav {
     border-bottom: 3px solid #8bffee;
     margin-top: -47px;
-        position: relative;
+    position: relative;
     z-index: 14;
 }
 nav ul {
@@ -195,13 +195,24 @@ nav li a:hover {
         background-color .2s ease-in-out;
 }
 #description {
-    font-weight: 400;
-    padding-left: 25px;
-    padding-right: 25px; 
+    font-weight: 400; 
     color: #edecec;
     font-size: 12px;
     line-height: 20px;
-
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: relative;
+    z-index: -2;
+    margin-top: -490px;
+    padding-top: 490px;
+}
+#description-container {
+    height: 100%;
+    position: relative;
+    overflow-y: auto;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 #container {
     overflow-y: hidden;
@@ -210,7 +221,7 @@ nav li a:hover {
     padding-left: 364px;
     padding-top: 237px;
     position: relative;
-    z-index: 2;
+    z-index: 2; /* consider deletion */
     height: 100%;
 }
 #container2 {
@@ -288,18 +299,54 @@ footer {
 }
 
 @media screen and (max-width: 1224px) {
+#banner {
+    height: 337px;
+}
+#navbar {
+    height: 100px;
+    margin-top: -100px;    
+}
+nav {
+    height: 100px;
+    margin-top: -100px;
+}
+nav li {
+    height: 100px;
+}
+nav li a {
+    font-size: 24px;
+    height: 100px;
+    padding-top: 35px;
+}
 #sidebar {
     max-width: auto;
     min-width: 100px;
-    width: 30%;
+    width: 35%;
+}
+#categories ul {
+        height: 202px;
 }
 #container {
     float: right;
     min-width: 319px;
-    width: 70%;
+    width: 65%;
     position: relative;
     padding-left: 0px;
+    margin-top: -337px;
+    padding-top: 337px;
 }   
+#categories li {
+    margin-bottom: 10px;
+}
+#categories li a {
+    height: 41px;
+    font-size: 20px;
+    line-height: 25px;
+}
+#description {
+    margin-top: -587px;
+    padding-top: 587px;
+}
 #work {
     width: 100%;
     margin-left: auto;
@@ -311,7 +358,7 @@ footer {
     margin-top: 0px;
     
 }
-    #thumbs img:nth-child(3n+2) {
+#thumbs img:nth-child(3n+2) {
     margin-left: 0px;
     margin-right: 0px;
 }
@@ -321,7 +368,7 @@ footer {
 }
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 900px) {
 nav ul {
     width: 450px;
     margin-left: auto;
@@ -338,16 +385,17 @@ nav li a {
     width: 150px;
     float: none;
 }
+    
 #sidebar {
     max-width: auto;
     min-width: 170px;
-    width: 30%;
+    width: 35%;
 }
 #container {
     height: 100%
     float: right;
     min-width: 319px;
-    width: 70%;
+    width: 65%;
     position: relative;
     padding-left: 0px;
 }   
