@@ -9,6 +9,7 @@
 - add more to about me
 - add button for resume
 - make mobile versions for about me and contact
+- maybe alter mobile versions to be bigger.
 
 /////NEED TO CHANGE CONTAINER PADDING AND MARGINS WHEN ADDING OR DELETING WORK OR ELSE IT WONT SHOW/////
 -nevermind the problem was that the div was placed in wrong area.
