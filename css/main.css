@@ -418,7 +418,7 @@ footer {
 }
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 900px) {
 nav ul {
     width: 100%;
     margin-left: auto;
@@ -444,7 +444,6 @@ nav li a {
 }
 #categories li a {
     padding-left: 10%;
-    font-size: 1.5vw;
 }
 
 #work {
@@ -452,7 +451,9 @@ nav li a {
     margin-top: 56px;
     overflow: hidden;
 }
-
+#thumbs {
+    max-width: 267px;
+}
 #thumbs img {
     max-width: 100%;
 }
@@ -466,6 +467,12 @@ nav li a {
 }
 }
 @media screen and (max-width: 720px) {
+h1 {
+width: 100%;
+}
+h2 {
+width: 100%;
+}
 #sidebar {
     width: 45%;
 }
