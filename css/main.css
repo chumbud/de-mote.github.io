@@ -552,7 +552,7 @@ nav li a {
 }
 }
 
-@media handheld and (max-width: 900px){
+@media handheld and (max-width: 720px){
 nav ul {
     width: 450px;
     margin-left: auto;
