@@ -491,6 +491,7 @@ width: 100%;
 }
 #container {
     padding-left: 55%;
+    margin-top: -240px;
 }
 #thumbs {
     width: 75%;
