@@ -469,6 +469,7 @@ nav li a {
 @media screen and (max-width: 720px) {
 h1 {
 width: 100%;
+font-size: 16vw;
 }
 h2 {
 width: 100%;
