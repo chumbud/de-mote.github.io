@@ -289,14 +289,16 @@ nav li a:hover {
 /*ABOUT*/
 
 #propic {
-    margin-right: auto;
-    margin-left: auto;
+    height: auto;
+    width: 60%;
+    max-width: 750px;
     margin-top: 10px;
     background: #edecec;
+    margin-left: auto;
+    margin-right: auto;
 }
 #propic img {
-    width: 100%;
-    max-width: 750px;
+    max-width: 100%;
 }
 #about {
     font-family: "Montserrat";
@@ -377,6 +379,95 @@ footer {
 }
 
 /*CLEAN UP ALLL OF THIS CRAP*/
+
+@media screen and (max-width: 1224px) {
+#sidebar {
+    max-width: auto;
+    min-width: 100px;
+    width: 30%;
+}
+#container {
+    float: right;
+    min-width: 319px;
+    width: 70%;
+    position: relative;
+    padding-left: 0px;
+}   
+#work {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 56px;
+}
+#thumbs {
+    max-width: 545px;
+    margin-top: 0px;
+    
+}
+#thumbs img:nth-child(3n+2) {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+#thumbs img:nth-child(2n+2) {
+    margin-left: 6px;
+    margin-right: 0px;
+}
+#about {
+    width: 60%;
+}
+}
+
+@media screen and (max-width: 820px) {
+nav ul {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav li {
+    max-width: 150px;
+    min-width: 20px;
+    width: 70%;
+    float: left;
+}
+nav li a {
+    min-width: 20px;
+    width: 150px;
+    float: none;
+}
+#sidebar {
+    max-width: auto;
+    min-width: 170px;
+    width: 30%;
+}
+#container {
+    height: 100%
+    float: right;
+    min-width: 319px;
+    width: 70%;
+    position: relative;
+    padding-left: 0px;
+}   
+#work {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 56px;
+}
+#thumbs {
+    max-width: 267px;
+    margin-top: 0px;
+    overflow-x: hidden;
+    
+}
+#thumbs img:nth-child(3n+2) {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+#thumbs img:nth-child(2n+2) {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+}
 
 @media handheld and (max-width: 1224px) {
 #banner {
@@ -510,90 +601,4 @@ nav li a {
 #thumbs img:nth-child(2n+2) {
     margin-left: 0px;
     margin-right: 0px;
-}
-    
-@media screen and (max-width: 1224px) {
-#sidebar {
-    max-width: auto;
-    min-width: 100px;
-    width: 30%;
-}
-#container {
-    float: right;
-    min-width: 319px;
-    width: 70%;
-    position: relative;
-    padding-left: 0px;
-}   
-#work {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 56px;
-}
-#thumbs {
-    max-width: 545px;
-    margin-top: 0px;
-    
-}
-#thumbs img:nth-child(3n+2) {
-    margin-left: 0px;
-    margin-right: 0px;
-}
-#thumbs img:nth-child(2n+2) {
-    margin-left: 6px;
-    margin-right: 0px;
-}
-}
-
-@media screen and (max-width: 820px) {
-nav ul {
-    width: 450px;
-    margin-left: auto;
-    margin-right: auto;
-}
-nav li {
-    max-width: 150px;
-    min-width: 20px;
-    width: 70%;
-    float: left;
-}
-nav li a {
-    min-width: 20px;
-    width: 150px;
-    float: none;
-}
-#sidebar {
-    max-width: auto;
-    min-width: 170px;
-    width: 30%;
-}
-#container {
-    height: 100%
-    float: right;
-    min-width: 319px;
-    width: 70%;
-    position: relative;
-    padding-left: 0px;
-}   
-#work {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 56px;
-}
-#thumbs {
-    max-width: 267px;
-    margin-top: 0px;
-    overflow-x: hidden;
-    
-}
-#thumbs img:nth-child(3n+2) {
-    margin-left: 0px;
-    margin-right: 0px;
-}
-#thumbs img:nth-child(2n+2) {
-    margin-left: 0px;
-    margin-right: 0px;
-}
 }
