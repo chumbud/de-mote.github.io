@@ -2,9 +2,7 @@
 - make previews of works
 - find propic of me
 - add contact
-- add dot to current page
 - maybe make banner percentage sized
-- clean up useless code
 - add more to about me
 
 /////NEED TO CHANGE CONTAINER PADDING AND MARGINS WHEN ADDING OR DELETING WORK OR ELSE IT WONT SHOW/////

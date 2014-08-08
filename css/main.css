@@ -19,7 +19,7 @@ body {
     color: #74c9ba;
     font-size: 10px;
     overflow: hidden;
-    height: 100%;
+    height: inherit;
 }
 header{
     width: inherit;
@@ -32,24 +32,10 @@ h1 {
     color: #fff;
     letter-spacing: 7px;
     font-size: 60px;
-    width: 370px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    z-index: 2;
-    
-}
-#h2bar {
-    margin-top: -7px;
-    background: #1c0f24;
-    height: 20px;
-    width: 354px;
-    opacity: .3;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    z-index: 2;
-
 }
     
 h2 {
@@ -60,12 +46,21 @@ h2 {
     font-size: 10px;
     margin-top: -20px;
     height: 20px;
-    width: 354px;
+    width: 100%;
     padding-top: 3px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    z-index: 2;
+}
+#h2bar {
+    margin-top: -7px;
+    background: #1c0f24;
+    height: 20px;
+    width: 354px;
+    opacity: .3;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
 
 }
 h3 {
@@ -78,11 +73,29 @@ h3 {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    font-size: 4vw;
-    border-left-color: #8bffee;
-    border-left-width: 5px;
 }
-
+h4 {
+    width: 100%;
+    height: 75px;
+    background-color: currentColor;
+    border-color: #edecec;
+    border-width: 0;
+    border-bottom-width: 10px;
+    border-style: solid;
+}
+.text {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    text-align: left;
+    margin-top: -75px;
+    padding-top: 20px;
+    background-color: inherit;
+    color: #edecec;
+    width: 60%;
+    max-width: 750px;
+    border-width: 0;
+}
 #banner {
     background-image: url(/img/spaceNEWpub.jpg);
     background-repeat: repeat;
@@ -166,14 +179,14 @@ nav li a:hover {
     position: fixed;
     height: 100%;
     width: 40%;
-    min-width: auto;
+    min-width: 100px;
     max-width: 350px;
     float: left; 
-    position: fixed;
     z-index: 4;
 }
 #categories {
-    height: 200px;
+    max-height: 200px;
+    height: 30%
 }
 #categories ul {
     height: 150px;
@@ -215,8 +228,7 @@ nav li a:hover {
     font-size: 12px;
     line-height: 20px;
     height: 100%;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    overflow: hidden;
     position: relative;
     z-index: -2;
     margin-top: -490px;
@@ -229,15 +241,22 @@ nav li a:hover {
     padding-left: 25px;
     padding-right: 25px;
 }
+#current {
+    font-size: 20px;
+    width: 100%;
+    height: 30px;
+    margin-top: -20px;
+    text-align: right;
+    padding-right: 5%;
+
+}
 #container {
-    overflow-y: hidden;
-    overflow-x: hidden;
-    margin-top: -237px;
-    padding-left: 364px;
-    padding-top: 237px;
+    overflow: hidden;
+    margin-top: -240px;
+    padding-top: 240px;
     position: relative;
-    z-index: 2; /* consider deletion */
     height: 100%;
+    padding-left: 350px;
 }
 #container2 {
     height: 100%;
@@ -245,12 +264,10 @@ nav li a:hover {
     overflow-y: scroll;
 }
 #etc-container {
-    overflow-y: hidden;
-    overflow-x: hidden;
+    overflow: hidden;
     margin-top: -240px;
     padding-top: 240px;
     position: relative;
-    z-index: 2; /* consider deletion */
     height: 100%;
 }
 #etc-container2 {
@@ -262,13 +279,12 @@ nav li a:hover {
 
 #work {
     overflow: hidden;
-    overflow-y: hidden;
-    width: 840px;
+    width: 820px;
     margin-left: auto;
     margin-right: auto;
 }
 #thumbs {
-    overflow-y: hidden;
+    overflow: hidden;
     margin-right: auto;
     margin-left: auto;
     margin-top: 56px;
@@ -278,6 +294,7 @@ nav li a:hover {
     opacity: .7;
 }
 #thumbs img {
+    max-width: 100%;
     margin-bottom: 6px;
     color: #000000;
     transition: opacity .3s ease-in-out;
@@ -304,23 +321,62 @@ nav li a:hover {
 #about {
     font-family: "Montserrat";
     font-weight: 400;
-    font-size: 11px;
+    font-size: 15px;
     line-height: 25px;
     color: #222222;
     text-align: center;
     width: 750px;
+    max-width: 60%;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#skills ul {
+    width: 60%;
+    max-width: 750px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#skills li {
+    display: inline-block;
+    height: 100%;
+    background-color: #edecec;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+#skillbox {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    margin-top: -25px;
+}
+
+.skill li {
+    color: #74c9ba;
+}
+.language li {
+    color: #20a2bf;
+}
+.software li {
+    color: #644c71;
 }
 #resume-shadow {
-    margin-top: -44px;
+    margin-top: -41px;
     margin-left: auto;
     margin-right: auto;
     height: 47px;
     width: 50%;
-    max-width: 267px;
+    max-width: 750px;
     background-color: #4b9386;
     border-radius: 3px;
     position: relative;
@@ -328,18 +384,21 @@ nav li a:hover {
     display: block;
 }
 #resume {
+    margin-top: 50px;
     width: 50%;
-    max-width: 267px;
+    max-width: 750px;
     margin-left: auto;
     margin-right: auto;
 }
 #resume a {
-    padding-top: 18px;
-    height: 47px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    height: 20%;
+    max-height: 100px;
     text-align: center;
     width: 100%;
     color: #edecec;
-    font-size: 10px;
+    font-size: 20px;
     font-weight: 400;
     background-color: #74c9ba;
     border-radius: 3px;
@@ -357,7 +416,7 @@ nav li a:hover {
 #resume a:hover {
     background-color: #7fd4c5;
     background: color .1s ease-in-out;
-    transform: translate3d(0px, 3px, 0px);
+    transform: translate3d(0px, 6px, 0px);
 }
 
 footer {
@@ -378,39 +437,20 @@ footer {
     color: #222222;
     background: #8bffee;
 }
-#current {
-    font-size: 20px;
-    width: 100%;
-    height: 30px;
-    margin-top: -20px;
-    text-align: right;
-    padding-right: 20px;
-
-}
-/*CLEAN UP ALLL OF THIS CRAP*/
-
 @media screen and (max-width: 1224px) {
-#sidebar {
-    max-width: auto;
-    min-width: 100px;
-    width: 30%;
+h3 {
+    font-size: 4vw;
 }
-#container {
-    float: right;
-    min-width: 319px;
-    width: 70%;
-    position: relative;
-    padding-left: 0px;
-}   
+h4 {
+    font-size: 2.5vw;
+}
 #work {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 56px;
 }
 #thumbs {
     max-width: 545px;
-    margin-top: 0px;
     
 }
 #thumbs img:nth-child(3n+2) {
@@ -421,34 +461,21 @@ footer {
     margin-left: 6px;
     margin-right: 0px;
 }
-#about {
-    width: 60%;
-}
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
 nav ul {
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
 }
 nav li {
     width: 33.33%;
-    float: left;
 }
 nav li a {
     width: 100%;
     float: none;
 }
-#sidebar {
-    width: 30%;
-}
 #container {
-    height: 100%;
-    float: right;
-    width: 100%;
-    position: relative;
-    padding-left: 25%;
+    padding-left: 40%;
 }
 #categories li a {
     padding-left: 10%;
@@ -456,19 +483,12 @@ nav li a {
 
 #work {
     max-width: 267px;
-    margin-top: 56px;
     overflow: hidden;
 }
 #thumbs {
     max-width: 267px;
 }
-#thumbs img {
-    max-width: 100%;
-}
-#thumbs img:nth-child(3n+2) {
-    margin-left: 0px;
-    margin-right: 0px;
-}
+
 #thumbs img:nth-child(2n+2) {
     margin-left: 0px;
     margin-right: 0px;
@@ -476,31 +496,29 @@ nav li a {
 }
 @media screen and (max-width: 720px) {
 h1 {
-width: 100%;
-font-size: 16vw;
+font-size: 12vw;
 }
-h2 {
-width: 100%;
-}
-#sidebar {
-    width: 45%;
+#description {
+    overflow-x: hidden; 
+    padding-top: 0px;
+    height: 30%;
+    margin-top: -10%;
 }
 #categories li a {
-    padding-left: 10%;
     font-size: 2.5vw;
-}
-#container {
-    padding-left: 55%;
-    margin-top: -240px;
 }
 #thumbs {
     width: 75%;
-    max-width: 267px;
-    height: auto;
-    margin-top: 0px;
-    overflow-x: hidden;
 }
-#current {
-    padding-right: 5%;
+#resume {
+    width: 80%;
+    max-width: 300px;
+}
+#resume-shadow {
+    width: 80%;
+    max-width: 300px;
+}
+    #resume a {
+    font-size: 5.5vw;
 }
 }
