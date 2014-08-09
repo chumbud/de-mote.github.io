@@ -325,15 +325,22 @@ nav li a:hover {
 #propic {
     width: 60%;
     max-width: 750px;
-    height: auto;
+    height: 300px;
     background: #edecec;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
+    background-image: url(/img/me.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
 }
 #propic img {
     max-width: 100%;
+    opacity: 0;
 }
+
 #about {
     width: 750px;
     max-width: 60%;
@@ -604,6 +611,9 @@ nav li a {
 @media screen and (max-width: 720px) {
 h1 {
 font-size: 12vw;
+}
+#propic {
+    background-image: url(/img/me2.png);
 }
 #description {
     overflow-x: hidden; 

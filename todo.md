@@ -1,8 +1,7 @@
-- fix repeating banner (add transition between repeats)
-- make banner 237px
+- if i really wanna, make the banner longer to only transition on biggg resolutions
 - make previews of works
-- find propic of me
 - remove "animation" in header lol
 - description space on bottom is uh.. scaling vertically with window size
 - revise descriptions
 - redo resume
+- optimize about and contact for mobile
