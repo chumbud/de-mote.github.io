@@ -521,7 +521,11 @@ font-size: 12vw;
     width: 80%;
     max-width: 300px;
 }
-    #resume a {
-    font-size: 5.5vw;
+#resume a {
+    font-size: 3.5vw;
+}
+#resume-shadow {
+    margin-top: -27px;
+    height: 4.5%;
 }
 }
