@@ -105,11 +105,11 @@ h4 {
 #banner {
     width: 100%;
     height: 237px;
-    background-image: url(/img/spaceNEWpub.jpg);
-    background-repeat: repeat;
+    background-image: url(/img/banner.png);
+    background-repeat: no-repeat;
     background-position: center;
+    background-color: #2b1f4f;
     text-align: center;
-    background-color: #74c9ba;
     position: relative;
     z-index: 10;
 }

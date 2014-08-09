@@ -1,4 +1,5 @@
 - fix repeating banner (add transition between repeats)
+- make banner 237px
 - make previews of works
 - find propic of me
 - remove "animation" in header lol
