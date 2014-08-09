@@ -78,10 +78,13 @@ h4 {
     width: 100%;
     height: 75px;
     background-color: currentColor;
-    border-color: #edecec;
+    border-bottom-color: #edecec;
     border-width: 0;
-    border-bottom-width: 10px;
-    border-style: solid;
+    border-bottom-width: 1px;
+    border-top-width: 3px;
+    border-top-color: #edecec;
+    border-style: dashed;
+    border-top-style: solid;
 }
 .text {
     margin-left: auto;
@@ -89,7 +92,7 @@ h4 {
     font-size: 25px;
     text-align: left;
     margin-top: -75px;
-    padding-top: 20px;
+    padding-top: 23px;
     background-color: inherit;
     color: #edecec;
     width: 60%;
@@ -358,7 +361,7 @@ nav li a:hover {
     margin-right: auto;
     width: 100%;
     height: 100%;
-    margin-top: -25px;
+    margin-top: -26px;
 }
 
 .skill li {
@@ -378,7 +381,7 @@ nav li a:hover {
     width: 50%;
     max-width: 750px;
     background-color: #4b9386;
-    border-radius: 3px;
+    border-radius: 7px;
     position: relative;
     z-index: 19;
     display: block;
@@ -401,7 +404,7 @@ nav li a:hover {
     font-size: 20px;
     font-weight: 400;
     background-color: #74c9ba;
-    border-radius: 3px;
+    border-radius: 7px;
     position: relative;
     z-index: 20;
     text-decoration: none;
