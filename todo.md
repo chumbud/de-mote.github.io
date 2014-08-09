@@ -4,3 +4,4 @@
 - remove "animation" in header lol
 - description space on bottom is uh.. scaling vertically with window size
 - revise descriptions
+- redo resume
