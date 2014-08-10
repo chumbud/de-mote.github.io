@@ -295,29 +295,31 @@ nav li a:hover {
 
 #work {
     overflow: hidden;
-    width: 820px;
-    margin-left: auto;
+    width: 935px;
+    margin: 20px;
     margin-right: auto;
+    margin-left: auto;
 }
 #thumbs {
     overflow: hidden;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 56px;
     height: 100%;
 }
 #thumbs img:hover{
     opacity: .7;
 }
+#thumbs a {
+}
 #thumbs img {
     max-width: 100%;
-    margin-bottom: 6px;
+    margin-bottom: 0px;
     color: #000000;
     transition: opacity .3s ease-in-out;
 }
 #thumbs img:nth-child(3n+2) {
-    margin-left: 6px;
-    margin-right: 6px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 /* ////////// ABOUT ////////// */
@@ -335,6 +337,7 @@ nav li a:hover {
     background-position: center;
     border-bottom-width: 5px;
     border-bottom-style: solid;
+    border-radius: 5px;
 }
 #propic img {
     max-width: 100%;
@@ -551,7 +554,18 @@ footer {
     color: #222222;
     background: #8bffee;
 }
-@media screen and (max-width: 1224px) {
+
+@media screen and (max-width: 1920px) {
+#work {
+    width: 1405px;
+}
+    
+@media screen and (max-width: 1800px) {
+#work {
+    width: 935px;
+}
+
+@media screen and (max-width: 1324px) {
 h3 {
     font-size: 4vw;
 }
@@ -564,7 +578,7 @@ h4 {
     margin-right: auto;
 }
 #thumbs {
-    max-width: 545px;
+    max-width: 465px;
     
 }
 #thumbs img:nth-child(3n+2) {
@@ -572,7 +586,7 @@ h4 {
     margin-right: 0px;
 }
 #thumbs img:nth-child(2n+2) {
-    margin-left: 6px;
+    margin-left: 0px;
     margin-right: 0px;
 }
 }
@@ -596,19 +610,14 @@ nav li a {
 }
 
 #work {
-    max-width: 267px;
+    max-width: 465px;
     overflow: hidden;
 }
 #thumbs {
-    max-width: 267px;
-}
-
-#thumbs img:nth-child(2n+2) {
-    margin-left: 0px;
-    margin-right: 0px;
+    max-width: 465px;
 }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 820px) {
 h1 {
 font-size: 12vw;
 }
