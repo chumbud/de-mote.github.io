@@ -7,3 +7,4 @@
 - optimize about and contact for mobile
 - get originals of my face from work
 - on hover titles, maybe
+- warning that the book previews have more than one page
