@@ -295,7 +295,7 @@ nav li a:hover {
 
 #work {
     overflow: hidden;
-    width: 935px;
+    width: 1405px;
     margin: 20px;
     margin-right: auto;
     margin-left: auto;
@@ -480,6 +480,7 @@ nav li a:hover {
     transform: rotate(5deg);
 }
 .contact-img img {
+    list-style: none;
     transition: transform .12s ease-in-out;
 }
 
@@ -555,12 +556,7 @@ footer {
     background: #8bffee;
 }
 
-@media screen and (max-width: 1920px) {
-#work {
-    width: 1405px;
-}
-    
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 1820px) {
 #work {
     width: 935px;
 }

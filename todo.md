@@ -1,5 +1,4 @@
 - if i really wanna, make the banner longer to only transition on biggg resolutions
-- make previews of works
 - remove "animation" in header lol
 - description space on bottom is uh.. scaling vertically with window size
 - revise descriptions
@@ -7,4 +6,3 @@
 - optimize about and contact for mobile
 - get originals of my face from work
 - on hover titles, maybe
-- warning that the book previews have more than one page
