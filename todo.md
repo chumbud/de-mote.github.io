@@ -5,4 +5,3 @@
 - redo resume
 - optimize about and contact for mobile
 - get originals of my face from work
-- on hover titles, maybe
