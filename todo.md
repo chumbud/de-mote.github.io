@@ -5,3 +5,6 @@
 - redo resume
 - optimize about and contact for mobile
 - get originals of my face from work
+
+- for web layouts, make their own page and just have a scroll down to preview
+- think about updating resume
