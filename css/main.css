@@ -257,6 +257,10 @@ nav li a:hover {
     padding-left: 25px;
     padding-right: 25px;
 }
+#description a {
+    color: #8bffee;
+    text-decoration: none;
+}
 #current {
     width: 100%;
     height: 30px;
@@ -332,7 +336,7 @@ nav li a:hover {
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
-    background-image: url(/img/me.png);
+    background-image: url(/img/me3.jpg);
     background-repeat: no-repeat;
     background-position: center;
     border-bottom-width: 5px;
