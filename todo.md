@@ -8,3 +8,8 @@
 
 - for web layouts, make their own page and just have a scroll down to preview
 - think about updating resume
+
+
+-consider doing how that guys portfolio was and to give more screen space to the page have the banner scroll when scrolling down
+-not sure what to with the side bar. maybe lay it under the banner and keep it the height of the page while the banner scrolls off of it?
+-PARALAXXXXXX
