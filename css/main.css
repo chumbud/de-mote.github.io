@@ -65,17 +65,18 @@ h2 {
 }
 h3 {
     width: 100%;
-    height: auto;
+    height: 50px;
     font-weight: 700;
     color: #edecec;
     letter-spacing: 3px;
-    font-size: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    background-color: #74c9ba;
+    background-color: #dbd4d4;
+    margin-bottom: 40px;
 }
 h4 {
     width: 100%;
@@ -89,6 +90,7 @@ h4 {
     border-style: dashed;
     border-top-style: solid;
 }
+
 .text {
     width: 60%;
     margin-left: auto;
@@ -104,7 +106,7 @@ h4 {
 }
 #banner {
     width: 100%;
-    height: 237px;
+    height: 200px;
     background-image: url(/img/banner.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -116,7 +118,7 @@ h4 {
 
 #banner-container a {
     width: 100%;
-    height: 237px;
+    height: 200px;
     display: block;
     position: fixed;
     z-index: 11;
@@ -244,9 +246,9 @@ nav li a:hover {
     color: #edecec;
     font-size: 12px;
     line-height: 20px;
-    margin-top: -490px;
-    padding-top: 490px;
-    overflow: hidden;
+    margin-top: -460px;
+    padding-top: 460px;
+    overflow-y: hidden;
     position: relative;
     z-index: -2;
 }
@@ -256,6 +258,7 @@ nav li a:hover {
     overflow-y: auto;
     padding-left: 25px;
     padding-right: 25px;
+    
 }
 #description a {
     color: #8bffee;
@@ -272,8 +275,8 @@ nav li a:hover {
 }
 #container {
     overflow: hidden;
-    margin-top: -240px;
-    padding-top: 240px;
+    margin-top: -203px;
+    padding-top: 203px;
     position: relative;
     height: 100%;
     padding-left: 350px;
@@ -282,6 +285,7 @@ nav li a:hover {
     height: 100%;
     position: relative;
     overflow-y: auto;
+    padding-top: 20px;
 }
 #etc-container {
     height: 100%;
@@ -309,21 +313,28 @@ nav li a:hover {
     margin-right: auto;
     margin-left: auto;
     height: 100%;
+
 }
 #thumbs img:hover{
-    opacity: .7;
+    opacity: 1;
 }
 #thumbs a {
 }
 #thumbs img {
+    opacity: .5;
     max-width: 100%;
     margin-bottom: 0px;
-    color: #000000;
     transition: opacity .3s ease-in-out;
 }
 #thumbs img:nth-child(3n+2) {
     margin-left: 0px;
     margin-right: 0px;
+}
+.overlay {
+    background: #222;
+    width: 465px;
+    height: 280px;
+    display: inline-block;
 }
 
 /* ////////// ABOUT ////////// */
@@ -566,7 +577,7 @@ footer {
 }
 
 @media screen and (max-width: 1324px) {
-h3 {
+h5 {
     font-size: 4vw;
 }
 h4 {
@@ -592,6 +603,16 @@ h4 {
 }
 
 @media screen and (max-width: 1000px) {
+.overlay {
+    background: #fff;
+    width: auto;
+    height: auto;
+    display: inline-block;
+}
+h3 {
+    width: 100%;
+    font-size: 3.5vw;
+}
 nav ul {
     width: 100%;
 }
@@ -603,7 +624,11 @@ nav li a {
     float: none;
 }
 #container {
-    padding-left: 40%;
+    padding-left: 35%;
+}
+#container2 {
+    width: 100%;
+    padding:
 }
 #categories li a {
     padding-left: 10%;
@@ -616,11 +641,11 @@ nav li a {
 #thumbs {
     max-width: 465px;
 }
+#thumbs img {
+    opacity: 1;
 }
-@media screen and (max-width: 820px) {
-h1 {
-font-size: 12vw;
 }
+@media screen and (max-width: 920px) {
 #propic {
     background-image: url(/img/me2.png);
 }
@@ -650,4 +675,11 @@ font-size: 12vw;
     margin-top: -27px;
     height: 4.5%;
 }
+#container2 {
+    padding-top: 1%;
+}
+}
+@media screen and (max-width: 420px) {  
+h1 {
+font-size: 12vw;
 }
