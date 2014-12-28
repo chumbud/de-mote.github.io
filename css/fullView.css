@@ -56,6 +56,13 @@ p {
     border-bottom-width: 1px;
     border-color: #7b7b7b;
 }
+p a {
+    color: #8bffee;
+}
+p a:visited {
+    color: #8bffee;
+
+}
 #banner {
     width: 100%;
     height: 47px;
@@ -172,9 +179,14 @@ nav li a:hover {
     float: left;
     display: block;
     margin-right: 30px;
-    overflow: hidden;
     margin-top: -15px;
 }
+#sidebarEX img {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+
 /*make scroll*/
 #full {
     width: 90%;
