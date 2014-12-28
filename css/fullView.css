@@ -246,12 +246,12 @@ nav li a:hover {
     margin-bottom: 15px;
     list-style: none;
     max-width: 100%;
-    opacity: .5;
+    opacity: 1;
     transition: opacity .3s ease-in-out;
 }
 
 #thumbs li img:hover {
-    opacity: 1;
+    opacity: .5;
 }
 
 .overlay {
