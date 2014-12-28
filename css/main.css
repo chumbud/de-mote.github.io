@@ -258,8 +258,8 @@ nav li a:hover {
     overflow-y: auto;
     padding-left: 25px;
     padding-right: 25px;
-    
 }
+
 #description a {
     color: #8bffee;
     text-decoration: none;
@@ -271,7 +271,6 @@ nav li a:hover {
     margin-top: -20px;
     text-align: right;
     padding-right: 5%;
-
 }
 #container {
     overflow: hidden;
@@ -286,6 +285,15 @@ nav li a:hover {
     position: relative;
     overflow-y: auto;
     padding-top: 20px;
+}
+#containerFull {
+    padding-left: -100px;
+}
+#containerFull2 {
+    position: relative;
+    overflow-y: auto;
+    margin-right: auto;
+    margin-left: auto;
 }
 #etc-container {
     height: 100%;
