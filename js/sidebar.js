@@ -11,7 +11,7 @@ var main = function() {
         }, 1000)
         $('.arrow2').animate({
             marginLeft: "1%"
-        }, 1000)
+        }, 800)
         $('#container').css({
             float: "none"
         }, 1000)  
@@ -29,18 +29,19 @@ var main = function() {
         if($('#container2').css("z-index") == "6" || $('#container').css("z-index") == "5") {
                 $('#container2').animate({marginLeft: "0px"})          
             } else {
-                $('#container2').animate({marginLeft: "150px"})
+                $('#container2').animate({paddingLeft: "0px"})
             }
         $('.arrow2').animate({
             marginLeft: "-4%"
         }, 1000)            
     });
-    $(window).resize(function(){	
+    /*$(window).resize(function(){	
         if($('#container').css("z-index") == "6" ||             $('#container').css("z-index") == "5") {
                 $('#container').animate({paddingLeft: "40%"})
                 $('#container2').animate({marginLeft: "0px"})
         }
     });
+    */
 };
 
 $(document).ready(main);
