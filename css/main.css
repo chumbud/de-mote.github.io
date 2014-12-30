@@ -377,18 +377,6 @@ nav li a:hover {
     margin-left: 350px;
 }
 
-#etc-container {
-    height: 100%;
-    overflow: hidden;
-    margin-top: -240px;
-    padding-top: 240px;
-    position: relative;
-}
-#etc-container2 {
-    height: 100%;
-    position: relative;
-    overflow-y: auto;
-}
 /* ////////// WORK ////////// */
 
 #work {
@@ -448,8 +436,6 @@ footer {
 @media screen and (max-width: 1820px) {
 #work {
     width: 935px;
-}
-#container2 {
 }
 }
 
@@ -544,8 +530,28 @@ nav li a {
 #container2 {
     padding-top: 1%;
 }
+
+#banner {
+    height: 47px;
 }
-@media screen and (max-width: 420px) {  
-h1 {
-font-size: 12vw;
+
+#banner-container a {
+    height: 47px;
+}
+header {
+    padding-top: 0px;
+}
+h1 {    
+    width: 0px;
+    font-size: 0px;
+}
+#container {
+    margin-top: 0px;
+    padding-bottom: 47px;
+    padding-top: 0px;
+    z-index: 5;
+}
+#container2 {
+    padding-top: 20px;
+}
 }
