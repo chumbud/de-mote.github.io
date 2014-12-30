@@ -242,7 +242,7 @@ nav li a:hover {
     padding-top: 50px;
     width: 18px;
     margin-top: 200px;
-    margin-left: 1%;
+    margin-left: -4%;
     opacity: .5;
     transition: opacity .2s ease-in-out;
     z-index: 20;
@@ -289,7 +289,7 @@ nav li a:hover {
     min-width: 100px;
     max-width: 350px;
     float: left; 
-    z-index: 4;
+    z-index: 10;
 }
 #categories {
     max-height: 200px;
@@ -367,13 +367,14 @@ nav li a:hover {
     padding-top: 203px;
     position: relative;
     height: 100%;
-    padding-left: 40%;
+    z-index: 0;
 }
 #container2 {
     height: 100%;
     position: relative;
     overflow-y: auto;
     padding-top: 20px;
+    margin-left: 350px;
 }
 
 #etc-container {
@@ -402,7 +403,6 @@ nav li a:hover {
     margin-right: auto;
     margin-left: auto;
     height: 100%;
-
 }
 #thumbs img:hover{
     opacity: .5;
@@ -449,6 +449,9 @@ footer {
 #work {
     width: 935px;
 }
+#container2 {
+}
+}
 
 @media screen and (max-width: 1424px) {
 h5 {
@@ -457,7 +460,12 @@ h5 {
 h4 {
     font-size: 2.5vw;
 }
+#container2 {
+    margin-left: 350px;
+    z-index: 6;
+}
 #work {
+    margin-left: 0px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -476,7 +484,7 @@ h4 {
 }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
 .overlay {
     background: #fff;
     width: auto;
@@ -499,9 +507,11 @@ nav li a {
 }
 #container {
     padding-left: 40%;
+    z-index: 5;
 }
 #container2 {
     width: 100%;
+    margin-left: 0px;
 }
 #categories li a {
     padding-left: 10%;
