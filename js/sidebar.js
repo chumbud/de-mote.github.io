@@ -22,12 +22,12 @@ var main = function() {
             marginLeft: "0px"
         }, 300)
         if($('#container').css("z-index") == "6" || $('#container').css("z-index") == "5") {
-                $('#container').animate({paddingLeft: "40%"})
+                $('#container').animate({paddingLeft: "350px"})
             } else {
                 $('#container').animate({paddingLeft: "350px"})
         }
         if($('#container2').css("z-index") == "6" || $('#container').css("z-index") == "5") {
-                $('#container2').animate({marginLeft: "0px"})          
+                $('#container2').animate({marginLeft: "0px"})      
             } else {
                 $('#container2').animate({paddingLeft: "0px"})
             }
@@ -35,13 +35,25 @@ var main = function() {
             marginLeft: "-4%"
         }, 1000)            
     });
-    $(window).resize(function(){	
+    //when resizeing, if the sidebar isn't hidden this makes sure the padding is correct
+    if(!$('#sidebar').css("margin-left") == "-375px") {
+    $(window).resize(function() {	
         if($('#container').css("z-index") == "6" ||             $('#container').css("z-index") == "5") {
-                $('#container').animate({paddingLeft: "40%"})
+                $('#container').animate({paddingLeft: "-40%"})
                 $('#container2').animate({marginLeft: "0px"})
+        } else {
+                $('#container').animate({paddingLeft: "350px"})
         }
     });
-    
+    }
+    if(!$('#sidebar').css("margin-left") == "-375px") {
+        $('#container').animate({paddingLeft: "350px"})
+    }
+    $(window).resize(function() {	
+        if(!$('#sidebar').css("margin-left") == "-375px" && $('#container').css("padding-left") == "40%") {
+        $('#container').animate({paddingLeft: "0%"})
+    }
+    });
 };
 
 $(document).ready(main);
