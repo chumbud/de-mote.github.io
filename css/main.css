@@ -569,6 +569,7 @@ h1 {
 #categories li a {
 }
 #thumbs {
-    width: 75%;
+    width: 95%;
+    padding-right: 40px;
 }
 }
