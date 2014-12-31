@@ -1,18 +1,5 @@
 /* ////////// ABOUT ////////// */
 
-#etc-container {
-    height: 100%;
-    overflow: hidden;
-    margin-top: -203px;
-    padding-top: 203px;
-    position: relative;
-}
-#etc-container2 {
-    height: 100%;
-    position: relative;
-    overflow-y: auto;
-}
-
 #propic {
     width: 60%;
     max-width: 750px;

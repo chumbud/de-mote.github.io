@@ -35,13 +35,13 @@ var main = function() {
             marginLeft: "-4%"
         }, 1000)            
     });
-    /*$(window).resize(function(){	
+    $(window).resize(function(){	
         if($('#container').css("z-index") == "6" ||             $('#container').css("z-index") == "5") {
                 $('#container').animate({paddingLeft: "40%"})
                 $('#container2').animate({marginLeft: "0px"})
         }
     });
-    */
+    
 };
 
 $(document).ready(main);

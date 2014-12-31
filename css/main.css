@@ -202,6 +202,7 @@ nav li a:hover {
     opacity: .5;
     transition: opacity .2s ease-in-out;
     cursor: pointer;
+    z-index: 50;
 }
 
 .arrow:before, .arrow:after {
@@ -377,6 +378,18 @@ nav li a:hover {
     margin-left: 350px;
 }
 
+#etc-container {
+    height: 100%;
+    overflow: hidden;
+    margin-top: -240px;
+    padding-top: 240px;
+    position: relative;
+}
+#etc-container2 {
+    height: 100%;
+    position: relative;
+    overflow-y: auto;
+}
 /* ////////// WORK ////////// */
 
 #work {
@@ -512,24 +525,9 @@ nav li a {
 #thumbs img {
     opacity: 1;
 }
+    
 }
-@media screen and (max-width: 920px) {
-
-#description {
-    overflow-x: hidden; 
-    padding-top: 0px;
-    height: 30%;
-    margin-top: -10%;
-}
-#categories li a {
-}
-#thumbs {
-    width: 75%;
-}
-
-#container2 {
-    padding-top: 1%;
-}
+@media screen and (max-width: 900px) {
 
 #banner {
     height: 47px;
@@ -552,6 +550,18 @@ h1 {
     z-index: 5;
 }
 #container2 {
-    padding-top: 20px;
+    padding-top: 1%;
+}    
+    
+#description {
+    overflow-x: hidden; 
+    padding-top: 0px;
+    height: 60%;
+    margin-top: -10%;
+}
+#categories li a {
+}
+#thumbs {
+    width: 75%;
 }
 }
