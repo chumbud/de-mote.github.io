@@ -381,9 +381,8 @@ nav li a:hover {
 #etc-container {
     height: 100%;
     overflow: hidden;
-    margin-top: -240px;
-    padding-top: 240px;
-    position: relative;
+    margin-top: -202px;
+    padding-top: 202px;
 }
 #etc-container2 {
     height: 100%;
@@ -571,5 +570,9 @@ h1 {
 #thumbs {
     width: 95%;
     padding-right: 40px;
+}
+#etc-container {
+    margin-top: -50px;
+    padding-top: 50px;
 }
 }
