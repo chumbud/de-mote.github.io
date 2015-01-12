@@ -1,0 +1,86 @@
+h1 {
+    width: 264px;
+    height: 76px;
+    text-align: center;
+    padding-top: 17px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -250px;
+    font-weight: 100;
+    font-size: 30.68px;
+    border-color: #edecec;
+    border-style: solid;
+    border-radius: 19px;
+    border-width: 2px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    position: relative;
+}
+p {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    font-size: 17.26px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+}
+#banner {
+    width: 100%;
+    height: 540px;
+    background-color: #000;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('/img/work/college/banner_resize01.jpg');
+    background-repeat: none;
+    opacity: .3;
+}
+#underlay {
+    background-color: #000;
+}
+#anchor {
+    width: 100%;
+    height: 50px;
+    transition: background-color .2s ease-in-out, opacity .2s ease-in-out;
+    text-align: center;
+    position: relative;
+}
+#anchor:hover {
+    opacity: .2;
+}
+
+#icon-set {
+    margin-top: 11px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#icon-set p {
+    font-size: 13px;
+    color: #503f72;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    padding-bottom: 25px;
+}
+#icon-set ul {
+    width: 928px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#icon-set li {
+    padding: 50px;
+    display: inline-block;
+}
+#icon-set li img {
+    width: 206px;
+    height: 206px;
+    transition: transform .2s ease-in-out;
+}
+#icon-set li img:hover {
+    transform: translate(0, -10px);
+}
+
+@media screen and (max-width: 928px) {
+#icon-set ul {
+    width:306px;
+}

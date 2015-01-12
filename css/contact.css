@@ -1,86 +1,72 @@
-/* /////////// CONTACT /////////// */
-
-#contact {
-    width: 780px;
-    max-width: 100%;
-    height: 400px;
-    background-color: #fff;
-    border-radius: 10px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #d9d9d9;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-}
-#contact a {
-    width: 300px;
-    max-width: 50%;
-    display: block;
-    margin: auto;
-}
-#contact img {
-    transition: transform .12s ease-in-out;
-}
-
-#contact img:hover {
-    transform: rotate(5deg);
-}
-.contact-img img {
-    list-style: none;
-    transition: transform .12s ease-in-out;
-}
-
-.contact-img img:hover {
-    transform: translate3d(0px, -2px, 0px);
-}
-.email {
-    height: 20%;
-    width: 780px;
-    max-width: 100%;
-    border-top-color: inherit;
-    border-top-width: 2px;
-    border-top-style: dashed;
-    color: #866096;
-    letter-spacing: 2px;
+h2 {
+    color: #222;
     text-align: center;
-    display: inline-block;
-    font-size: 18px;
-    margin-top: 3%;
-    padding-top: 3.5%;
-    padding-bottom: 3.5%;
-}
-h5 {
-    color: #866096;
-    font-size: 25px;
-    font-weight: 400;
     letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    margin-top: 60px;
+}
+p {
+    font-family: 'Open Sans';
+    font-size: 10px;
+    color: #222;
+    letter-spacing: 1px;
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-bottom: 60px;
+}
+#banner {
+    width: 100%;
+    height: 540px;
+    background-color: #000;
+    position: absolute;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('/img/work/college/banner_resize01.jpg');
+    background-repeat: none;
+    opacity: .3;
+    z-index: -1;
+}
+#underlay {
+    background-color: #000;
+    z-index: -2;
+    position: absolute;
+    height: 540px;
+    width: 100%;
 }
 
-.icons {
-    width: auto;
-    height: 65px;
-    max-width: 780px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+.contact {
+    padding-top: 110px;
+    padding-bottom: 120px;
 }
 
-.icons ul {
-    width: 185px;
+.contact ul {
+    width: 95%;
+    max-width: 885px;
     margin-left: auto;
     margin-right: auto;
+}
+.contact li {
+    width: 253px;
+    margin-right: auto;
+    margin-left: auto;
     list-style: none;
 }
-
-.icons li:nth-child(n-1) {
-    clear: left;
-    display: inline-block;
-    margin-left: 20px;
+.description h2 {
+    font-size: 35px;
+}
+.description {
+    width: 95%;
+    max-width: 885px;
+    margin-left: auto;
     margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.footer {
+    margin-top: 100px;
+}
+@media screen and (max-width: 600px) {
+
 }

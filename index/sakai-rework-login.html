@@ -3,12 +3,11 @@
     <head lang="en">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <meta charset="utf-8">
-        <link rel="stylesheet" href="/css/fullView.css">
+        <link rel="stylesheet" href="/css/fullview.css">
+        <link rel="stylesheet" href="/common.css">
         <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <script src="/js/lightbox/js/jquery-1.11.0.min.js"></script>
-        <script src="/js/lightbox/js/lightbox.min.js"></script>
-        <link href="/js/lightbox/css/lightbox.css" rel="stylesheet" />
         <title>PJ Rosa</title> 
         <link rel="icon" type="image/png" href="/img/favicon.png"/>
         <script>
@@ -20,30 +19,38 @@
       ga('create', 'UA-54481131-1', 'auto');
             ga('require', 'displayfeatures');
       ga('send', 'pageview');
-
-            
         </script>
-        
+          <script>
+            $(document).ready(function(){
+              $("#dropdown").click(function(){
+                $("#dropdown-menu").fadeToggle(200);
+              });
+            });
+        </script>      
         </head>
-            <div id="banner-container"><a href="/index.html"></a>
-            <div id="banner">
-
-            </div> 
-        </div>
-        <div id="navbar">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="/about.html">about me</a></li>
-                <li><a href="/index.html">work</a><div id="nipple"></div></li>
-                <li><a href="/contact.html">contact</a></li>
-            </ul>
-        </nav>
-    <body>
+     <body>
+<div id="transparent-bar"></div>
+            <nav>
+                <ul style="float: left; margin-top: 29px; margin-left: 30px;">
+                    <a class="logo" href="/index.html"><li class="logo" style="font-weight: 700; font-size: 16px;">P.J. ROSA</li></a>
+                </ul>
+                <ul>
+                    <li><a href="/index.html">home</a></li>
+                    <li><a href="/about.html">about</a></li>
+                    <span style="cursor: pointer;" id="dropdown"><li><div id="nipple"></div><a>work</a></li></span>
+                    <li><a href="/contact.html">contact</a></li>
+                </ul>
+            </nav>
+            <div id="dropdown-menu" style="display: none;">
+                <ul>
+                    <a href="work.html"><li>Personal</li></a>
+                    <a href="index/anthologist.html"><li>Anthologist</li></a>
+                    <a href="index/mediateam.html"><li>Rutgers Student Life</li></a>
+                </ul>
+            </div>
         <div id="wrapped">
-        <div id="wrapper">
             <div id="sidebarEX">
-                <div id="backbutton"><a href="/">back</a></div>
+                <div id="backbutton"><a href="/work.html">back</a></div>
             <h2>Rutgers Sakai Rework</h2>
                 <p>This is a rework I mocked up for the academic hub of Rutgers University.</p>
                 <div id="thumbs">
@@ -60,6 +67,7 @@
                     </ul>                    
                 </div>
                 </div>
+        <div id="wrapper">
             <div id="full">
                 <img src="/img/work/college/sakai_login_preview.jpg">
                     </div>

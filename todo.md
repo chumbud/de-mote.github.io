@@ -1,1 +1,1 @@
--update rhythm gates preview with award,
+-work button needs to somehow show other sections

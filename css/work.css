@@ -1,0 +1,92 @@
+.work {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.work ul {
+    width: 95%;
+    max-width: 885px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.work li {
+    width: 420px;
+    height: 300px;
+    margin-top: 40px;
+    display: inline-block;
+    background-color: #000;
+}
+
+.work li:nth-child(2n-1) {
+    margin-left: 0px;
+    margin-right: 40px;
+}
+.work li a {
+    transition: opacity .2s ease-in-out;
+}
+.work li a:hover {
+    opacity: .8;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    margin-top: 60px;
+}
+p {
+    font-family: 'Open Sans';
+    font-size: 10px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+p a {
+    display: inline-block;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .5);
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color .2s ease-in-out, color .2s ease-in-out;
+}
+p a:hover {
+    background-color: #8bffee;
+    color: #222;
+}
+#banner {
+    width: 100%;
+    height: 540px;
+    background-color: #000;
+    position: absolute;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('/img/work/college/banner_resize01.jpg');
+    background-repeat: none;
+    opacity: .3;
+    z-index: -1;
+}
+#underlay {
+    background-color: #000;
+    z-index: -2;
+    position: absolute;
+    height: 540px;
+    width: 100%;
+}
+
+@media screen and (max-width: 885px) {
+    
+.work ul {
+    width: 420px;
+}
+.work li:nth-child(2n-1) {
+    padding-right: 0px;
+}
+    
+}

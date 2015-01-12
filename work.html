@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="description" content="Design Portfolio of PJ Rosa">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="/css/work.css">
+        <link rel="stylesheet" href="/common.css">
+        <script src="/js/lightbox/js/lightbox.min.js"></script>
+        <link href="/js/lightbox/css/lightbox.css" rel="stylesheet"/>
+        <title>PJ Rosa</title>  
+        <link rel="icon" type="image/png" href="/img/favicon.png"/>
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-54481131-1', 'auto');
+                ga('require', 'displayfeatures');
+          ga('send', 'pageview');
+        </script>
+        <script>
+            $(document).ready(function(){
+              $("#dropdown").click(function(){
+                $("#dropdown-menu").fadeToggle(200);
+              });
+            });
+        </script>
+        </head>
+    <body>
+            <div id="underlay">
+                <div id="banner">
+                </div>
+            </div>
+        <div id="transparent-bar"></div>
+            <nav>
+                <ul style="float: left; margin-top: 29px; margin-left: 30px;">
+                    <a class="logo" href="/index.html"><li class="logo" style="font-weight: 700; font-size: 16px;">P.J. ROSA</li></a>
+                </ul>
+                <ul>
+                    <li><a href="/index.html">home</a></li>
+                    <li><a href="/about.html">about</a></li>
+                    <span style="cursor: pointer;" id="dropdown"><li><div id="nipple"></div><a>work</a></li></span>
+                    <li><a href="/contact.html">contact</a></li>
+                </ul>
+            </nav>
+            <div id="dropdown-menu" style="display: none;">
+                <ul>
+                    <a href="work.html"><li>Personal</li></a>
+                    <a href="index/anthologist.html"><li>Anthologist</li></a>
+                    <a href="index/mediateam.html"><li>Rutgers Student Life</li></a>
+                </ul>
+            </div>
+        <div id="container" class="work">
+            <ul>
+                <h2>Personal</h2>
+                <p>Projects that I've done in the past in my spare time.</p>
+                <li><a href="/index/sakai-rework.html"><img src="/img/preview/sakai-preview.jpg"></a></li>
+                <li><a href="/index/ocean.html"><img src="/img/preview/ocean-preview.jpg"></a></li>
+                <li><a href="http://theantho.com"><img src="/img/preview/anthosite-preview.jpg"></a></li>
+                <li><a href="/img/work/college/banner.jpg" data-lightbox="image-1" data-title="A piece I made for fun in Hexels"><img src="/img/preview/spacehexel-preview.jpg" alt=""></a></li>
+                <li><a href="/index/crunchyroll.html"><img src="/img/preview/crunchyroll-preview.jpg"></a></li>
+                <li><a href="/img/work/college/UNF_Skype_OSX.png" data-lightbox="image-2" data-title="Yosemite inspired skype mockup."><img src="/img/preview/skype-preview.jpg" alt=""></a></li>
+            </ul>
+        </div>
+        <div id="container" class="footer">PJ ROSA © 2015 <br><br> Made with tons of PJ's love, blood and sweat; probably mostly sweat.</div>
+    </body>
+</html>
