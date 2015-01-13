@@ -11,6 +11,7 @@ html {
     background-color: #edecec;
 }
 body {
+    height: 100%;
     font-family: 'Montserrat';
     font-size: 10px;
     letter-spacing: 2px;
@@ -129,6 +130,8 @@ nav ul:first-child a:hover {
     height: 100%;
 }
 .footer {
+    width: 100%;
+    height: 120px;
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: #222;
@@ -136,6 +139,8 @@ nav ul:first-child a:hover {
     font-size: 10px;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
+    position: absolute;
+    bottom: 0;
 }
 
 ::selection {
@@ -145,6 +150,11 @@ nav ul:first-child a:hover {
 ::-moz-selection {
     color: #222222;
     background: #8bffee;
+}
+#footer-c {
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 200px;
 }
 
 @media screen and (max-width: 600px) {
