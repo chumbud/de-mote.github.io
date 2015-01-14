@@ -3,4 +3,3 @@
 -fix overflow in mobile fullview
 -finish contact
 -finish about
--flip nipple for older browser support that doesnt support transforms...

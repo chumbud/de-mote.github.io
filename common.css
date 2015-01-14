@@ -95,7 +95,7 @@ nav ul:first-child a:hover {
     padding-top: 10px;
     padding-bottom: 10px;
     display: inline-block;
-    width: 33.33%;
+    width: 33.3333333%;
     border-left-color: rgba(255, 255, 255, .1) ;
     border-left-style: solid;
     border-left-width: thin;
@@ -123,7 +123,6 @@ nav ul:first-child a:hover {
     margin-right: auto;
     margin-bottom: 23px;
     margin-top: -33px;
-    transform: rotate(180deg); 
 }
 #container {
     width: 100%;
