@@ -1,5 +1,1 @@
 -work button needs to somehow show other sections
--need to fix back button in mobile
--fix overflow in mobile fullview
--finish contact
--finish about
