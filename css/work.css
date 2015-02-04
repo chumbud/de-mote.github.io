@@ -78,9 +78,7 @@ p a:hover {
     height: 540px;
     width: 100%;
 }
-
-@media screen and (max-width: 885px) {
-    
+@media screen and (max-width: 940px) {
 .work ul {
     width: 420px;
 }

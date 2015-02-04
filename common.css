@@ -72,6 +72,15 @@ nav li a:hover {
     background-color: #8bffee;
     color: #000;
 }
+.cur  {
+    color: #8bffee;
+    transition: color .2s ease-in-out,
+    background-color .2s ease-in-out;
+}
+.cur:hover {
+    color: #000;
+    background-color: rgba(0, 0, 0, 0);
+}
 nav ul:first-child a:hover {
     color: #9f9f9f;
 }
@@ -165,7 +174,7 @@ nav li a {
     margin-right: auto;
 }
 nav ul:nth-child(2) {
-    min-width: 440px;
+    min-width: 400px;
     width: 100%;
     position: fixed;
     margin-left: auto;
@@ -174,6 +183,7 @@ nav ul:nth-child(2) {
 }
 #dropdown-menu {
     height: 200px;
+    display: none;
 }
 #dropdown-menu li {
     width: 100%;
