@@ -1,9 +1,9 @@
 * {
-	margin: 0px;
-	padding: 0px;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+     margin: 0px;
+     padding: 0px;
+     -moz-box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
 }
 html {
     width: 100%;
@@ -99,19 +99,17 @@ nav ul:first-child a:hover {
 }
 #dropdown-menu li {
     float: left;
-    background: rgba(0, 0, 0, .1);
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
     display: inline-block;
     width: 33.3333333%;
-    border-left-color: rgba(255, 255, 255, .1) ;
+    border-left-color: rgba(255, 255, 255, .1);
     border-left-style: solid;
     border-left-width: thin;
 }
 #dropdown-menu a li {
     text-decoration: none;
-    color: #edecec;
     transition: opacity .2s ease-in-out, color .2s ease-in-out;
 }
 #dropdown-menu a {
@@ -165,6 +163,45 @@ nav ul:first-child a:hover {
     padding-bottom: 200px;
 }
 
+.currenttab {
+     color: #8bffee;
+     border: #8bffee;
+     border: 3px;
+     border-bottom-style: solid;
+     background-color: rgba(139, 255, 238, .1);
+}
+.desu {
+     opacity: 0;
+     width: 420px;
+     height: 300px;
+     background-color: rgba(0, 0, 0, .8);
+     position: absolute;
+     z-index: 100;
+     transition: opacity .2s ease-in-out;
+}
+.desu:hover {
+     opacity: 1;
+}
+.desu h6 {
+     margin-left: auto;
+     margin-right: auto;
+     width: 350px;
+     color: #fff;
+     padding-top: 110px;
+     text-align: center;
+     font-size: 24px;
+     text-transform: uppercase;
+}
+.desu p {
+     margin-left: auto;
+     margin-right: auto;
+     padding-top: 10px;
+     width: 350px;
+     text-align: center;
+
+}
+
+
 @media screen and (max-width: 600px) {
 .logo {
     display: none;
@@ -190,4 +227,5 @@ nav ul:nth-child(2) {
     height: 66px;
     padding-top: 27px;
     display: block;
+}
 }
