@@ -72,6 +72,11 @@ nav li a:hover {
     background-color: #8bffee;
     color: #000;
 }
+
+nav ul:first-child a:hover {
+    color: #9f9f9f;
+}
+
 .cur  {
     color: #8bffee;
     transition: color .2s ease-in-out,
@@ -80,9 +85,6 @@ nav li a:hover {
 .cur:hover {
     color: #000;
     background-color: rgba(0, 0, 0, 0);
-}
-nav ul:first-child a:hover {
-    color: #9f9f9f;
 }
 
 #dropdown-menu {
