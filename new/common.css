@@ -209,8 +209,6 @@ body {
      .buttons li:hover {
           transform: scale(1.05, 1.05);
      }
-}
-
      .currenttab {
           color: #8bffee;
           border: #8bffee;
@@ -218,36 +216,16 @@ body {
           border-bottom-style: solid;
           background-color: rgba(139, 255, 238, .1);
      }
-     .desu {
-          opacity: 0;
-          width: 420px;
-          height: 300px;
-          background-color: rgba(0, 0, 0, .8);
-          position: absolute;
-          z-index: 100;
-          transition: opacity .2s ease-in-out;
-     }
-     .desu:hover {
-          opacity: 1;
-     }
-     .desu h6 {
-          margin-left: auto;
-          margin-right: auto;
-          width: 350px;
-          color: #fff;
-          padding-top: 110px;
-          text-align: center;
-          font-size: 24px;
-          text-transform: uppercase;
-     }
-     .desu p {
-          margin-left: auto;
-          margin-right: auto;
-          padding-top: 10px;
-          width: 350px;
-          text-align: center;
-
-     }
+    footer {
+        width: 100%;
+        padding: 5% 5%;
+        text-align: center;
+        background-color: #1c1c1c;
+        color: #555555;
+        font-family: 'Open Sans';
+        font-size: .7em;
+        margin-top: 10%;
+    }
 }
 
 @media screen and (min-width: 420px) {
