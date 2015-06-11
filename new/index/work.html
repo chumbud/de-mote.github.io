@@ -26,14 +26,14 @@ ga('create', 'UA-54481131-1', 'auto');
 ga('require', 'displayfeatures');
 ga('send', 'pageview');
 </script>
---><!--
+-->
         <script>
             $(document).ready(function(){
                 $("#dropdown").click(function(){
                     $("#dropdown-menu").fadeToggle(200);
                 });
             });
-        </script>-->
+        </script>
     </head>
     <body>
         <section class="banner">
@@ -46,10 +46,10 @@ ga('send', 'pageview');
                     <a class="logo" href="/index.html"><li class="logo" style="letter-spacing: 4px; font-weight: 700; font-size: 16px;">P.J. ROSA</li></a>
                     <ul>
                         <div id="home">
-                            <li><div id="nipple"></div><a class="cur" style="color:#8bffee;" href="/index.html">home</a></li>
+                            <li><a href="/index.html">home</a></li>
                         </div>
                         <a href="#"><li>About</li></a>
-                        <span style="cursor: pointer;" id="dropdown"><li><a>work</a></li></span>
+                        <span style="cursor: pointer;" id="dropdown"><li><div id="nipple"></div><a class="cur">work</a></li></span>
                         <a href="#"><li>Contact</li></a>
                     </ul>
                 </nav>
@@ -57,7 +57,7 @@ ga('send', 'pageview');
         </section>
         <div id="dropdown-menu" style="display: none;">
             <ul>
-                <a href="work.html"><li>Personal</li></a>
+                <a href="work.html"><li class="currenttab">Personal</li></a>
                 <a href="index/anthologist.html"><li>Anthologist</li></a>
                 <a href="index/mediateam.html"><li>Rutgers Student Life</li></a>
             </ul>
