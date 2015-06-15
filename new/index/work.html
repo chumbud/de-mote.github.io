@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
-    <head lang="en">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <meta charset="utf-8">
-        <meta name="description" content="Design Portfolio of PJ Rosa">
-        <script src="/js/lightbox/js/jquery-1.11.0.min.js"></script>
-        <script src="/js/lightbox/js/lightbox.min.js"></script>
-        <link href="/js/lightbox/css/lightbox.css" rel="stylesheet"/>
-        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+     <head lang="en">
+          <meta name="viewport" content="width=device-width,initial-scale=1.0">
+          <meta charset="utf-8">
+          <meta name="description" content="Design Portfolio of PJ Rosa">
+          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+          <script src="/js/lightbox/js/lightbox.min.js"></script>
+          <link href="/js/lightbox/css/lightbox.css" rel="stylesheet"/>
+          <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+          <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
-        <link rel="stylesheet" href="/common.css">
-        <link rel="stylesheet" href="/css/work.css">
+          <link rel="stylesheet" href="/common.css">
+          <link rel="stylesheet" href="/css/work.css">
 
-        <title>PJ Rosa</title>
-        <link rel="icon" type="image/png" href="/img/favicon.png"/>
-        <!--
+          <title>PJ Rosa</title>
+          <link rel="icon" type="image/png" href="/img/favicon.png"/>
+          <!--
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -27,70 +27,175 @@ ga('require', 'displayfeatures');
 ga('send', 'pageview');
 </script>
 -->
-        <script>
-            $(document).ready(function(){
-                $("#dropdown").click(function(){
-                    $("#dropdown-menu").fadeToggle(200);
-                });
-            });
-        </script>
-    </head>
-    <body>
-        <section class="banner">
-            <div class="banner-container">
-            </div>
-        </section>
-        <section class="navbar">
-            <div class="container">
-                <nav>
-                    <a class="logo" href="/index.html"><li class="logo" style="letter-spacing: 4px; font-weight: 700; font-size: 16px;">P.J. ROSA</li></a>
+          <script>
+               $(document).ready(function(){
+                    $("#dropdown").click(function(){
+                         $("#dropdown-menu").fadeToggle(200);
+                    });
+               });
+          </script>
+     </head>
+     <body>
+          <section class="banner">
+               <div class="banner-container">
+               </div>
+          </section>
+          <section class="navbar">
+               <div class="container">
+                    <nav>
+                         <a class="logo" href="/index.html"><li class="logo" style="letter-spacing: 4px; font-weight: 700; font-size: 16px;">P.J. ROSA</li></a>
+                         <ul>
+                              <div id="home">
+                                   <li><a href="/index.html">home</a></li>
+                              </div>
+                              <a href="#"><li>About</li></a>
+                              <a class="cur"><span style="cursor: pointer;" id="dropdown"><li><div class="nipple"></div>work</li></span></a>
+                              <a href="#"><li>Contact</li></a>
+                         </ul>
+                    </nav>
+               </div>
+          </section>
+          <div id="dropdown-menu" style="display: none;">
+               <ul>
+                    <a href="work.html"><li class="currenttab">Personal</li></a>
+                    <a href="index/anthologist.html"><li>Anthologist</li></a>
+                    <a href="index/mediateam.html"><li>Rutgers Student Life</li></a>
+               </ul>
+          </div>
+          <section class="description">
+               <div class="desc-container">
+                    <h2>Personal</h2>
+                    <p>Projects that I've done in the past in my spare time.</p>
+               </div>
+          </section>
+          <section class="work">
+               <div class="container">
                     <ul>
-                        <div id="home">
-                            <li><a href="/index.html">home</a></li>
-                        </div>
-                        <a href="#"><li>About</li></a>
-                        <span style="cursor: pointer;" id="dropdown"><li><div id="nipple"></div><a class="cur">work</a></li></span>
-                        <a href="#"><li>Contact</li></a>
+                         <li>
+                              <div class="desu">
+                                   <a href="/index/antho81.html">
+                                        <h6>the Anthologist</h6>
+                                        <p>Issue 81. Spring 2015</p>
+                                   </a>
+                              </div>
+                              <img src="/img/preview/antho81-preview.jpg">
+                         </li>
+                         <li>
+                              <div class="desu">
+                                   <a href="/index/wave-01.html">
+                                        <h6>Wave: Mobile UI Mockup</h6>
+                                        <p>Proof of concept for a project for HackRU Spring 2015.</p>
+                                   </a>
+                              </div>
+                              <img src="/img/preview/wave-preview.jpg">
+                         </li>
+                         <li>
+                              <div class="desu">
+                                   <a href="/img/work/college/hackru_shirt-04.jpg" data-lightbox="image-1" data-title="T-Shirt Design for HackRU Spring 2015">
+                                        <h6>HackRU T-Shirt Spring 2015</h6>
+                                        <p>
+                                        </p>
+                                   </a>
+                              </div>
+                              <img src="/img/preview/hackru_shirt_preview-04.jpg">
+                         </li>
+                         <li>
+                              <div class="desu">
+                                   <a href="/index/ru-esports.html">
+                                        <h6>Rutgers eSports Logo</h6>
+                                        <p>
+                                        </p>
+                                   </a>
+                              </div>
+                              <img src="/img/preview/ru_esports_preview.jpg">
+                         </li>
+                         <li>
+                              <div class="desu">
+                                   <a href="/index/antho-iconset.html">
+                                        <h6>the Anthologist Icon Set</h6>
+                                        <p>Art for the newly revamped Anthologist website.</p>
+                                   </a>
+                              </div>
+                              <img src="/img/preview/antho_iconset_preview.jpg">
+                         </li>
+                         <li>
+                              <a href="/index/discus.html">
+                                   <div class="desu">
+                                        <h6>discus.</h6>
+                                        <p>Music eCommerce site concept</p>
+                                   </div>
+                              </a>
+                              <img src="/img/preview/discus_preview.jpg">
+                         </li>
+                         <li>
+                              <a href="/index/ren5.html">
+                                   <div class="desu">
+                                        <h6>Ren5</h6>
+                                        <p>Made at PennApps Winter 2015. A HTML5 based visual novel engine.</p>
+                                   </div>
+                              </a>
+                              <img src="/img/preview/ren5_preview.jpg">
+                         </li>
+                         <li>
+                              <a href="/index/sakai-rework.html">
+                                   <div class="desu">
+                                        <h6>Rutgers Sakai Rework</h6>
+                                        <p>Rework I created for Rutgers University's current academic portal.</p>
+                                   </div>
+                              </a>
+                              <img src="/img/preview/sakai-preview.jpg">
+                         </li>
+                         <li>
+                              <a href="/index/ocean.html">
+                                   <div class="desu">
+                                        <h6>Ocean</h6>
+                                        <p>Made at YHack Fall 2014. An IRC client for Slack users.</p>
+                                   </div>
+                              </a>
+                              <img src="/img/preview/ocean-preview.jpg">
+                         </li>
+                         <li>
+                              <a href="http://theantho.com">
+                                   <div class="desu">
+                                        <h6>the Anthologist website</h6>
+                                        <p>Newly revamped website for the Rutgers Literary Magazine, the Anthologist.</p>
+                                   </div>
+                              </a>
+                              <img src="/img/preview/anthosite-preview.jpg">
+                         </li>
+                         <li>
+                              <a href="/img/work/college/banner.jpg" data-lightbox="image-1" data-title="A piece I made for fun in Hexels">
+                                   <div class="desu">
+                                        <h6>"Hexel"</h6>
+                                        <p>
+                                        </p>
+                                   </div>
+                              </a>
+                              <img src="/img/preview/spacehexel-preview.jpg" alt="">
+                         </li>
+                         <li><a href="/index/crunchyroll.html">
+                              <div class="desu">
+                                   <h6>Crunchyroll Rework</h6>
+                                   <p>Rework I made of the anime distribution site, Crunchyroll.com</p>
+                              </div>
+                              </a>
+                              <img src="/img/preview/crunchyroll-preview.jpg">
+                         </li>
+                         <li><a href="/img/work/college/UNF_Skype_OSX.png" data-lightbox="image-2" data-title="Yosemite inspired skype mockup.">
+                              <div class="desu">
+                                   <h6>Skype Yosemite</h6>
+                                   <p>Proof of concept for Skype for OSX Yosemite.</p>
+                              </div>
+                              </a>
+                              <img src="/img/preview/skype-preview.jpg" alt="">
+                         </li>
                     </ul>
-                </nav>
-            </div>
-        </section>
-        <div id="dropdown-menu" style="display: none;">
-            <ul>
-                <a href="work.html"><li class="currenttab">Personal</li></a>
-                <a href="index/anthologist.html"><li>Anthologist</li></a>
-                <a href="index/mediateam.html"><li>Rutgers Student Life</li></a>
-            </ul>
-        </div>
-        <section class="description">
-            <div class="container">
-                <h2>Personal</h2>
-                <p>Projects that I've done in the past in my spare time.</p>
-            </div>
-        </section>
-        <section class="work">
-            <div class="container">
-                <ul>
-                    <li><a href="/index/antho81.html"><div class="desu"><h6>the Anthologist</h6><p>Issue 81. Spring 2015</p></div></a><img src="/img/preview/antho81-preview.jpg"></li>
-                    <li><a href="/index/wave-01.html"><div class="desu"><h6>Wave: Mobile UI Mockup</h6><p>Proof of concept for a project for HackRU Spring 2015.</p></div></a><img src="/img/preview/wave-preview.jpg"></li>
-                    <li><a href="/img/work/college/hackru_shirt-04.jpg" data-lightbox="image-1" data-title="T-Shirt Design for HackRU Spring 2015"><div class="desu"><h6>HackRU T-Shirt Spring 2015</h6><p></p></div></a><img src="/img/preview/hackru_shirt_preview-04.jpg"></li>
-                    <li><a href="/index/ru-esports.html"><div class="desu"><h6>Rutgers eSports Logo</h6><p></p></div></a><img src="/img/preview/ru_esports_preview.jpg"></li>
-                    <li><a href="/index/antho-iconset.html"><div class="desu"><h6>the Anthologist Icon Set</h6><p>Art for the newly revamped Anthologist website.</p></div></a><img src="/img/preview/antho_iconset_preview.jpg"></li>
-                    <li><a href="/index/discus.html"><div class="desu"><h6>discus.</h6><p>Music eCommerce site concept</p></div></a><img src="/img/preview/discus_preview.jpg"></li>
-                    <li><a href="/index/ren5.html"><div class="desu"><h6>Ren5</h6><p>Made at PennApps Winter 2015. A HTML5 based visual novel engine.</p></div></a><img src="/img/preview/ren5_preview.jpg"></li>
-                    <li><a href="/index/sakai-rework.html"><div class="desu"><h6>Rutgers Sakai Rework</h6><p>Rework I created for Rutgers University's current academic portal.</p></div></a><img src="/img/preview/sakai-preview.jpg"></li>
-                    <li><a href="/index/ocean.html"><div class="desu"><h6>Ocean</h6><p>Made at YHack Fall 2014. An IRC client for Slack users.</p></div></a><img src="/img/preview/ocean-preview.jpg"></li>
-                    <li><a href="http://theantho.com"><div class="desu"><h6>the Anthologist website</h6><p>Newly revamped website for the Rutgers Literary Magazine, the Anthologist.</p></div></a><img src="/img/preview/anthosite-preview.jpg"></li>
-                    <li><a href="/img/work/college/banner.jpg" data-lightbox="image-1" data-title="A piece I made for fun in Hexels"><div class="desu"><h6>"Hexel"</h6><p></p></div></a><img src="/img/preview/spacehexel-preview.jpg" alt=""></li>
-                    <li><a href="/index/crunchyroll.html"><div class="desu"><h6>Crunchyroll Rework</h6><p>Rework I made of the anime distribution site, Crunchyroll.com</p></div></a><img src="/img/preview/crunchyroll-preview.jpg"></li>
-                    <li><a href="/img/work/college/UNF_Skype_OSX.png" data-lightbox="image-2" data-title="Yosemite inspired skype mockup."><div class="desu"><h6>Skype Yosemite</h6><p>Proof of concept for Skype for OSX Yosemite.</p></div></a><img src="/img/preview/skype-preview.jpg" alt=""></li>
-                </ul>
-            </div>
-        </section>
-        <footer>
-            <div class="container">
-                PJ ROSA © 2015 <br><br> Made with tons of PJ's love, blood and sweat; probably mostly sweat.
-            </div>
-        </footer>
-    </body>
+               </div>
+          </section>
+          <footer>
+               <div class="container">
+                    PJ ROSA © 2015 <br><br> Made with tons of PJ's love, blood and sweat; probably mostly sweat.
+               </div>
+          </footer>
+     </body>
 </html>
