@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="description" content="Design Portfolio of PJ Rosa">
+        <script src="/js/lightbox/js/jquery-1.11.0.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="/common.css">
+        <link rel="stylesheet" href="/css/contact.css">
+
+        <title>PJ Rosa</title>
+        <link rel="icon" type="image/png" href="/img/favicon.png"/>
+        <!--
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-54481131-1', 'auto');
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+</script>
+-->
+        <script>
+            $(document).ready(function(){
+                $("#dropdown").click(function(){
+                    $("#dropdown-menu").fadeToggle(200);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <section class="background">
+        </section>
+        <section class="navbar">
+            <div class="container">
+                <nav>
+                    <a class="logo" href="/index.html"><li class="logo" style="letter-spacing: 4px; font-weight: 700; font-size: 16px;">P.J. ROSA</li></a>
+                    <ul>
+                        <div id="home">
+                            <li><a href="/index.html">home</a></li>
+                        </div>
+                        <a href="#"><li>About</li></a>
+                        <span style="cursor: pointer;" id="dropdown"><li><div id="nipple"></div><a class="cur">work</a></li></span>
+                        <a href="#"><li>Contact</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <div id="dropdown-menu" style="display: none;">
+            <ul>
+                <a href="work.html"><li class="currenttab">Personal</li></a>
+                <a href="index/anthologist.html"><li>Anthologist</li></a>
+                <a href="index/mediateam.html"><li>Rutgers Student Life</li></a>
+            </ul>
+        </div>
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact">
+                    <h1>Contact</h1>
+                    <img src="img/icon-08-08.svg">
+                    <p>Email: peter.rosa@rutgers.edu</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                PJ ROSA © 2015 <br><br> Made with tons of PJ's love, blood and sweat; probably mostly sweat.
+            </div>
+        </footer>
+    </body>
+</html>
