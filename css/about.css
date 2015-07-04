@@ -3,12 +3,10 @@
      padding-top: 170px;
 }
 .psudoheader {
-     min-height: 335px;
-     height: 55%;
+     height: 335px;
 }
 .header {
-     height: 55%;
-     min-height: 335px;
+     height: 335px;
 }
 .pic {
      width: 170px;
