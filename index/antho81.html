@@ -1,71 +1,62 @@
 <!DOCTYPE html>
 <html>
-    <head lang="en">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="/css/fullView.css">
-        <link rel="stylesheet" href="/common.css">
-        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-        <script src="/js/lightbox/js/jquery-1.11.0.min.js"></script>
-        <title>PJ Rosa</title>
-        <link rel="icon" type="image/png" href="/img/favicon.png"/>
-        <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-54481131-1', 'auto');
-            ga('require', 'displayfeatures');
-      ga('send', 'pageview');
-        </script>
-        <script>
-            $(document).ready(function(){
-              $("#dropdown").click(function(){
-                $("#dropdown-menu").fadeToggle(200);
-              });
-            });
-        </script>
-        </head>
-<body>
-<div id="transparent-bar"></div>
-            <nav>
-                <ul style="float: left; margin-top: 29px; margin-left: 30px;">
-                    <a class="logo" href="/index.html"><li class="logo" style="letter-spacing: 4px; font-weight: 700; font-size: 16px;">P.J. ROSA</li></a>
-                </ul>
-                <ul>
-                    <li><a href="/index.html">home</a></li>
-                    <li><a href="/about.html">about</a></li>
-                    <span style="cursor: pointer;" id="dropdown"><li><div id="nipple"></div><a class="cur" style="color: #8bffee;">work</a></li></span>
-                    <li><a href="/contact.html">contact</a></li>
-                </ul>
-            </nav>
-            <div id="dropdown-menu" style="display: none;">
-                <ul>
-                    <a href="/work.html"><li>Personal</li></a>
-                    <a href="/index/anthologist.html"><li>Anthologist</li></a>
-                    <a href="/index/mediateam.html"><li>Rutgers Student Life</li></a>
-                </ul>
-            </div>
-        <div id="wrapped">
-            <div id="sidebarEX">
-                <div id="backbutton"><a href="/work.html">back</a></div>
-            <h2>Anthologist Issue 81</h2>
-                <p><a href="http://issuu.com/theantho/docs/antho81">Spring 2015 edition</a></p>
-                <div id="thumbs">
+     <head lang="en">
+          <meta name="viewport" content="width=device-width,initial-scale=1.0">
+          <meta charset="utf-8">
+          <link rel="stylesheet" href="/css/fullView.css">
+          <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+          <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+          <script src="/js/lightbox/js/jquery-1.11.0.min.js"></script>
+          <link rel="stylesheet" href="../css/common.css">
+          <link rel="stylesheet" href="../css/work.css">
+          <link rel="stylesheet" href="../css/fullView.css">
+          <script src="/js/com.js"></script>
+          <script src="/js/analytics.js"></script>
+          <title>PJ Rosa</title>
+          <link rel="icon" type="image/png" href="../img/favicon.png"/>
+     </head>
+     <body>
+          <section class="background"></section>
+          <nav>
+               <div class="bar"></div>
+               <div class="container">
+                    <a href="index.html"><div class="logo">p.j. rosa</div></a>
                     <ul>
-                        <div class="overlay">
-                        </div>
-                        <li><div id="current"><a href="/index/antho81.html"><img src="/img/preview/antho81-preview.jpg"></a></div></li>
+                         <a href="../about.html"><li>about</li></a>
+                         <span style="cursor: pointer;" id="dropdown"><a><li class="cur">work</li></a></span>
+                         <a href="../contact.html"><li>contact</li></a>
                     </ul>
-                </div>
-                </div>
-        <div id="wrapper">
-            <div id="full">
-                <img src="/img/work/college/antho81_cover_small.jpg">
+               </div>
+          </nav>
+          <div class="dropdown-menu" style="display: none;">
+               <ul>
+                    <a href="../work.html"><li>Personal</li></a>
+                    <a href="anthologist.html"><li class="current-tab">Anthologist</li></a>
+                    <a href="mediateam.html"><li>Rutgers Student Life</li></a>
+               </ul>
+          </div>
+          <div class="back"><a href="anthologist.html">back</a></div>
+          <section>
+               <div class="container">
+                    <h2>Anthologist Issue 81</h2>
+               </div>
+          </section>
+          <section>
+               <div class="thumbs">
+                    <div class="table">
+                         <ul>
+                              <li><div class="current"><a href="antho81.html"><img src="../img/preview/antho81-preview.jpg"></a></div></li>
+                              <li><a href="antho81_issue.html"><img src="../img/preview/antho81-issuu-preview.jpg"></a></li>
+                         </ul>
                     </div>
-        </div>
-        </div>
-    </body>
+               </div>
+          </section>
+          <section class="main-image">
+               <div class="container">
+                    <div class="wrapper">
+                         <div class="image"><img src="../img/work/college/antho81_cover_small.jpg"></div>
+                    </div>
+               </div>
+          </section>
+     </body>
 </html>

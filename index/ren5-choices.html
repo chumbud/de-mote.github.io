@@ -1,79 +1,74 @@
 <!DOCTYPE html>
 <html>
-    <head lang="en">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="/css/fullView.css">
-        <link rel="stylesheet" href="/common.css">
-        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-        <script src="/js/lightbox/js/jquery-1.11.0.min.js"></script>
-        <title>PJ Rosa</title> 
-        <link rel="icon" type="image/png" href="/img/favicon.png"/>
-        <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-54481131-1', 'auto');
-            ga('require', 'displayfeatures');
-      ga('send', 'pageview');
-        </script>
-        <script>
-            $(document).ready(function(){
-              $("#dropdown").click(function(){
-                $("#dropdown-menu").fadeToggle(200);
-              });
-            });
-        </script>        
-        </head>
-    <body>
-<div id="transparent-bar"></div>
-            <nav>
-                <ul style="float: left; margin-top: 29px; margin-left: 30px;">
-                    <a class="logo" href="/index.html"><li class="logo" style="letter-spacing: 4px; font-weight: 700; font-size: 16px;">P.J. ROSA</li></a>
-                </ul>
-                <ul>
-                    <li><a href="/index.html">home</a></li>
-                    <li><a href="/about.html">about</a></li>
-                    <span style="cursor: pointer;" id="dropdown"><li><div id="nipple"></div><a class="cur" style="color: #8bffee;">work</a></li></span>
-                    <li><a href="/contact.html">contact</a></li>
-                </ul>
-            </nav>
-            <div id="dropdown-menu" style="display: none;">
-                <ul>
-                    <a href="/work.html"><li>Personal</li></a>
-                    <a href="/index/anthologist.html"><li>Anthologist</li></a>
-                    <a href="/index/mediateam.html"><li>Rutgers Student Life</li></a>
-                </ul>
-            </div>
-        <div id="wrapped">
-            <div id="sidebarEX">
-                <div id="backbutton"><a href="/work.html">back</a></div>
-                <img class="ocean" src="/img/work/college/ren5_logo.png">
-            <h2>Ren5</h2>
-                <p>This is a project I worked on with a friend of mine for the Winter 2015 PennApps, a 36 hour hackathon hosted at UPenn. Ren5 is an HTML5 kinetic novel engine that I designed while my friend handled the coding with Canvas and Javascript. </p>
-                <div id="thumbs">
+     <head lang="en">
+          <meta name="viewport" content="width=device-width,initial-scale=1.0">
+          <meta charset="utf-8">
+          <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+          <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+          <script src="/js/lightbox/js/jquery-1.11.0.min.js"></script>
+          <link rel="stylesheet" href="../css/common.css">
+          <link rel="stylesheet" href="../css/work.css">
+          <link rel="stylesheet" href="../css/fullView.css">
+          <script src="/js/com.js"></script>
+          <script src="/js/analytics.js"></script>
+          <title>PJ Rosa</title>
+          <link rel="icon" type="image/png" href="../img/favicon.png"/>
+     </head>
+     <body>
+          <section class="background"></section>
+          <nav>
+               <div class="bar"></div>
+               <div class="container">
+                    <a href="index.html"><div class="logo">p.j. rosa</div></a>
                     <ul>
-                        <div class="overlay">
-                        </div> 
-                        <li><a href="/index/ren5.html"><img src="/img/preview/ren5_landing_preview_01.jpg"></a></li>
-                        <li><a href="/index/ren5-saves.html"><img src="/img/preview/ren5_saves_preview_01.jpg"></a></li>
-                        <li><a href="/index/ren5-config.html"><img src="/img/preview/ren5_config_preview_01.jpg"></a></li>
-                        <li><a href="/index/ren5-loading.html"><img src="/img/preview/ren5_loading_preview_01.jpg"></a></li>
-                        <li><a href="/index/ren5-example-01.html"><img src="/img/preview/ren5_example_preview_01.jpg"></a></li>
-                        <li><a href="/index/ren5-example-02.html"><img src="/img/preview/ren5_example_preview_02.jpg"></a></li>
-                        <li><a href="/index/ren5-log.html"><img src="/img/preview/ren5_log_preview_01.jpg"></a></li>
-                        <li><div id="current"><a href="/index/ren5-choices.html"><img src="/img/preview/ren5_choices_preview_01.jpg"></a></div></li>
-                    </ul>                    
-                </div>
-                </div>
-             <div id="wrapper">
-                <div id="full">
-                    <img src="/img/work/college/ren5/ren5_choices.jpg">
-                </div>
-            </div>
-        </div>
-    </body>
+                         <a href="../about.html"><li>about</li></a>
+                         <span style="cursor: pointer;" id="dropdown"><a><li class="cur">work</li></a></span>
+                         <a href="../contact.html"><li>contact</li></a>
+                    </ul>
+               </div>
+          </nav>
+          <div class="dropdown-menu" style="display: none;">
+               <ul>
+                    <a href="../work.html"><li class="current-tab">Personal</li></a>
+                    <a href="anthologist.html"><li>Anthologist</li></a>
+                    <a href="mediateam.html"><li>Rutgers Student Life</li></a>
+               </ul>
+          </div>
+          <div class="back"><a href="../work.html">back</a></div>
+          <section>
+               <div class="container">
+                    <div class="fullView-desu">
+                         <div class="project">
+                              <img src="../img/work/college/ren5_logo.png">
+                         </div>
+                         <h2>Ren5</h2>
+                         <p>This is a project I worked on with a friend of mine for the Winter 2015 PennApps, a 36 hour hackathon hosted at UPenn. Ren5 is an HTML5 kinetic novel engine that I designed while my friend handled the coding with Canvas and Javascript. </p>
+                    </div>
+               </div>
+          </section>
+          <section>
+               <div class="thumbs">
+                    <div class="table">
+                         <ul>
+                              <li><a href="ren5.html"><img src="../img/preview/ren5_landing_preview_01.jpg"></a></li>
+                              <li><a href="ren5-saves.html"><img src="../img/preview/ren5_saves_preview_01.jpg"></a></li>
+                              <li><a href="ren5-config.html"><img src="../img/preview/ren5_config_preview_01.jpg"></a></li>
+                              <li><a href="ren5-loading.html"><img src="../img/preview/ren5_loading_preview_01.jpg"></a></li>
+                              <li><a href="ren5-example-01.html"><img src="../img/preview/ren5_example_preview_01.jpg"></a></li>
+                              <li><a href="ren5-example-02.html"><img src="../img/preview/ren5_example_preview_02.jpg"></a></li>
+                              <li><a href="ren5-log.html"><img src="../img/preview/ren5_log_preview_01.jpg"></a></li>
+                    <li><div class="current"><a href="ren5-choices.html"><img src="../img/preview/ren5_choices_preview_01.jpg"></a></div></li>
+                         </ul>
+                    </div>
+               </div>
+          </section>
+          <section class="main-image">
+               <div class="container">
+                    <div class="wrapper">
+                         <div class="image" id="landscape"><img src="../img/work/college/ren5/ren5_choices.jpg">
+                         </div>
+                    </div>
+               </div>
+          </section>
+     </body>
 </html>
