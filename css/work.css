@@ -24,6 +24,9 @@ h2 {
      padding-bottom: 30px;
      transition: padding-top .2s ease-in-out;
 }
+.help {
+     margin-top: 70px;
+}
 .desc-container {
      width: 90%;
      margin-left: auto;
@@ -192,6 +195,11 @@ h2 {
      .work {
           margin-top: 60px;
      }
+     h2 {
+          line-height: 10px;
+          position: relative;
+          height: 100px;
+     }
      .description {
           padding-top: 120px;
      }
@@ -204,6 +212,9 @@ h2 {
      }
 }
 @media screen and (min-width: 470px) {
+     .help {
+          margin-top: 0px;
+     }
      .desu:hover {
           opacity: 1;
      }
