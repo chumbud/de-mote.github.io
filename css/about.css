@@ -5,10 +5,12 @@
 .psudoheader {
      height: 388px;
      max-height: 388px;
+     min-height: 0;
 }
 .header {
      max-height: 388px;
      height: 388px;
+     min-height: 0;
 }
 .pic {
      width: 170px;

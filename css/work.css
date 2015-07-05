@@ -143,6 +143,7 @@ h2 {
      float: left;
      background-color: rgba(0, 0, 0, .8);
      z-index: 9;
+     display: none;
      border-top-color: #242424;
      border-top-style: solid;
      border-top-width: thin;
@@ -198,6 +199,16 @@ h2 {
      .description {
           padding-top: 120px;
      }
+     .desc-container a{
+          display: inline-block;
+          width: 100%;
+     }
+     .desc-container a:last-child {
+          margin-bottom: 50px;
+     }
+}
+@media screen and (min-width: 320px) {
+
 }
 @media screen and (min-width: 600px) {
      .desu {
@@ -215,6 +226,7 @@ h2 {
      }
      .dropdown-menu {
           height: 32px;
+          display: block;
      }
      .dropdown-menu ul a {
           display: inline-block;

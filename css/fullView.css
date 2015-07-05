@@ -80,10 +80,8 @@ h2 {
 }
 #full img {
      width: 100%;
-     max-width: 1200px;
 }
 #landscape img {
-     max-width: 1400px;
      width: 100%;
 }
 .project {
@@ -129,8 +127,7 @@ h2 {
      margin-bottom: 50px;
 }
 .main-image img {
-     width: auto;
-     max-width: 600px;
+     width: 100%;
      display: table;
      margin: 0 auto;
 }
@@ -153,8 +150,20 @@ p {
      margin-right: auto;
 }
 @media screen and (min-width: 600px) {
+     #full img {
+          width: 100%;
+          max-width: 1200px;
+     }
+     #landscape img {
+          max-width: 1400px;
+          width: 100%;
+     }
+     .main-image img {
+          width: auto;
+          max-width: 600px;
+     }
      .full-desu a {
-     max-width: 300px;
+          max-width: 300px;
      }
      .wrapper {
           max-width: 1200px;
