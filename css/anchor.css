@@ -4,6 +4,7 @@
 .psudoheader {
      height: 100%;
 }
+
 #anchor{
   animation: animationFrames ease-in-out 1s;
   animation-iteration-count: infinite;
