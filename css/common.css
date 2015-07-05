@@ -38,12 +38,12 @@ section {
      background-repeat: no-repeat;
      background-position: center;
      background-size: cover;
-     min-height: 565px;
+     height: 420px;
      width: 100%;
      z-index: -10;
 }
 .psudoheader {
-     min-height: 565px;
+     height: 420px;
      background-color: rgba(0, 0, 0, .7);
      position: absolute;
 }
@@ -245,6 +245,12 @@ nav ul a:hover {
      nav ul {
           float: right;
           width: 400px;
+     }
+     .header {
+          height: 565px;
+     }
+     .psudoheader {
+          height: 565px;
      }
 }
 @media screen and (min-width: 900px) {

@@ -149,6 +149,28 @@ p {
      margin-left: auto;
      margin-right: auto;
 }
+.fullView-desu a {
+     font-family: 'Open Sans';
+     font-size: 10px;
+     text-align: center;
+     text-decoration: none;
+     color: #edecec;
+     display: inline-block;
+     padding: 10px 30px 10px 30px;
+     background-color: rgba(0, 0, 0, .7);
+     margin-right: 5px;
+     margin-bottom: 5px;
+     border-bottom-color: #242424;
+     border-bottom-style: solid;
+     border-bottom-width: thin;
+     width: 50%;
+     max-width: 200px;
+     transition: all .2s ease-in-out;
+}
+.fullView-desu a:hover {
+     background-color: rgba(139, 255, 238, 1);
+     color: black;
+}
 @media screen and (min-width: 600px) {
      #full img {
           width: 100%;
