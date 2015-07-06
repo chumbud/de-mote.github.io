@@ -1,11 +1,9 @@
 .psudoheader {
      height: 100%;
      position: absolute;
-     max-height: 420px;
 }
 .header {
      height: 100%;
-     max-height: 420px;
      position: absolute;
      background-position: 50% 30%;
 }
