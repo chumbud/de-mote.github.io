@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'akzidenz-grotesk_stdbold_SVG';
+    src: url('akzidgrostdbol-webfont.svg') format('svg');
+}
+@font-face {
+    font-family: 'akzidenz-grotesk_stdbold_TTF';
+    src: url('akzidgrostdbol-webfont.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'akzidenz-grotesk_stdbold_EOT';
+    src: url('akzidgrostdbol-webfont.eot') format('embedded-opentype');
+}
+@font-face {
+    font-family: 'akzidenz-grotesk_stdbold_WOFF';
+    src: url('akzidgrostdbol-webfont.woff') format('woff');
+}
+
+/*-----------------SUPER---------------*/
+@font-face {
+    font-family: 'akzidenz-grotesk_stdsuper_SVG';
+    src: url('akzidgrostdsup-webfont.svg') format('svg');
+}
+@font-face {
+    font-family: 'akzidenz-grotesk_stdsuper_TTF';
+    src: url('akzidgrostdsup-webfont.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'akzidenz-grotesk_stdsuper_EOT';
+    src: url('akzidgrostdsup-webfont.eot') format('embedded-opentype');
+}
+@font-face {
+    font-family: 'akzidenz-grotesk_stdsuper_WOFF';
+    src: url('akzidgrostdsup-webfont.woff') format('woff');
+}
+
+h1 {
+    font-family: 'AkzidenzGrotesk';
+    font-weight: 700;
+    text-align: center;
+    height: 100px;
+    color: white;
+    line-height: 100px;
+    background: blue ;
+}
+h2 {
+    text-align: center;
+    height: 40px;
+    color: white;
+    line-height: 40px;
+    background: lightgrey;
+}
+p {
+    font-family: 'AkzidenzGrotesk';
+    font-weight: 800;
+}
+.stdbold_svg {
+    font-family: 'akzidenz-grotesk_stdbold_SVG';
+}
+.stdbold_ttf {
+    font-family: 'akzidenz-grotesk_stdbold_TTF';
+}
+.stdbold_eot {
+    font-family: 'akzidenz-grotesk_stdbold_EOT';
+}
+.stdbold_woff {
+    font-family: 'akzidenz-grotesk_stdbold_WOFF';
+}
+
+
+.stdsuper_svg {
+    font-family: 'akzidenz-grotesk_stdsuper_SVG';
+}
+.stdsuper_ttf {
+    font-family: 'akzidenz-grotesk_stdsuper_TTF';
+}
+.stdsuper_eot {
+    font-family: 'akzidenz-grotesk_stdsuper_EOT';
+}
+.stdsuper_woff {
+    font-family: 'akzidenz-grotesk_stdsuper_WOFF';
+}
+
+
+.test1 {
+    font-size: 10px;
+}
+.test2 {
+    font-size: 20px;
+}
+.test3 {
+    font-size: 30px;
+}
+.test4 {
+    font-size: 40px;
+}
+.test5 {
+    font-size: 50px;
+}
+.test6 {
+    font-size: 60px;
+}
