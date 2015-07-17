@@ -1,42 +1,43 @@
 @font-face {
     font-family: 'akzidenz-grotesk_stdbold_SVG';
-    src: url('akzidgrostdbol-webfont.svg') format('svg');
+    src: url('akzgrobol/akzidgrostdbolwebfont.svg#akzidenz-grotesk_std_boldRg');
 }
 @font-face {
     font-family: 'akzidenz-grotesk_stdbold_TTF';
-    src: url('akzidgrostdbol-webfont.ttf') format('truetype');
+    src: url('akzgrobol/akzidgrostdbolwebfont.ttf');
 }
 @font-face {
     font-family: 'akzidenz-grotesk_stdbold_EOT';
-    src: url('akzidgrostdbol-webfont.eot') format('embedded-opentype');
+    src: url('akzgrobol/akzidgrostdbolwebfont.eot');
 }
 @font-face {
     font-family: 'akzidenz-grotesk_stdbold_WOFF';
-    src: url('akzidgrostdbol-webfont.woff') format('woff');
+    src: url('akzgrobol/akzidgrostdbolwebfont.woff');
 }
 
 /*-----------------SUPER---------------*/
 @font-face {
     font-family: 'akzidenz-grotesk_stdsuper_SVG';
-    src: url('akzidgrostdsup-webfont.svg') format('svg');
+    src: url('akzgrosup/akzidgrostdsupwebfont.svg#akzidenz-grotesk_std_boldIt');
 }
 @font-face {
     font-family: 'akzidenz-grotesk_stdsuper_TTF';
-    src: url('akzidgrostdsup-webfont.ttf') format('truetype');
+    src: url('akzgrosup/akzidgrostdsupwebfont.ttf') format('truetype');
 }
 @font-face {
     font-family: 'akzidenz-grotesk_stdsuper_EOT';
-    src: url('akzidgrostdsup-webfont.eot') format('embedded-opentype');
+    src: url('akzgrosup/akzidgrostdsupwebfont.eot') format('embedded-opentype');
 }
 @font-face {
     font-family: 'akzidenz-grotesk_stdsuper_WOFF';
-    src: url('akzidgrostdsup-webfont.woff') format('woff');
+    src: url('akzgrosup/akzidgrostdsupwebfont.woff') format('woff');
 }
 
 h1 {
     font-family: 'AkzidenzGrotesk';
     font-weight: 700;
     text-align: center;
+
     height: 100px;
     color: white;
     line-height: 100px;
@@ -50,7 +51,6 @@ h2 {
     background: lightgrey;
 }
 p {
-    font-family: 'AkzidenzGrotesk';
     font-weight: 800;
 }
 .stdbold_svg {
