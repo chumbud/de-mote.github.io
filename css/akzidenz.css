@@ -37,11 +37,10 @@ h1 {
     font-family: 'AkzidenzGrotesk';
     font-weight: 700;
     text-align: center;
-
     height: 100px;
     color: white;
-    line-height: 100px;
-    background: blue ;
+    line-height: 75px;
+    background: blue;
 }
 h2 {
     text-align: center;
@@ -49,6 +48,16 @@ h2 {
     color: white;
     line-height: 40px;
     background: lightgrey;
+}
+h3 {
+    font-size: 15px;
+    margin-top: -70px;
+    margin-bottom: 30px;
+    text-align: center;
+    height: 40px;
+    color: white;
+    line-height: 40px;
+    font-family: 'AkzidenzGrotesk'
 }
 p {
     font-weight: 800;
@@ -99,3 +108,13 @@ p {
 .test6 {
     font-size: 60px;
 }
+
+.phpheader-bol {
+    font-family: 'AkzidenzGrotesk';
+    font-weight: 700;
+}
+.phpheader-sup {
+    font-family: 'AkzidenzGrotesk';
+    font-weight: 900;
+}
+
