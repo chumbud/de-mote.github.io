@@ -1,24 +1,32 @@
 @font-face {
     font-family: 'akzidenz-grotesk_stdbold_SVG';
-    src: url('akzgrobol/akzidgrostdbolwebfont.svg#akzidenz-grotesk_std_boldRg');
+    src: url('akzgrobol/akzidgrostdbolwebfont.svg#akzidenz-grotesk_std_boldRg') format('svg');
+}
+@font-face {
+    font-family: 'akzidenz-grotesk_stdbold_OTF';
+    src: url('akzgrobol/AkzidGroStdBol.otf') format('opentype');
 }
 @font-face {
     font-family: 'akzidenz-grotesk_stdbold_TTF';
-    src: url('akzgrobol/akzidgrostdbolwebfont.ttf');
+    src: url('akzgrobol/akzidgrostdbolwebfont.ttf') format('truetype');
 }
 @font-face {
     font-family: 'akzidenz-grotesk_stdbold_EOT';
-    src: url('akzgrobol/akzidgrostdbolwebfont.eot');
+    src: url('akzgrobol/akzidgrostdbolwebfont.eot') formate('eot');
 }
 @font-face {
     font-family: 'akzidenz-grotesk_stdbold_WOFF';
-    src: url('akzgrobol/akzidgrostdbolwebfont.woff');
+    src: url('akzgrobol/akzidgrostdbolwebfont.woff') format('woff');
 }
 
 /*-----------------SUPER---------------*/
 @font-face {
     font-family: 'akzidenz-grotesk_stdsuper_SVG';
     src: url('akzgrosup/akzidgrostdsupwebfont.svg#akzidenz-grotesk_std_boldIt');
+}
+@font-face {
+    font-family: 'akzidenz-grotesk_stdbold_OTF';
+    src: url('akzgrosup/AkzidGroStdSup.otf') format('opentype');
 }
 @font-face {
     font-family: 'akzidenz-grotesk_stdsuper_TTF';
@@ -65,6 +73,9 @@ p {
 .stdbold_svg {
     font-family: 'akzidenz-grotesk_stdbold_SVG';
 }
+.stdbold_otf {
+    font-family: 'akzidenz-grotesk_stdbold_OTF';
+}
 .stdbold_ttf {
     font-family: 'akzidenz-grotesk_stdbold_TTF';
 }
@@ -78,6 +89,9 @@ p {
 
 .stdsuper_svg {
     font-family: 'akzidenz-grotesk_stdsuper_SVG';
+}
+.stdsuper_otf {
+    font-family: 'akzidenz-grotesk_stdsuper_OTF';
 }
 .stdsuper_ttf {
     font-family: 'akzidenz-grotesk_stdsuper_TTF';
