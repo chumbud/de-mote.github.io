@@ -22,10 +22,10 @@
 /*-----------------SUPER---------------*/
 @font-face {
     font-family: 'akzidenz-grotesk_stdsuper_SVG';
-    src: url('akzgrosup/akzidgrostdsupwebfont.svg#akzidenz-grotesk_std_boldIt');
+    src: url('akzgrosup/akzidgrostdsupwebfont.svg#akzidenz-grotesk_std_boldIt') format('svg');
 }
 @font-face {
-    font-family: 'akzidenz-grotesk_stdbold_OTF';
+    font-family: 'akzidenz-grotesk_stdsuper_OTF';
     src: url('akzgrosup/AkzidGroStdSup.otf') format('opentype');
 }
 @font-face {
