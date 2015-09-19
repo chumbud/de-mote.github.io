@@ -1,69 +1,69 @@
 <!DOCTYPE html>
 <html>
-     <head lang="en">
-          <meta name="viewport" content="width=device-width,initial-scale=1.0">
-          <meta name="description" content="PJ Rosa">
-          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-          <title>PJ Rosa</title>
-          <link rel="icon" type="image/png" href="img/favicon.png"/>
-          <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-          <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
-          <link rel="stylesheet" href="css/common.css">
-          <link rel="stylesheet" href="css/anchor.css">
-          <script src="/js/com.js"></script>
-          <script src="/js/analytics.js"></script>
-          <script>
-               $(function() {
-                    $('a[href*=#]:not([href=#])').click(function() {
-                         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                              var target = $(this.hash);
-                              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                              if (target.length) {
-                                   $('html,body').animate({
-                                        scrollTop: target.offset().top
-                                   }, 1000);
-                                   return false;
-                              }
-                         }
-                    });
-               });
-          </script>
-          <script>
-               $(document).ready(function(){
-                    $(".one").hide(0).delay(300).fadeIn(1000),
-                    $("h1").hide(0).delay(500).fadeIn(1000),
-                    $("#three").hide(0).delay(1500).fadeIn(1000),
-                    $("#anchor-container").hide(0).delay(1500).fadeIn(1000),
-                    $("#anchor").hide(0).delay(2500).fadeIn(1000)
-               });
-          </script>
-     </head>
-     <body>
-          <div class="bar"></div>
-          <section class="psudoheader">
-               <div class="container">
-                         <h2 class="one">hey, i'm</h2>
-                         <h1>p.j. rosa</h1>
-                         <h2 id="three">take a whirl around.</h2>
-               </div>
-          </section>
-          <section class="header"></section>
+	<head lang="en">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta name="description" content="PJ Rosa">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<title>PJ Rosa</title>
+		<link rel="icon" type="image/png" href="img/favicon.png"/>
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/anchor.css">
+		<script src="/js/com.js"></script>
+		<script src="/js/analytics.js"></script>
+		<script>
+			$(function() {
+				$('a[href*=#]:not([href=#])').click(function() {
+					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+						var target = $(this.hash);
+						target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+						if (target.length) {
+							$('html,body').animate({
+								scrollTop: target.offset().top
+							}, 1000);
+							return false;
+						}
+					}
+				});
+			});
+		</script>
+		<script>
+			$(document).ready(function(){
+				$(".one").hide(0).delay(300).fadeIn(1000),
+				$("h1").hide(0).delay(500).fadeIn(1000),
+				$("#three").hide(0).delay(1500).fadeIn(1000),
+				$("#anchor-container").hide(0).delay(1500).fadeIn(1000),
+				$("#anchor").hide(0).delay(2500).fadeIn(1000)
+			});
+		</script>
+	</head>
+	<body>
+		<div class="bar"></div>
+		<section class="psudoheader">
+			<div class="container">
+					<h2 class="one">hey, i'm</h2>
+					<h1>p.j. rosa</h1>
+					<h2 id="three">take a whirl around.</h2>
+			</div>
+		</section>
+		<section class="header"></section>
 
-          <a id="anchor-container" href="#menu"><div id="anchor"><img src="img/arrow-02.svg"></div></a>
-          <section>
-               <span id="menu"></span>
-               <div class="container">
-                    <div class="buttons">
-                         <ul>
-                              <li><p>about</p> <div class="icon"><a href="about.html"><img src="img/icon-04.svg"></a></div></li>
-                              <li><p>work</p> <div class="icon"><a href="work.html"><img src="img/icon-03.svg"></a></div></li>
-                              <li><p>contact</p> <div class="icon"><a href="contact.html"><img src="img/icon-05.svg"></a></div></li>
-                         </ul>
-                    </div>
-               </div>
-          </section>
-          <div class="footer">
-               PJ ROSA © 2015 <br>Made with tons of PJ's love, blood and sweat. (probably mostly sweat)
-          </div>
-     </body>
+		<a id="anchor-container" href="#menu"><div id="anchor"><img src="img/arrow-02.svg"></div></a>
+		<section>
+			<span id="menu"></span>
+			<div class="container">
+				<div class="buttons">
+					<ul>
+						<li><p>about</p> <div class="icon"><a href="about.html"><img src="img/icon-04.svg"></a></div></li>
+						<li><p>work</p> <div class="icon"><a href="work.html"><img src="img/icon-03.svg"></a></div></li>
+						<li><p>contact</p> <div class="icon"><a href="contact.html"><img src="img/icon-05.svg"></a></div></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<div class="footer">
+			PJ ROSA © 2015 <br>Made with tons of PJ's love, blood and sweat. (probably mostly sweat)
+		</div>
+	</body>
 </html>
