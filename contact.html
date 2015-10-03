@@ -1,47 +1,57 @@
 <!DOCTYPE html>
 <html>
-     <head lang="en">
-          <meta name="viewport" content="width=device-width,initial-scale=1.0">
-          <meta charset="utf-8">
-          <meta name="description" content="Design Portfolio of PJ Rosa">
-          <script src="/js/lightbox/js/jquery-1.11.0.min.js"></script>
-          <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-          <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-          <link rel="stylesheet" href="css/common.css">
-          <link rel="stylesheet" href="css/work.css">
-          <link rel="stylesheet" href="css/contact.css">
-          <script src="/js/com.js"></script>
-          <script src="/js/analytics.js"></script>
-          <title>PJ Rosa</title>
-          <link rel="icon" type="image/png" href="img/favicon.png"/>
-     </head>
-     <body>
-          <section class="background"></section>
-          <nav>
-               <div class="bar"></div>
-               <div class="container">
-                    <a href="../index.html"><div class="logo">p.j. rosa</div></a>
-                    <ul>
-                         <a href="about.html"><li >about</li></a>
-                         <span style="cursor: pointer;" id="dropdown"><a><li>work</li></a></span>
-                         <a href="contact.html"><li class="cur">contact</li></a>
-                    </ul>
-               </div>
-          </nav>
-          <div class="dropdown-menu" style="display: none;">
-               <ul>
-                    <a href="work.html"><li>Personal</li></a>
-                    <a href="/index/anthologist.html"><li>Anthologist</li></a>
-                    <a href="/index/mediateam.html"><li>Rutgers Student Life</li></a>
-               </ul>
-          </div>
-          <section class="contact">
-               <div class="container">
-                    <div class="image"><img src="img/icon-08-08.svg"></div>
-                         <h3>contact</h3>
-                         <p>Got questions, comments, concerns? Shoot me a message at:</p>
-                         <p class="email">pj@pjrosa.com</p>
-               </div>
-          </section>
-     </body>
+	 <head lang="en">
+		  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+		  <meta charset="utf-8">
+		  <meta name="description" content="Design Portfolio of PJ Rosa">
+		  <script src="/js/lightbox/js/jquery-1.11.0.min.js"></script>
+		  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		  <link rel="stylesheet" href="css/common.css">
+		  <link rel="stylesheet" href="css/work.css">
+		  <link rel="stylesheet" href="css/contact.css">
+		  <script src="/js/com.js"></script>
+		  <script src="/js/analytics.js"></script>
+		  <title>PJ Rosa</title>
+		  <link rel="icon" type="image/png" href="img/favicon.png"/>
+		 <script>
+			 $(document).ready(function() {
+				 document.getElementsByTagName("html")[0].style.visibility = "visible";
+			 });
+		 </script>
+		 <script>
+			 $(window).load(function() {
+				 $("body").fadeIn(500);
+			 });
+		 </script>
+	 </head>
+	 <body>
+		  <section class="background"></section>
+		  <nav>
+			   <div class="bar"></div>
+			   <div class="container">
+					<a href="../index.html"><div class="logo">p.j. rosa</div></a>
+					<ul>
+						 <a href="about.html"><li >about</li></a>
+						 <span style="cursor: pointer;" id="dropdown"><a><li>work</li></a></span>
+						 <a href="contact.html"><li class="cur">contact</li></a>
+					</ul>
+			   </div>
+		  </nav>
+		  <div class="dropdown-menu" style="display: none;">
+			   <ul>
+					<a href="work.html"><li>Personal</li></a>
+					<a href="/index/anthologist.html"><li>Anthologist</li></a>
+					<a href="/index/mediateam.html"><li>Rutgers Student Life</li></a>
+			   </ul>
+		  </div>
+		  <section class="contact">
+			   <div class="container">
+					<div class="image"><img src="img/icon-08-08.svg"></div>
+						 <h3>contact</h3>
+						 <p>Got questions, comments, concerns? Shoot me a message at:</p>
+						 <p class="email">pj@pjrosa.com</p>
+			   </div>
+		  </section>
+	 </body>
 </html>
