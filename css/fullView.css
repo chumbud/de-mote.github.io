@@ -1,5 +1,4 @@
 body {
-
 	background-color: #000;
 }
 h2 {
@@ -22,14 +21,21 @@ h2 {
 	z-index: -10;
 }
 .back {
-	padding-top: 86px;
+	margin-top: 5px;
+	height: 81px;
+	max-width: 1050px;
+	width: 80%;
+	transition: width .2s ease-in-out;
+	display: inline-block;
+	line-height: 86px;
+	transition: all .2s ease-in-out;
 }
 .back a {
-	font-size: 10px;
-	background-color: rgba(0, 0, 0, .7);
+	font-size: 12px;
+	background-color: rgba(255, 255, 255, .05);
 	width: 100%;
-	height: 60px;
-	color: #edecec;;
+	height: 100%;
+	color: #edecec;
 	font-family: 'Montserrat';
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -41,24 +47,23 @@ h2 {
 	border-width: 1px;
 	border-color: transparent;
 	text-align: center;
-	line-height: 60px;
 	text-decoration: none;
-	display: block;
-	transition: all .2s ease-in-out;
+	display: inline-block;
+	transition: background-color .2s ease-in-out;
 }
 .back a:hover {
 	background-color: rgba(139, 255, 238, .3);
 }
 .full-desu {
 	text-align: center;
-	font-family: 'Open Sans';
+	font-family: 'Lato';
 	font-size: 14px;
 	color: #edecec;
 	text-decoration: none;
 }
 .full-desu a {
-	font-family: 'Open Sans';
-	font-size: 10px;
+	font-family: 'Lato';
+	font-size: 12px;
 	text-align: center;
 	text-decoration: none;
 	color: #edecec;
@@ -139,10 +144,12 @@ h2 {
 	max-width: 100%;
 }
 p {
-	font-size: 12px;
-	font-family: 'Open Sans';
+	font-size: 14px;
+	letter-spacing: .1px;
+	font-family: 'Lato';
 	color: #edecec;
 	text-align: center;
+	line-height: 25px;
 }
 .fullView-desu {
 	max-width: 600px;
@@ -150,8 +157,8 @@ p {
 	margin-right: auto;
 }
 .fullView-desu a {
-	font-family: 'Open Sans';
-	font-size: 10px;
+	font-family: 'Lato';
+	font-size: 12px;
 	text-align: center;
 	text-decoration: none;
 	color: #edecec;
@@ -171,6 +178,27 @@ p {
 	background-color: rgba(139, 255, 238, 1);
 	color: black;
 }
+#description {
+	background-color: #edecec;
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+#description h2, #description p {
+	color: #222;
+}
+#description h2 {
+	line-height: 2px;
+}
+#header-description {
+	padding-top: 86px;
+}
+#header-description * {
+	color: #edecec;
+}
+.resize {
+	height: 50px;
+	line-height: 50px;
+}
 @media screen and (min-width: 600px) {
 	#full img {
 		width: 100%;
@@ -188,7 +216,7 @@ p {
 		max-width: 300px;
 	}
 	.wrapper {
-		max-width: 1200px;
+		max-width: 1000px;
 		width: 100%;
 		display: block;
 		margin-left: auto;
@@ -204,5 +232,10 @@ p {
 		max-width: 880px;
 		margin-left: auto;
 		margin-right: auto;
+	}
+}
+@media screen and (max-width: 600px) {
+	.back {
+		width: 100%;
 	}
 }

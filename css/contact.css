@@ -1,54 +1,54 @@
 body {
-     background-color: #000;
+	 background-color: #000;
 }
 .background {
-     height: 100%;
-     width: 100%;
-     background-image: url(/img/work/college/banner.jpg);
-     background-position: top;
-     background-attachment: fixed;
-     background-repeat: no-repeat;
-     background-size: cover;
-     opacity: .3;
-     position: fixed;
-     z-index: -10;
+	 height: 100%;
+	 width: 100%;
+	 background-image: url(/img/work/college/banner.jpg);
+	 background-position: top;
+	 background-attachment: fixed;
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 opacity: .3;
+	 position: fixed;
+	 z-index: -10;
 }
 .contact {
-     width: 90%;
-     height: 100%;
-     margin-left: auto;
-     margin-right: auto;
+	 width: 90%;
+	 height: 100%;
+	 margin-left: auto;
+	 margin-right: auto;
 }
 .image {
-     padding-top: 130px;
-     width: 200px;
-     margin-right: auto;
-     margin-left: auto;
+	 padding-top: 130px;
+	 width: 200px;
+	 margin-right: auto;
+	 margin-left: auto;
 }
 img {
-     width: 200px;
-     margin-left: auto;
-     margin-right: auto;
+	 width: 200px;
+	 margin-left: auto;
+	 margin-right: auto;
 }
 h3 {
-     text-align: center;
-     font-family: 'Montserrat';
-     font-size: 30px;
-     color: #edecec;
-     letter-spacing: 4px;
-     height: 100px;
-     line-height: 100px;
+	 text-align: center;
+	 font-family: 'Montserrat';
+	 font-size: 30px;
+	 color: #edecec;
+	 letter-spacing: 4px;
+	 height: 100px;
+	 line-height: 100px;
 }
 .email {
-     font-size: 17px;
-     height: 40px;
-     line-height: 40px;
+	 font-size: 17px;
+	 height: 40px;
+	 line-height: 40px;
 }
 p {
-     font-family: 'Open Sans';
-     font-size: 13px;
-     color: #edecec;
-     text-align: center;
+	 font-family: 'Lato';
+	 font-size: 13px;
+	 color: #edecec;
+	 text-align: center;
 }
 .footer {
 }

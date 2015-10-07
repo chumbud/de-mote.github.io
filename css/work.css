@@ -36,8 +36,8 @@ h2 {
 
 }
 .desc-container a {
-	font-family: 'Open Sans';
-	font-size: 10px;
+	font-family: 'Lato';
+	font-size: 12px;
 	text-align: center;
 	text-decoration: none;
 	color: #edecec;
@@ -58,8 +58,8 @@ h2 {
 	color: black;
 }
 .description p {
-	font-family: 'Open Sans';
-	font-size: .65em;
+	font-family: 'Lato';
+	font-size: 12px;;
 	color: #edecec;
 	position: relative;
 	text-align: center;
@@ -123,7 +123,7 @@ h2 {
 .desu p {
 	margin-top: 10px;
 	font-size: .7em;
-	font-family: 'Open Sans';
+	font-family: 'Lato';
 	color: #edecec;
 	text-align: center;
 	padding: 0px 20px 0px 20px;
@@ -153,7 +153,7 @@ h2 {
 	list-style: none;
 	text-decoration: none;
 	font-size: 10px;
-	font-family: 'Open Sans';
+	font-family: 'Lato';
 	color: #edecec;
 	display: block;
 	width: 100%;
