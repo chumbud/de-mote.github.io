@@ -4,7 +4,7 @@
 
 ###[Apply!](#apply)
 
-**Note: If want to hold both of these positions, go right ahead and let us know when you apply!**
+**Note: If you want to hold both of these positions, go right ahead and let us know when you apply!**
 
 # <a name="design"></a> Anthologist Designer Requirements and Recommendations:
 
