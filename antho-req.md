@@ -4,6 +4,8 @@
 
 ###[Apply!](#apply)
 
+**Note: If want to hold both of these positions, go right ahead and let us know when you apply!**
+
 # <a name="design"></a> Anthologist Designer Requirements and Recommendations:
 
 As a designer for the Anthologist you will be collaborating with creative individuals who take pride in publishing and highlighting student made work every semester. You'll be in charge the visual identity of the Anthologist both online and in print.
