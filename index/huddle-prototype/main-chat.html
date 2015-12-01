@@ -13,24 +13,28 @@
 			<script type="text/javascript" src="http://www.datejs.com/build/date.js"></script>
 			<script type="text/javascript">
 				function submitOnEnter(inputElement, event) {
-					if (event.keyCode == 13) { // No need to do browser specific checks. It is always 13.
+					if (event.keyCode == 13) {
 						add();
-						$('#message').val('');
+						scroll2bottom();
 					}
 				}
 			</script>
 			<script>
 				function add() {
-					// $("input") is used to get jQuery object based on tag name of text input
-					// val() method is used to get the value from input field
+
 					var taskName = $("input").val();
 
 					var date = new Date().toString("hh:mm tt");
 
-					// $("#todo") is used to get jQuery object based on id selector of ul
-					// append() method is used to insert an li element into ul
-					// note the onclick attribute of li. it is linked to another function "completeTask"
 					$(".message-wrapper").append("<li class='message'><div class='propic'><img src='./assets/img/jessica-unfiltered.png'></div><div class='user-info'><span class='user-name'>@operator38200</span><span class='time-stamp'> " + date + "</span></div> <div class='user-message'>" + taskName + "</div></li>");
+					$('#message').val('');
+				}
+			</script>
+			<script>
+				function scroll2bottom() {
+					var textarea = document.getElementsByClassName('message-wrapper')[0];
+
+					textarea.scrollTop = textarea.scrollHeight;
 				}
 			</script>
 		</head>
