@@ -8,7 +8,31 @@
 		<head>
 			<link rel="stylesheet" href="./common.css" type="text/css" />
 			<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 			<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+			<script type="text/javascript" src="http://www.datejs.com/build/date.js"></script>
+			<script type="text/javascript">
+				function submitOnEnter(inputElement, event) {
+					if (event.keyCode == 13) { // No need to do browser specific checks. It is always 13.
+						add();
+						$('#message').val('');
+					}
+				}
+			</script>
+			<script>
+				function add() {
+					// $("input") is used to get jQuery object based on tag name of text input
+					// val() method is used to get the value from input field
+					var taskName = $("input").val();
+
+					var date = new Date().toString("hh:mm tt");
+
+					// $("#todo") is used to get jQuery object based on id selector of ul
+					// append() method is used to insert an li element into ul
+					// note the onclick attribute of li. it is linked to another function "completeTask"
+					$(".message-wrapper").append("<li class='message'><div class='propic'><img src='./assets/img/jessica-unfiltered.png'></div><div class='user-info'><span class='user-name'>@operator38200</span><span class='time-stamp'> " + date + "</span></div> <div class='user-message'>" + taskName + "</div></li>");
+				}
+			</script>
 		</head>
 		<!-- top bar -->
 		<nav>
@@ -17,7 +41,7 @@
 				<li><!--logo---><img src="./assets/img/huddle-logo.png"></li>
 				<li><img src="./assets/icons/star.png"></li>
 				<li><span>#development::</span><span>server management</span></li>
-			   <li><img src="./assets/icons/3dots.png"></li>
+				<li><img src="./assets/icons/3dots.png"></li>
 			</ul>
 			<!--right area of top bar-->
 			<ul class="bar-right">
@@ -109,7 +133,7 @@
 				<div class="text-input">
 					<div class="propic-input-side"><!--user icon---><img src="./assets/img/jessica.png"></div>
 					<div class="input-area">
-						<input type="text" name="message-input" value="">
+						<input type="text" name="message-input" id="message" onkeypress="submitOnEnter(this, event);" value="">
 					</div>
 				</div>
 			</div>
