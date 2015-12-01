@@ -26,6 +26,7 @@ body {
 	font-weight: 700;
 	min-width: 1000px;
 	width: 100%;
+	overflow: hidden;
 }
 .user-message, input[type=text] {
 	font-family: 'Open Sans';
