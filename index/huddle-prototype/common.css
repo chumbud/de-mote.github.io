@@ -24,6 +24,8 @@ html {
 body {
 	font-family: 'Montserrat';
 	font-weight: 700;
+	min-width: 1000px;
+	width: 100%;
 }
 .user-message, input[type=text] {
 	font-family: 'Open Sans';
@@ -38,6 +40,8 @@ nav {
 	border-bottom-width: 5px;
 	border-bottom-color: #D8402B;
 	border-bottom-style: solid;
+	z-index: 10;
+	min-width: 1000px;
 }
 
 
@@ -115,12 +119,17 @@ nav {
 
 
 #chat {
+	min-width: 800px;
+	float: left;
 	position: absolute;
+	display: inline-block;
 	padding-top: 53px;
-	display: block;
-	width: 75%;
+	width: 80%;
 	height: 100%;
-	flex: 1 1 auto;
+	z-index: 0;
+	background-image: url(./assets/img/huddle-bg.png);
+	background-repeat: no-repeat;
+	background-position: -20px 90%;
 }
 .announcements {
 	height: 31px;
@@ -172,10 +181,42 @@ nav {
 #sidebar {
 	float: right;
 	height: 100%;
-	width: 25%;
+	width: 20%;
+	display: inline-block;
 	padding-top: 53px;
+	border-left: 1px solid #FF5E43;
 }
-
+.text-wrapper {
+	position: absolute;
+	top: 0;
+	z-index: 10;
+	height: 100%;
+	padding: 84px 0 61px;
+}
+.message-wrapper {
+	height: 100%;
+	position: relative;
+	padding: 10px 50px 30px 130px;
+	z-index: -1;
+	overflow-y: auto;
+}
+.message {
+	list-style: none;
+	margin: 15px 0px;
+}
+.propic {
+	float: left;
+	position: absolute;
+	left: 45px;
+}
+.user-name {
+	font-size: 14px;
+	text-transform: uppercase
+}
+.time-stamp {
+	font-size: 14px;
+	color: #ffd6d0;
+}
 .online-circle {
 	content: "&#9675";
 }
