@@ -22,14 +22,14 @@ html {
 
 }
 body {
-	font-family: 'Montserrat';
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	min-width: 1000px;
 	width: 100%;
 	overflow: hidden;
 }
 .user-message, input[type=text] {
-	font-family: 'Open Sans';
+	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
 }
@@ -177,6 +177,19 @@ nav {
 	opacity: .7;
 	cursor: pointer;
 }
+.emoji {
+	right: 50;
+	height: 61px;
+	padding: 22px;
+	position: absolute;
+	z-index: 11;
+	display: inline-block;
+	cursor: pointer;
+	transition: background-color .2s ease-in-out;
+}
+.emoji:hover {
+	background-color: #f2f2f2;
+}
 
 
 #sidebar {
@@ -218,8 +231,31 @@ nav {
 	font-size: 14px;
 	color: #ffd6d0;
 }
-.online-circle {
-	content: "&#9675";
+
+.users-wrapper {
+	height: 65%;
+	text-transform: uppercase;
+	border-bottom: 1px solid #FF5E43;
+}
+.users-title {
+	background-color: #ffd6d0;
+	height: 31px;
+	text-align: center;
+	line-height: 31px;
+	color: #FF5E43;
+	margin-bottom: 10px;
+}
+.users > li {
+	font-size: 14px;
+	list-style: none;
+	color: #FF5E43;
+	font-weight: 400;
+	padding: 10px 15px
+}
+.online-circle:before {
+	font-family: 'FontAwesome';
+	content: "\f10c";
+	margin-right: 15px;
 }
 .green {
 	color: #4DBC24;
@@ -229,6 +265,57 @@ nav {
 }
 .red {
 	color: #ED3535;
+}
+.flowchart {
+	height: 35%;
+	width: 100%;
+	bottom: 0;
+}
+.flowchart:first-child {
+	margin: 20%;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.flowchart-wrapper {
+	height: 100%;
+	width: 100%;
+	max-width: 100%;
+	padding: 40px 20px 0px;
+}
+.flowchart-img {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	max-width: 240px;
+	max-height: 200px;
+}
+.flowchart-img img {
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	max-width: 200px;
+	max-height: 200px;
+}
+.flowchart-view-btn {
+	float: left;
+	width: 20%;
+	bottom: 0;
+	position: absolute;
+	height: 60px;
+	background-color: #FF5E43;
+	line-height: 60px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: white;
+	border-bottom: 4px solid #D8402B;
+	transition: background-color .2s ease-in-out, transform .2s ease-in-out;
+}
+.flowchart-view-btn:hover {
+	cursor: pointer;
+	background-color: #ff7d66;
+	transform: translateY(4px);
 }
 ::selection {
 	background-color: #FF5E43;

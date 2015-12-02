@@ -1,16 +1,19 @@
-
-
-<!--- *~* check out the image of the prototype as a guide. *~* --->
-
-
 <html>
 	<body>
 		<head>
 			<link rel="stylesheet" href="./common.css" type="text/css" />
 			<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 			<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 			<script type="text/javascript" src="http://www.datejs.com/build/date.js"></script>
+
+			<!-- ENABLE IF INTERNET IS OUT
+			<script src="./offline/jquery.min.js"></script>
+			<script src="./offline/font-awesome.min.css"></script>
+			<script src="./offline/date.js"></script>
+			-->
+
 			<script type="text/javascript">
 				function submitOnEnter(inputElement, event) {
 					if (event.keyCode == 13) {
@@ -26,8 +29,11 @@
 
 					var date = new Date().toString("hh:mm tt");
 
-					$(".message-wrapper").append("<li class='message'><div class='propic'><img src='./assets/img/jessica-unfiltered.png'></div><div class='user-info'><span class='user-name'>@operator38200</span><span class='time-stamp'> " + date + "</span></div> <div class='user-message'>" + taskName + "</div></li>");
-					$('#message').val('');
+					if (taskName.length == 0) {
+					} else {
+						$(".message-wrapper").append("<li class='message'><div class='propic'><img src='./assets/img/jessica-unfiltered.png'></div><div class='user-info'><span class='user-name'>$Jessica Roberts</span><span class='time-stamp'> " + date + "</span></div> <div class='user-message'>" + taskName + "</div></li>");
+						$('#message').val('');
+					}
 				}
 			</script>
 			<script>
@@ -65,8 +71,8 @@
 					<li class="message">
 						<div class="propic"><!--user icon---><img src="./assets/img/robert.png"></div>
 						<div class="user-info">
-							<span class="user-name">@operator382</span>
-							<span class="time-stamp">11:12AM</span>
+							<span class="user-name">@Robert Wilkinson</span>
+							<span class="time-stamp">11:10AM</span>
 						</div>
 						<div class="user-message">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere, lectus et fringilla congue, turpis elit dictum ipsum, id tempor eros ipsum iaculis mi. Maecenas viverra vel nunc sed lacinia. Donec auctor convallis pretium. Aenean finibus auctor felis, ut aliquam nunc semper sed. Proin a fermentum nisl, eget fringilla magna. Suspendisse tempor sollicitudin nisi et lacinia. Duis rutrum facilisis orci vel pellentesque. Praesent in dictum arcu. Suspendisse mi turpis, finibus luctus velit ut, luctus imperdiet nunc. Nullam eu faucibus mi. Donec nunc velit, tempus ac nulla mollis, scelerisque molestie eros.
@@ -75,61 +81,42 @@
 					<li class="message">
 						<div class="propic"><!--user icon---><img src="./assets/img/robert.png"></div>
 						<div class="user-info">
-							<span class="user-name">@operator382</span>
-							<span class="time-stamp">11:12AM</span>
+							<span class="user-name">@Robert Wilkinson</span>
+							<span class="time-stamp">11:10AM</span>
 						</div>
 						<div class="user-message">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere, lectus et fringilla congue, turpis elit dictum ipsum, id tempor eros ipsum iaculis mi. Maecenas viverra vel nunc sed lacinia. Donec auctor convallis pretium. Aenean finibus auctor felis, ut aliquam nunc semper sed. Proin a fermentum nisl, eget fringilla magna. Suspendisse tempor sollicitudin nisi et lacinia. Duis rutrum facilisis orci vel pellentesque. Praesent in dictum arcu. Suspendisse mi turpis, finibus luctus velit ut, luctus imperdiet nunc. Nullam eu faucibus mi. Donec nunc velit, tempus ac nulla mollis, scelerisque molestie eros.
+							Donec auctor convallis pretium. Aenean finibus auctor felis, ut aliquam nunc semper sed.
 						</div>
 					</li>
 					<li class="message">
-						<div class="propic"><!--user icon---><img src="./assets/img/robert.png"></div>
+						<div class="propic"><!--user icon---><img src="./assets/img/janet.png"></div>
 						<div class="user-info">
-							<span class="user-name">@operator382</span>
-							<span class="time-stamp">11:12AM</span>
+							<span class="user-name">Janet Reynolds</span>
+							<span class="time-stamp">11:10AM</span>
 						</div>
 						<div class="user-message">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere, lectus et fringilla congue, turpis elit dictum ipsum, id tempor eros ipsum iaculis mi. Maecenas viverra vel nunc sed lacinia. Donec auctor convallis pretium. Aenean finibus auctor felis, ut aliquam nunc semper sed. Proin a fermentum nisl, eget fringilla magna. Suspendisse tempor sollicitudin nisi et lacinia. Duis rutrum facilisis orci vel pellentesque. Praesent in dictum arcu. Suspendisse mi turpis, finibus luctus velit ut, luctus imperdiet nunc. Nullam eu faucibus mi. Donec nunc velit, tempus ac nulla mollis, scelerisque molestie eros.
+							Ut aliquam nunc semper sed.
 						</div>
 					</li>
 					<li class="message">
-						<div class="propic"><!--user icon---><img src="./assets/img/robert.png"></div>
+						<div class="propic"><!--user icon---><img src="./assets/img/janet.png"></div>
 						<div class="user-info">
-							<span class="user-name">@operator382</span>
-							<span class="time-stamp">11:12AM</span>
+							<span class="user-name">Janet Reynolds</span>
+							<span class="time-stamp">11:11AM</span>
 						</div>
 						<div class="user-message">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere, lectus et fringilla congue, turpis elit dictum ipsum, id tempor eros ipsum iaculis mi. Maecenas viverra vel nunc sed lacinia. Donec auctor convallis pretium. Aenean finibus auctor felis, ut aliquam nunc semper sed. Proin a fermentum nisl, eget fringilla magna. Suspendisse tempor sollicitudin nisi et lacinia. Duis rutrum facilisis orci vel pellentesque. Praesent in dictum arcu. Suspendisse mi turpis, finibus luctus velit ut, luctus imperdiet nunc. Nullam eu faucibus mi. Donec nunc velit, tempus ac nulla mollis, scelerisque molestie eros.
+							Attached Image:
 						</div>
+						<span><img src="./assets/img/sample-file.png"></span>
 					</li>
 					<li class="message">
-						<div class="propic"><!--user icon---><img src="./assets/img/robert.png"></div>
+						<div class="propic"><!--user icon---><img src="./assets/img/abdul.png"></div>
 						<div class="user-info">
-							<span class="user-name">@operator382</span>
+							<span class="user-name">William Abhishek</span>
 							<span class="time-stamp">11:12AM</span>
 						</div>
 						<div class="user-message">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere, lectus et fringilla congue, turpis elit dictum ipsum, id tempor eros ipsum iaculis mi. Maecenas viverra vel nunc sed lacinia. Donec auctor convallis pretium. Aenean finibus auctor felis, ut aliquam nunc semper sed. Proin a fermentum nisl, eget fringilla magna. Suspendisse tempor sollicitudin nisi et lacinia. Duis rutrum facilisis orci vel pellentesque. Praesent in dictum arcu. Suspendisse mi turpis, finibus luctus velit ut, luctus imperdiet nunc. Nullam eu faucibus mi. Donec nunc velit, tempus ac nulla mollis, scelerisque molestie eros.
-						</div>
-					</li>
-					<li class="message">
-						<div class="propic"><!--user icon---><img src="./assets/img/robert.png"></div>
-						<div class="user-info">
-							<span class="user-name">@operator382</span>
-							<span class="time-stamp">11:12AM</span>
-						</div>
-						<div class="user-message">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere, lectus et fringilla congue, turpis elit dictum ipsum, id tempor eros ipsum iaculis mi. Maecenas viverra vel nunc sed lacinia. Donec auctor convallis pretium. Aenean finibus auctor felis, ut aliquam nunc semper sed. Proin a fermentum nisl, eget fringilla magna. Suspendisse tempor sollicitudin nisi et lacinia. Duis rutrum facilisis orci vel pellentesque. Praesent in dictum arcu. Suspendisse mi turpis, finibus luctus velit ut, luctus imperdiet nunc. Nullam eu faucibus mi. Donec nunc velit, tempus ac nulla mollis, scelerisque molestie eros.
-						</div>
-					</li>
-					<li class="message">
-						<div class="propic"><!--user icon---><img src="./assets/img/robert.png"></div>
-						<div class="user-info">
-							<span class="user-name">@operator382</span>
-							<span class="time-stamp">11:12AM</span>
-						</div>
-						<div class="user-message">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere, lectus et fringilla congue, turpis elit dictum ipsum, id tempor eros ipsum iaculis mi. Maecenas viverra vel nunc sed lacinia. Donec auctor convallis pretium. Aenean finibus auctor felis, ut aliquam nunc semper sed. Proin a fermentum nisl, eget fringilla magna. Suspendisse tempor sollicitudin nisi et lacinia. Duis rutrum facilisis orci vel pellentesque. Praesent in dictum arcu. Suspendisse mi turpis, finibus luctus velit ut, luctus imperdiet nunc. Nullam eu faucibus mi. Donec nunc velit, tempus ac nulla mollis, scelerisque molestie eros.
+							Proin a fermentum nisl, eget fringilla magna. Suspendisse tempor sollicitudin nisi et lacinia. Duis rutrum facilisis orci vel pellentesque. Praesent in dictum arcu. Suspendisse mi turpis, finibus luctus velit ut, luctus imperdiet nunc. Nullam eu faucibus mi. Donec nunc velit, tempus ac nulla mollis, scelerisque molestie eros.
 						</div>
 					</li>
 				</ul>
@@ -139,37 +126,37 @@
 					<div class="input-area">
 						<input type="text" name="message-input" id="message" onkeypress="submitOnEnter(this, event);" value="">
 					</div>
+
 				</div>
+									<div class="emoji"><img src="./assets/icons/emoji.png"></div>
 			</div>
 		</section>
 		<!-- sidebar action -->
 		<section id="sidebar">
 			<div class="users-wrapper">
 				<div class="users-title">
-					<img src="">
+					<img src="./assets/icons/user.png">
 					users
 				</div>
 				<ul class="users">
-					<li><span class="online-circle green"></span>@operator382</li>
-					<li><span class="online-circle yellow"></span>@operator2912</li>
-					<li><span class="online-circle red"></span>@operator28</li>
-					<li><span class="online-circle green"></span>user20193</li>
-					<li><span class="online-circle green"></span>user29831</li>
+					<li><span class="online-circle green"></span>$Jessica Roberts</li>
+					<li><span class="online-circle green"></span>@Robert Wilkinson</li>
+					<li><span class="online-circle yellow"></span>@Renee Thomas</li>
+					<li><span class="online-circle red"></span>Ruth Blecker</li>
+					<li><span class="online-circle green"></span>William Abhishek</li>
+					<li><span class="online-circle green"></span>Janet Reynolds</li>
 					<!-- and so on... -->
 				</ul>
 			</div>
 			<!-- flowchart view area-->
 			<div class="flowchart">
-				<div class="flowchart">
-					<!-- image of flowchart view lol-->
-					<img src="">
+				<div class="flowchart-wrapper">
+					<div class="flowchart-img"><img src="./assets/img/flowchart-view.png"></div>
 				</div>
 				<div class="flowchart-view-btn">
 					flowchart view
 				</div>
 			</div>
 		</section>
-		<!-- background branding image-->
-		<img src="">
 	</body>
 </html>
