@@ -190,6 +190,20 @@ nav {
 .emoji:hover {
 	background-color: #f2f2f2;
 }
+.user-message ~ div {
+	background-image: url(./assets/icons/glass.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 131px;
+	width: 228px;
+}
+.user-message ~ div > img {
+	transition: opacity .2s ease-in-out;
+}
+.user-message ~ div > img:hover {
+	opacity: .6;
+	cursor: pointer;
+}
 
 
 #sidebar {
