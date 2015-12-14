@@ -1,0 +1,59 @@
+#contact {
+	width: 100%;
+	padding: 50px 100px;
+	height: auto;
+}
+.wrapper {
+	width: 500px;
+}
+h1 {
+	font-family: 'Montserrat';
+	color: #c1a887;
+}
+ form > input, form > textarea  {
+	border: 1px solid #c1a887;
+	color: #c1a887;
+	display: block;
+	margin-top: 20;
+	font-size: 12px;
+	font-family: 'Lato';
+}
+form > input {
+	width: 200px;
+	height: 30px;
+	padding-left: 10;
+}
+#name {
+
+}
+#message {
+	padding: 10 0 0 10px;
+	width: 500px;
+	height: 200px;
+}
+
+#submit {
+	margin-top: 20px;
+	width: 150px;
+	height: 30px;
+	background-color: #c1a887;
+	border: 0;
+	color: #fff;
+	cursor: pointer;
+	transition: background-color .2s ease-in-out;
+}
+#submit:hover {
+	background-color: #aa9273;
+}
+
+@media screen and (max-width: 600px) {
+	#contact {
+		padding: 30px 30px;
+	}
+	.wrapper {
+		width: 100%;
+	}
+	#message {
+		width: 100%;
+	}
+}

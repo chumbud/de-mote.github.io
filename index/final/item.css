@@ -1,0 +1,42 @@
+.wrapper {
+	overflow: hidden;
+}
+div#resgal {
+	overflow: hidden;
+	background-color: #fff;
+	border: solid 5px #c1a887;
+}
+div#resgal:hover .item {
+	opacity: 0.7;
+	display: block;
+
+}
+div#resgal:hover .item:hover {
+	opacity: 1;
+}
+
+.item a{
+	width:100%;
+	height:100%;
+	background-color: #fff;
+}
+
+.item {
+	transition: .2s opacity;
+	float:left;
+	width:33.1%;
+	height:300px;
+	position:relative;
+	overflow:hidden;
+	font-size: 0;
+	border-left: solid 1px #c1a887;
+	background-color: #fff;
+}
+
+.item img{
+	position:absolute;
+	width:100%;
+	transform: translate(0%, -50%);
+	top:50%;
+	background-color: #fff;
+}
