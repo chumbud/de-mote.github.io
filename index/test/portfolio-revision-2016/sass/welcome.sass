@@ -1,0 +1,33 @@
+@import base
+
+.pattern
+	background-image: url('/img/bg-01.svg')
+
+#welcome
+	.wrapper
+		position: absolute
+	.main_copy
+		top: 200px
+		left: 240px
+		position: absolute
+		z-index: 0
+	.main_copy_active
+		top: 200px
+		z-index: 5
+		position: absolute
+		left: 240px
+		width: 400px
+		height: 300px
+		padding-left: 1px
+	.main_copy_active span
+		width: 0px
+		position: absolute
+		overflow: hidden
+		z-index: 5
+	.main_copy_active span img
+		width: 400px
+	.main_copy span img
+		width: 400px
+
+body
+	background-color: $l-serenity

@@ -1,0 +1,222 @@
+/* line 1, ../sass/pageTransitions.sass */
+.m-scene .scene_element {
+  animation-duration: 1s;
+  transition-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+
+/* line 6, ../sass/pageTransitions.sass */
+.m-scene .scene_element--fadein {
+  animation-name: fadeIn;
+}
+
+/* line 9, ../sass/pageTransitions.sass */
+.m-scene.is-exiting .scene_element {
+  animation-direction: alternate-reverse;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 15, ../sass/base.sass */
+* {
+  margin: 0px;
+  padding: 0px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 22, ../sass/base.sass */
+body {
+  font-family: "Open Sans";
+  color: #fff;
+  background-color: white;
+}
+
+/* line 27, ../sass/base.sass */
+.pattern {
+  background-image: url("/img/bg-02.svg");
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* line 35, ../sass/base.sass */
+#sidebar {
+  width: 210px;
+  height: 100%;
+  position: fixed;
+  background-color: white;
+  padding: 45 0 0 45;
+  z-index: 2;
+  float: left;
+  display: block;
+  border-right: 1px solid #DEECFC;
+}
+
+/* line 47, ../sass/base.sass */
+.scene_element .icon {
+  display: block;
+  color: black;
+  top: 15px;
+  left: 175px;
+  position: absolute;
+  z-index: 10;
+}
+/* line 54, ../sass/base.sass */
+.scene_element .icon img {
+  height: 20px;
+  float: right;
+}
+
+/* line 59, ../sass/base.sass */
+.top .logo {
+  font-family: "Montserrat";
+  color: black;
+  width: 50px;
+  font-size: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/* line 66, ../sass/base.sass */
+.top .logo a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.2s ease-in-out;
+}
+/* line 70, ../sass/base.sass */
+.top .logo a:hover {
+  color: #0033FF;
+}
+/* line 72, ../sass/base.sass */
+.top .sub-text {
+  color: #0033FF;
+  font-size: 12px;
+  text-align: left;
+  width: 140px;
+}
+
+/* line 78, ../sass/base.sass */
+.nav {
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 100%;
+}
+/* line 84, ../sass/base.sass */
+.nav a {
+  padding: 0.5em 0;
+  color: #8C8C8C;
+  position: relative;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+/* line 91, ../sass/base.sass */
+.nav a:before, .nav a:after {
+  position: absolute;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 95, ../sass/base.sass */
+.nav a:before {
+  bottom: 0;
+  display: block;
+  height: 3px;
+  width: 0%;
+  content: "";
+  background-color: #0033FF;
+}
+/* line 102, ../sass/base.sass */
+.nav a:hover:before,
+.nav .current a:before {
+  opacity: 1;
+  width: 100%;
+}
+/* line 106, ../sass/base.sass */
+.nav a:hover:after,
+.nav .current a:after {
+  max-width: 100%;
+}
+/* line 109, ../sass/base.sass */
+.nav a:hover {
+  color: black;
+}
+/* line 112, ../sass/base.sass */
+.nav .current a {
+  color: black;
+}
+/* line 114, ../sass/base.sass */
+.nav li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 10 1.5em 10 0;
+  padding: 0;
+}
+
+/* line 120, ../sass/base.sass */
+.footer {
+  position: absolute;
+  bottom: 15;
+  left: 0;
+  width: 100%;
+  font-size: 10px;
+  color: #8DA5D0;
+  text-align: center;
+}
+
+/* line 3, ../sass/welcome.sass */
+.pattern {
+  background-image: url("/img/bg-01.svg");
+}
+
+/* line 7, ../sass/welcome.sass */
+#welcome .wrapper {
+  position: absolute;
+}
+/* line 9, ../sass/welcome.sass */
+#welcome .main_copy {
+  top: 200px;
+  left: 240px;
+  position: absolute;
+  z-index: 0;
+}
+/* line 14, ../sass/welcome.sass */
+#welcome .main_copy_active {
+  top: 200px;
+  z-index: 5;
+  position: absolute;
+  left: 240px;
+  width: 400px;
+  height: 300px;
+  padding-left: 1px;
+}
+/* line 22, ../sass/welcome.sass */
+#welcome .main_copy_active span {
+  width: 0px;
+  position: absolute;
+  overflow: hidden;
+  z-index: 5;
+}
+/* line 27, ../sass/welcome.sass */
+#welcome .main_copy_active span img {
+  width: 400px;
+}
+/* line 29, ../sass/welcome.sass */
+#welcome .main_copy span img {
+  width: 400px;
+}
+
+/* line 32, ../sass/welcome.sass */
+body {
+  background-color: #DEECFC;
+}

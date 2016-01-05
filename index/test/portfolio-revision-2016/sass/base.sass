@@ -1,0 +1,127 @@
+$rose: #F7CAC9
+$l-rose: #FFE9E9
+$d-rose: #DD9B9B
+$serenity: #8DA5D0
+$l-serenity: #DEECFC
+$d-serenity: #8DA5D0
+$light-grey: #8C8C8C
+$grey: #656565
+$love: #ff1e1e
+$orange: #F38630
+$blum: #0033FF
+
+@import pageTransitions
+
+*
+	margin: 0px
+	padding: 0px
+	-moz-box-sizing: border-box
+	-webkit-box-sizing: border-box
+	box-sizing: border-box
+
+body
+	font-family: 'Open Sans'
+	color: #fff
+	background-color: white
+
+.pattern
+	background-image: url('/img/bg-02.svg')
+	width: 100%
+	height: 100%
+	position: fixed
+	z-index: 1
+	pointer-events: none
+
+#sidebar
+	width: 210px
+	height: 100%
+	position: fixed
+	background-color: white
+	padding: 45 0 0 45
+	z-index: 2
+	float: left
+	display: block
+	border-right: 1px solid $l-serenity
+
+.scene_element
+	.icon
+		display: block
+		color: black
+		top: 15px
+		left: 175px
+		position: absolute
+		z-index: 10
+		img
+			height: 20px
+			float: right
+
+.top
+	.logo
+		font-family: 'Montserrat'
+		color: black
+		width: 50px
+		font-size: 26px
+		font-weight: 700
+		text-transform: uppercase
+		a
+			text-decoration: none
+			color: black
+			transition: color .2s ease-in-out
+	.logo a:hover
+		color: $blum
+	.sub-text
+		color: $blum
+		font-size: 12px
+		text-align: left
+		width: 140px
+
+.nav
+	font-family: 'Montserrat'
+	font-size: 15px
+	font-weight: 700
+	text-transform: uppercase
+	margin-top: 100%
+	a
+		padding: 0.5em 0
+		color: $light-grey
+		position: relative
+		letter-spacing: 1px
+		text-decoration: none
+		transition: all .2s ease-in-out
+	a:before, a:after
+		position: absolute
+		-webkit-transition: all 0.2s ease-in-out
+		transition: all 0.2s ease-in-out
+	a:before
+		bottom: 0
+		display: block
+		height: 3px
+		width: 0%
+		content: ""
+		background-color: $blum
+	a:hover:before,
+	.current a:before
+		opacity: 1
+		width: 100%
+	a:hover:after,
+	.current a:after
+		max-width: 100%
+	a:hover
+		color: black
+	.current
+		a
+			color: black
+	li
+		display: inline-block
+		list-style: outside none none
+		margin: 10 1.5em 10 0
+		padding: 0
+
+.footer
+	position: absolute
+	bottom: 15
+	left: 0
+	width: 100%
+	font-size: 10px
+	color: $serenity
+	text-align: center

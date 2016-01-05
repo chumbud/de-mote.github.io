@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<link rel='stylesheet' type='text/css' href="stylesheets/digital.css">
+		<!--
+
+		Super cool stuff used to make this site:
+
+		Smooth State - ajax page transitions with jQuery
+		https://github.com/miguel-perez/smoothState.js
+
+		Mo.js - motion graphics for the web
+		https://github.com/legomushroom/mojs
+
+		-->
+	</head>
+	<body>
+		<div id="main" class="m-scene">
+			<section id="sidebar">
+				<div class="top">
+					<div class="scene_element scene_element--fadein">
+						<div class="icon"><img src="/img/icons/digital.svg"></div>
+					</div>
+					<div class="logo"><a href="/home.html">p.j. rosa</a></div>
+					<div class="sub-text">Loves to round corners and admire pastels.</div>
+				</div>
+				<ul class="nav">
+					<li><a href="/about.html" data-hover="about">about</a></li>
+					<li class="current"><a href="/digital.html" data-hover="digital">digital</a></li>
+					<li><a href="/print.html" data-hover="print">print</a></li>
+					<li><a href="/contact.html" data-hover="contact">contact</a></li>
+				</ul>
+				<div class="footer">Made with <span class="heart">❤</span> by P.J. Rosa</div>
+			</section>
+			<div class="scene_element scene_element--fadein">
+				<div class="icon"><img src="/img/icons/pen.svg"></div>
+				<section id="work">
+					<div class="pattern"></div>
+				</section>
+			</div>
+
+		</div>
+		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<script src="//cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
+		<script src="http://smoothstate.com/javascripts/jquery.smoothState.js"></script>
+		<script src="js/functions.js"></script>
+	</body>
+</html>
