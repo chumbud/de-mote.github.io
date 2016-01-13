@@ -1,0 +1,290 @@
+@import animate
+
+$red: #f43434
+$med-red: #dd2626
+$yellow: #ffc933
+$hover-white: #ffc933
+$fadedwhite: rgba(255, 255, 255, .2)
+$fadedred: rgba(244, 52, 52, .7)
+$darkred: rgba(196, 8, 8, 0.5)
+
+$med: "only screen and (max-width : 720px)"
+$small: "only screen and (max-width : 570px)"
+$short: "only screen and (max-height : 630px)"
+
+
+*
+	margin: 0px
+	padding: 0px
+	-moz-box-sizing: border-box
+	-webkit-box-sizing: border-box
+	box-sizing: border-box
+nav
+	position: fixed
+	display: none
+body
+	width: 100%
+	height: 100%
+.container
+	margin-left: auto
+	margin-right: auto
+	width: 100%
+	height: 100%
+	max-width: 1200px
+	position: relative
+#mlh-trust-badge
+	position: absolute
+	max-width: 100px
+	width: 10%
+	min-width: 60px
+	display: block
+	z-index: 10000
+	transition: left .2s ease-in-out
+	@media #{$small}
+		top: 75px
+		z-index: 1
+
+nav
+	width: 90%
+	height: 60px
+	background-color: $med-red
+
+#landing
+	width: 100%
+	height: 100%
+	background-image: url("../assets/img/landing.jpg")
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	.container
+		z-index: 2
+.landing-nav
+	height: 75px
+	width: 100%
+	margin-left: auto
+	margin-right: auto
+	max-width: 1200px
+	color: white
+	font-family: "Work Sans"
+	font-weight: 300
+	position: absolute
+	left: 0
+	right: 0
+	z-index: 10
+	@media #{$small}
+		position: fixed
+	.logo
+		padding-left: 12%
+		transition: opacity .2s ease-in-out
+		height: 75px
+		float: left
+		@media #{$med}
+			opacity: 0
+			position: fixed
+		img
+			height: 30px
+			width: 160px
+		a
+			padding-top: 20px
+			position: absolute
+			height: 75px
+			transition: opacity .2s ease-in-out
+			&:hover
+				opacity: .7
+	.items
+		height: 75px
+		float: right
+		position: relative
+		transition: all .2s ease-in-out
+		@media #{$med}
+			width: 100%
+			padding-left: 12%
+			background-color: $darkred
+		@media #{$small}
+			padding-left: 0
+		li
+			display: inline-block
+			@media #{$med}
+				width: 25%
+				float: left
+			a
+				line-height: 75px
+				height: 100%
+				padding: 0 20px
+				float: right
+				color: white
+				text-decoration: none
+				transition: all .2s ease-in-out
+				@media #{$med}
+					font-size: 12px
+					padding: 0
+					width: 100%
+					text-align: center
+				&:hover
+					color: $hover-white
+					background-color: $fadedred
+.landing-content
+	padding: 0 8%
+	margin-left: auto
+	margin-right: auto
+	width: 100%
+	height: 100%
+	font-family: "Work Sans"
+	font-weight: 100
+	color: white
+	text-align: center
+	.logo
+		width: 100%
+		max-width: 630px
+		margin-bottom: 4.6%
+		margin-left: auto
+		margin-right: auto
+		position: relative
+		transition: margin .2s ease-in-out
+		@media #{$med}
+			margin-bottom: 12%
+		img
+			max-width: 100%
+		.spacer
+			position: relative
+			z-index: 1
+			min-height: 100px
+			height: 14%
+			width: 100%
+
+	.landing-text
+		p
+			&:nth-child(1)
+				font-size: 1.25em
+				color: $yellow
+				@media #{$small}
+					font-size: 4vw
+			&:nth-child(2)
+				font-size: 3.125em
+				font-family: "Montserrat"
+				font-weight: 700
+				text-transform: uppercase
+				@media #{$small}
+					font-size: 8vw
+			&:nth-child(3)
+				font-size: 2em
+				@media #{$small}
+					font-size: 6vw
+	.sign-up
+		margin-top: 4.6%
+		@media #{$med}
+			margin-top: 10%
+		.sign-up-btn
+			display: block
+			color: $red
+			font-size: 1.4375em
+			height: 54px
+			margin-bottom: 5px
+			@media #{$small}
+				margin-bottom: 3%
+			a
+				margin-left: auto
+				margin-right: auto
+				height: 54px
+				width: 80%
+				max-width: 312px
+				color: $red
+				background-color: $yellow
+				border-radius: 8px
+				text-decoration: none
+				line-height: 48px
+				border: 3px solid $yellow
+				transition: all .2s ease-in-out
+				padding: 10px 100px
+				@media #{$small}
+					padding: 3vw 13vw
+				.svg
+					path, rect
+						transition: all .2s ease-in-out
+				&:hover
+					background-color: rgba(0, 0, 0, 0)
+					color: $yellow
+					.svg
+						path, rect
+							fill: $yellow
+				img
+					margin-right: 10px
+
+		span
+			font-size: .9em
+			display: block
+			transition: all .2s ease-in-out
+			@media #{$small}
+				font-size: 3.5vw
+			a
+				color: $yellow
+				transition: all .2s ease-in-out
+				&:hover
+					color: white
+	.bottom-landing
+		position: absolute
+		width: 100%
+		max-width: 1200px
+		bottom: 0
+		left: 0
+		.learn-more-link
+			text-decoration: none
+			color: white
+			width: 80%
+			max-width: 1000px
+			.learn-more
+				padding: 20px 0 40px
+				transition: all .2s ease-in-out
+				span
+					display: block
+					padding: 10px 0
+					transition: all .2s ease-in-out
+					@media #{$short}
+						opacity: 0
+				.learn-more-arrow
+					width: 15px
+					margin-left: auto
+					margin-right: auto
+					display: block
+				&:hover
+					color: $yellow
+	.social-media
+		position: absolute
+		bottom: 0
+		a
+			display: inline-block
+			position: relative
+			width: 55px
+			height: 55px
+			padding: 14px
+			transition: all .2s ease-in-out
+			float: left
+			.svg
+				path
+					transition: all .2s ease-in-out
+			&:hover
+				background-color: $fadedwhite
+				.svg
+					path
+						fill: $yellow
+.red-fill
+	background-color: $fadedred
+	width: 100%
+	height: 100%
+	position: absolute
+	z-index: 1
+	border-bottom: 1px solid $fadedwhite
+
+#about
+	width: 100%
+	height: 100%
+	background-color: $med-red
+.bg-pattern
+	height: 100%
+	width: 100%
+	background-image: url("../assets/img/bg-pattern.svg")
+	background-repeat: repeat
+	background-size: 21 28
+
+line
+	border-bottom: 1px solid $fadedwhite
