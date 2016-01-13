@@ -32,7 +32,7 @@
     transform: translate(0px, 0px);
   }
   50% {
-    transform: translate(0px, 6px);
+    transform: translate(0px, 15px);
   }
   100% {
     transform: translate(0px, 0px);
@@ -43,7 +43,7 @@
     -moz-transform: translate(0px, 0px);
   }
   50% {
-    -moz-transform: translate(0px, 6px);
+    -moz-transform: translate(0px, 15px);
   }
   100% {
     -moz-transform: translate(0px, 0px);
@@ -54,7 +54,7 @@
     -webkit-transform: translate(0px, 0px);
   }
   50% {
-    -webkit-transform: translate(0px, 6px);
+    -webkit-transform: translate(0px, 15px);
   }
   100% {
     -webkit-transform: translate(0px, 0px);
@@ -65,7 +65,7 @@
     -o-transform: translate(0px, 0px);
   }
   50% {
-    -o-transform: translate(0px, 6px);
+    -o-transform: translate(0px, 15px);
   }
   100% {
     -o-transform: translate(0px, 0px);
@@ -76,7 +76,7 @@
     -ms-transform: translate(0px, 0px);
   }
   50% {
-    -ms-transform: translate(0px, 6px);
+    -ms-transform: translate(0px, 15px);
   }
   100% {
     -ms-transform: translate(0px, 0px);
@@ -382,43 +382,44 @@ nav {
 }
 /* line 202, ../sass/base.sass */
 .landing-content .sign-up .sign-up-btn a .svg path, .landing-content .sign-up .sign-up-btn a .svg rect {
+  fill: #f43434;
   transition: all 0.2s ease-in-out;
 }
-/* line 204, ../sass/base.sass */
+/* line 205, ../sass/base.sass */
 .landing-content .sign-up .sign-up-btn a:hover {
   background-color: transparent;
   color: #ffc933;
 }
-/* line 208, ../sass/base.sass */
+/* line 209, ../sass/base.sass */
 .landing-content .sign-up .sign-up-btn a:hover .svg path, .landing-content .sign-up .sign-up-btn a:hover .svg rect {
   fill: #ffc933;
 }
-/* line 210, ../sass/base.sass */
+/* line 211, ../sass/base.sass */
 .landing-content .sign-up .sign-up-btn a img {
   margin-right: 10px;
 }
-/* line 213, ../sass/base.sass */
+/* line 214, ../sass/base.sass */
 .landing-content .sign-up span {
   font-size: 0.9em;
   display: block;
   transition: all 0.2s ease-in-out;
 }
 @media only screen and (max-width: 570px) {
-  /* line 213, ../sass/base.sass */
+  /* line 214, ../sass/base.sass */
   .landing-content .sign-up span {
     font-size: 3.5vw;
   }
 }
-/* line 219, ../sass/base.sass */
+/* line 220, ../sass/base.sass */
 .landing-content .sign-up span a {
   color: #ffc933;
   transition: all 0.2s ease-in-out;
 }
-/* line 222, ../sass/base.sass */
+/* line 223, ../sass/base.sass */
 .landing-content .sign-up span a:hover {
   color: white;
 }
-/* line 224, ../sass/base.sass */
+/* line 225, ../sass/base.sass */
 .landing-content .bottom-landing {
   position: absolute;
   width: 100%;
@@ -426,47 +427,47 @@ nav {
   bottom: 0;
   left: 0;
 }
-/* line 230, ../sass/base.sass */
+/* line 231, ../sass/base.sass */
 .landing-content .bottom-landing .learn-more-link {
   text-decoration: none;
   color: white;
   width: 80%;
   max-width: 1000px;
 }
-/* line 235, ../sass/base.sass */
+/* line 236, ../sass/base.sass */
 .landing-content .bottom-landing .learn-more-link .learn-more {
   padding: 20px 0 40px;
   transition: all 0.2s ease-in-out;
 }
-/* line 238, ../sass/base.sass */
+/* line 239, ../sass/base.sass */
 .landing-content .bottom-landing .learn-more-link .learn-more span {
   display: block;
   padding: 10px 0;
   transition: all 0.2s ease-in-out;
 }
 @media only screen and (max-height: 630px) {
-  /* line 238, ../sass/base.sass */
+  /* line 239, ../sass/base.sass */
   .landing-content .bottom-landing .learn-more-link .learn-more span {
     opacity: 0;
   }
 }
-/* line 244, ../sass/base.sass */
+/* line 245, ../sass/base.sass */
 .landing-content .bottom-landing .learn-more-link .learn-more .learn-more-arrow {
   width: 15px;
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
-/* line 249, ../sass/base.sass */
+/* line 250, ../sass/base.sass */
 .landing-content .bottom-landing .learn-more-link .learn-more:hover {
   color: #ffc933;
 }
-/* line 251, ../sass/base.sass */
+/* line 252, ../sass/base.sass */
 .landing-content .social-media {
   position: absolute;
   bottom: 0;
 }
-/* line 254, ../sass/base.sass */
+/* line 255, ../sass/base.sass */
 .landing-content .social-media a {
   display: inline-block;
   position: relative;
@@ -476,20 +477,20 @@ nav {
   transition: all 0.2s ease-in-out;
   float: left;
 }
-/* line 263, ../sass/base.sass */
+/* line 264, ../sass/base.sass */
 .landing-content .social-media a .svg path {
   transition: all 0.2s ease-in-out;
 }
-/* line 265, ../sass/base.sass */
+/* line 266, ../sass/base.sass */
 .landing-content .social-media a:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
-/* line 268, ../sass/base.sass */
+/* line 269, ../sass/base.sass */
 .landing-content .social-media a:hover .svg path {
   fill: #ffc933;
 }
 
-/* line 270, ../sass/base.sass */
+/* line 271, ../sass/base.sass */
 .red-fill {
   background-color: rgba(244, 52, 52, 0.7);
   width: 100%;
@@ -499,14 +500,14 @@ nav {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* line 278, ../sass/base.sass */
+/* line 279, ../sass/base.sass */
 #about {
   width: 100%;
   height: 100%;
   background-color: #dd2626;
 }
 
-/* line 282, ../sass/base.sass */
+/* line 283, ../sass/base.sass */
 .bg-pattern {
   height: 100%;
   width: 100%;
@@ -515,7 +516,7 @@ nav {
   background-size: 21 28;
 }
 
-/* line 289, ../sass/base.sass */
+/* line 290, ../sass/base.sass */
 line {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
