@@ -13,6 +13,19 @@ $(function() {
 	});
 });
 
+$(function($) {
+	$(document).ready(function(){
+		$(window).scroll(function(){
+			var window = $('#landing').height()* .5;
+			if ($(this).scrollTop() > window) {
+				$('nav').fadeIn(500);
+			} else {
+				$('nav').fadeOut(500);
+			}
+		});
+	});
+});
+
 $(function(){
 	jQuery('img.svg').each(function(){
 		var $img = jQuery(this);

@@ -13,6 +13,7 @@ Site designed and written by PJ Rosa :: http://pjrosa.com
 	<head lang="en">
 		<meta name="description" content="Sign up for Rutgers University Spring 2016 hackathon, HackRU! April 16 to 18.">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta property="og:image" content="./assets/img/preview.jpg" />
 		<link href='https://fonts.googleapis.com/css?family=Work+Sans' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
 		<link href='./stylesheets/base.css' rel='stylesheet' type="text/css">
@@ -21,14 +22,17 @@ Site designed and written by PJ Rosa :: http://pjrosa.com
 	</head>
 	<body>
 		<nav>
-			<ul>
-			</ul>
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
+			<div class="container">
+				<ul class="logo">
+					<a href="#landing"><img src="./assets/img/hackru-logo.svg"></a>
+				</ul>
+				<ul class="items">
+					<li><a href="#about">about</a></li>
+					<li><a href="#faq">faq</a></li>
+					<li><a href="#schedule">schedule</a></li>
+					<li><a href="#sponsors">sponsors</a></li>
+				</ul>
+			</div>
 		</nav>
 		<section id="landing">
 			<div class="red-fill"></div>
@@ -63,7 +67,7 @@ Site designed and written by PJ Rosa :: http://pjrosa.com
 								Sign up
 							</a>
 						</div>
-						<p class="subtext">want to sponsor? <a href="mailto:team@hackru.org">email us!</a></p>
+						<p class="subtext">want to sponsor? <a href="mailto:team@hackru.org" data-email="team@hackru.org">email us!</a></p>
 					</div>
 					<div class="bottom-landing">
 						<div class="social-media">
@@ -123,6 +127,10 @@ Site designed and written by PJ Rosa :: http://pjrosa.com
 			</div>
 		</section>
 		<section id="faq">
+			<div class="banner" style="background-image: url('./assets/img/faq.jpg')"><div class="wrapper"><span class="icon"><img src="./assets/img/question.svg"></span><h1>frequently asked questions</h1></div></div>
+			<div class="container">
+				<p class="subtext">anymore questions? <a href="mailto:questions@hackru.org" data-email="questions@hackru.org">email us!</a></p>
+			</div>
 		</section>
 		<section id="schedule">
 		</section>
