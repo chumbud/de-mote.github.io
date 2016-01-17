@@ -109,7 +109,7 @@ nav
 				text-decoration: none
 				transition: all .2s ease-in-out
 				@media #{$med}
-					font-size: 1em
+					font-size: .9em
 					padding: 0
 					width: 100%
 					text-align: center
@@ -188,7 +188,7 @@ nav
 				text-decoration: none
 				transition: all .2s ease-in-out
 				@media #{$med}
-					font-size: 1em
+					font-size: .9em
 					padding: 0
 					width: 100%
 					text-align: center
@@ -521,7 +521,7 @@ nav
 		transition: all .2s ease-in-out
 		.q-block
 			height: 200px
-			weight: 280px
+			width: 280px
 			margin: 20px
 			display: flex
 			transition: all .2s ease-in-out
@@ -529,13 +529,18 @@ nav
 			@media #{$small}
 				margin: 20px auto
 				padding: 20px
+				width: 100%
+				height: auto
 			.icon
 				float: left
 				position: relative
 				width: 36px
 				height: 100%
 				display: inline-block
+				@media #{$small}
+					height: auto
 				img
+					min-width: 36px
 					top: 0
 					left: -3
 					position: relative
@@ -549,6 +554,8 @@ nav
 					font-size: 1.3em
 					padding-bottom: 5px
 					width: 280px
+					@media #{$small}
+						width: 100%
 				p
 					width: 280px
 					height: 100%
@@ -557,6 +564,9 @@ nav
 					font-family: $body
 					font-size: 1em
 					font-wieght: 400
+					@media #{$small}
+						width: 100%
+						height: auto
 
 #schedule
 	@extend line
@@ -640,14 +650,14 @@ nav
 		font-family: $head
 		text-align: center
 		.one
-			font-size: 1em
+			font-size: .8em
 			display: block
 		.two
 			font-size: 4.0625em
 			line-height: 1em
 			@media #{$small}
 				text-align: center
-				font-size: 2em
+				font-size: 2.5em
 		img
 			margin: 0 0 0 10
 			width: 40px
