@@ -1,0 +1,14 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.982 28.41209">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #9b1010;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <title>heart</title>
+  <path class="cls-1" d="M3248.88238,3827.11762a2.92434,2.92434,0,0,1-4.13564,0L3234.62911,3817a7.87179,7.87179,0,1,1,11.13239-11.13239l1.053,1.053,1.053-1.053A7.87179,7.87179,0,0,1,3259,3817Z" transform="translate(-3230.32356 -3801.56205)"/>
+</svg>

@@ -1,6 +1,7 @@
 @import animate
 
 $red: #f43434
+$darkred-f: #9b1010
 $faq-bg: #c91818
 $faq-faded: rgba(216, 31, 31, 0.7)
 $med-red: #dd2626
@@ -9,6 +10,7 @@ $hover-white: #ffc933
 $fadedwhite: rgba(255, 255, 255, .2)
 $fadedred: rgba(244, 52, 52, .7)
 $darkred: rgba(196, 8, 8, 0.5)
+$sponsors-bg: rgba(214, 214, 214, .8)
 
 $head: "Montserrat"
 $body: "Work Sans"
@@ -54,7 +56,6 @@ nav
 	position: fixed
 	z-index: 20
 	top: 0
-	width: 100%
 	background-color: $med-red
 	display: none
 	height: 75px
@@ -108,7 +109,7 @@ nav
 				text-decoration: none
 				transition: all .2s ease-in-out
 				@media #{$med}
-					font-size: 12px
+					font-size: 1em
 					padding: 0
 					width: 100%
 					text-align: center
@@ -187,7 +188,7 @@ nav
 				text-decoration: none
 				transition: all .2s ease-in-out
 				@media #{$med}
-					font-size: 12px
+					font-size: 1em
 					padding: 0
 					width: 100%
 					text-align: center
@@ -273,6 +274,7 @@ nav
 					padding: 3vw 13vw
 				.svg
 					path, rect
+						stroke-width: 0
 						fill: $red
 						transition: all .2s ease-in-out
 				&:hover
@@ -319,6 +321,8 @@ nav
 		position: absolute
 		bottom: 0
 		a
+			@extend line
+			border-color: rgba(255, 255, 255, .0)
 			display: inline-block
 			position: relative
 			width: 55px
@@ -327,13 +331,15 @@ nav
 			transition: all .2s ease-in-out
 			float: left
 			.svg
-				path
+				path, polygon, rect
+					fill: white
 					transition: all .2s ease-in-out
 			&:hover
-				background-color: $fadedwhite
+				border-color: rgba(255, 255, 255, .2)
+				background-color: $med-red
 				.svg
-					path
-						fill: $yellow
+					path, polygon, rect
+						fill: white
 .red-fill
 	background-color: $fadedred
 	width: 100%
@@ -406,12 +412,23 @@ nav
 			text-align: center
 			transition: all .2s ease-in-out
 			border-radius: 8px
+			.svg
+				width: 12px
+				@media #{$small}
+					width: 8px
+				polygon, path, rect
+					fill: $red
+					transition: all .2s ease-in-out
 			@media #{$small}
-				padding: 3vw 13vw
-				font-size: 4vw
+				width: 90%
+				padding: 3vw 0vw
+				font-size: 5vw
 			&:hover
 				color: $yellow
 				background-color: rgba(0, 0, 0, 0)
+				.svg
+					polygon, path, rect
+						fill: $yellow
 .subtext
 	margin-top: 10px
 	text-align: center
@@ -421,7 +438,7 @@ nav
 	display: block
 	transition: all .2s ease-in-out
 	@media #{$small}
-		font-size: 3vw
+		font-size: 4vw
 	a
 		text-decoration: none
 		color: $yellow
@@ -509,6 +526,9 @@ nav
 			display: flex
 			transition: all .2s ease-in-out
 			position: relative
+			@media #{$small}
+				margin: 20px auto
+				padding: 20px
 			.icon
 				float: left
 				position: relative
@@ -518,9 +538,11 @@ nav
 				img
 					top: 0
 					left: -3
-					position: absolute
+					position: relative
 			.q-text
 				display: inline-block
+				@media #{$small}
+					margin: 0px auto
 				h1
 					font-family: $head
 					color: white
@@ -537,9 +559,12 @@ nav
 					font-wieght: 400
 
 #schedule
+	@extend line
 	background-color: $faq-bg
 	.container
-		padding: 45px 0
+		padding: 45px
+		@media #{$small}
+			padding: 45px 0
 	span
 		p
 			padding: 15px 0
@@ -548,9 +573,182 @@ nav
 			font-size: 1.4em
 			color: white
 			font-family: $body
+			transition: all .2s ease-in-out
+			@media #{$small}
+				font-size: 6vw
+	.dates
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		margin-bottom: 40px
+		transition: all .2s ease-in-out
+		@media #{$small}
+			font-size: 3vw
+		h1
+			margin: 0 45px 20px
+			font-family: $head
+			color: white
+			font-size: 2em
+			margin-bottom: 20px
+		.sat
+			margin-bottom: 20px
+			display: inline-block
+		.sun
+			display: inline-block
+		.schedule-wrapper
+			li
+				margin: 0 45px
+				font-family: $body
+				list-style: none
+				font-size: 1.4em
+				transition: all .2s ease-in-out
+				@media #{$small}
+					width: 100%
+					margin: 10px 0
+					padding: 0 45px
+				span
+					&:first-child
+						display: inline-block
+						width: 120px
+						color: $yellow
+						@media #{$small}
+							width: 100%
+					&:last-child
+						color: white
 
+#sponsors
+	@extend line
+	background-image: url('../assets/img/sponsors.jpg')
+	background-attachment: fixed
+	background-position: center bottom
+	background-size: cover
+	position: relative
+	z-index: 1
+	&:before
+		content: ""
+		position: absolute
+		width: 100%
+		height: 100%
+		background-color: $sponsors-bg
+	.container
+		position: relative
+		z-index: 2
+		padding: 45px
+	.title
+		margin-bottom: 50px
+		color: $darkred-f
+		font-family: $head
+		text-align: center
+		.one
+			font-size: 1em
+			display: block
+		.two
+			font-size: 4.0625em
+			line-height: 1em
+			@media #{$small}
+				text-align: center
+				font-size: 2em
+		img
+			margin: 0 0 0 10
+			width: 40px
+			translation: all .2s ease-in-out
+			@media #{$small}
+				width: 25px
 
+	.first
+		display: block
+		width: 100%
+		max-width: 600px
+		margin: 0 auto 50px
+		transition: all .2s ease-in-out
+		&:hover
+			opacity: .7
+	.second
+		text-align: center
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		a
+			margin: 50px
+			min-height: 100px
+			width: 250px
+			display: flex
+			transition: all .2s ease-in-out
+			background-position: center
+			background-size: cover
+			background-repeat: no-repeat
+			&:hover
+				opacity: .7
+			img
+				width: 100%
+				max-height: 200px
+	.third
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		a
+			margin: 20px
+			min-height: 100px
+			width: 150px
+			display: flex
+			transition: all .2s ease-in-out
+			background-position: center
+			background-size: cover
+			background-repeat: no-repeat
+			&:hover
+				opacity: .7
+			img
+				width: 100%
+				max-height: 100px
 
+#footer
+	height: 75px
+	background-color: $med-red
+
+	span
+		&:first-child
+			a
+				padding: 0 20px
+				display: inline-block
+				height: 75px
+				line-height: 75px
+				font-family: $head
+				color: white
+				font-size: 1em
+				float: left
+				transition: all .2s ease-in-out
+				@media #{$small}
+					width: 50%
+				&:hover
+					background-color: $red
+			img
+				padding: 13px 0
+				width: 150px
+				@media #{$small}
+					width: 100%
+				height: 75px
+				float: left
+				&:nth-child(2)
+		&:last-child
+			a
+				padding: 20px 0
+				display: inline-block
+				position: relative
+				width: 75px
+				height: 75px
+				transition: all .2s ease-in-out
+				float: left
+				@media #{$small}
+					opacity: 0
+					position: absolute
+					left: 0
+				img
+					margin: 0 auto
+					width: 100%
+					height: 35px
+				&:hover
+					background-color: $red
+			float: right
 .banner
 	height: 270px
 	background-size: cover
