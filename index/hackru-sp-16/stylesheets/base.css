@@ -1265,3 +1265,9 @@ nav .items li a:hover {
 .banner .faq .icon {
   width: 65px;
 }
+
+/* line 804, ../sass/base.sass */
+::selection {
+  background-color: #ffc933;
+  color: #f43434;
+}
