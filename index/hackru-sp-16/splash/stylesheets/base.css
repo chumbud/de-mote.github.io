@@ -33,7 +33,7 @@ section {
 @media only screen and (max-width: 480px) {
   /* line 26, ../sass/base.sass */
   section {
-    padding: 20px 2%;
+    padding: 4% 0%;
   }
 }
 
@@ -59,57 +59,59 @@ section {
 @media only screen and (max-width: 480px) {
   /* line 37, ../sass/base.sass */
   .logo {
-    padding: 10%;
+    max-width: 175px;
+    margin-top: 2%;
+    padding: 3%;
   }
 }
 
-/* line 44, ../sass/base.sass */
+/* line 46, ../sass/base.sass */
 .date {
   max-width: 500px;
   width: 90%;
   transition: all 0.2s ease-in-out;
 }
 @media only screen and (max-width: 480px) {
-  /* line 44, ../sass/base.sass */
+  /* line 46, ../sass/base.sass */
   .date {
     font-size: 2.2vw;
   }
 }
-/* line 50, ../sass/base.sass */
+/* line 52, ../sass/base.sass */
 .date span {
   font-size: 1.4em;
   transition: all 0.2s ease-in-out;
 }
 @media only screen and (max-width: 480px) {
-  /* line 50, ../sass/base.sass */
+  /* line 52, ../sass/base.sass */
   .date span {
     font-size: 5vw;
   }
 }
-/* line 55, ../sass/base.sass */
+/* line 57, ../sass/base.sass */
 .date p {
   font-size: 2.7em;
   font-family: "Montserrat";
 }
 @media only screen and (max-width: 480px) {
-  /* line 55, ../sass/base.sass */
+  /* line 57, ../sass/base.sass */
   .date p {
     font-size: 9vw;
   }
 }
-/* line 60, ../sass/base.sass */
+/* line 62, ../sass/base.sass */
 .date p:last-child {
   font-size: 1.6em;
   transition: all 0.2s ease-in-out;
 }
 @media only screen and (max-width: 480px) {
-  /* line 60, ../sass/base.sass */
+  /* line 62, ../sass/base.sass */
   .date p:last-child {
     font-size: 5vw;
   }
 }
 
-/* line 65, ../sass/base.sass */
+/* line 67, ../sass/base.sass */
 .coming-soon {
   height: 200px;
   font-size: 1.5em;
@@ -118,22 +120,28 @@ section {
   margin-top: 5%;
   transition: all 0.2s ease-in-out;
 }
-/* line 72, ../sass/base.sass */
+/* line 74, ../sass/base.sass */
 .coming-soon span {
   border: 3px solid white;
   padding: 10px 30px;
   border-radius: 8px;
 }
 @media only screen and (max-width: 480px) {
-  /* line 72, ../sass/base.sass */
+  /* line 74, ../sass/base.sass */
   .coming-soon span {
     width: 90%;
     font-size: 5vw;
     padding: 3vw 8vw;
   }
 }
+@media only screen and (max-width: 480px) {
+  /* line 67, ../sass/base.sass */
+  .coming-soon {
+    height: 20px;
+  }
+}
 
-/* line 81, ../sass/base.sass */
+/* line 85, ../sass/base.sass */
 ::selection {
   background-color: white;
   color: #f43434;
