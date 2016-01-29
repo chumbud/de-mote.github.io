@@ -1,3 +1,4 @@
+//smooth scroll anchor
 $(function() {
 	$('a[href*=#]:not([href=#])').click(function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -13,6 +14,7 @@ $(function() {
 	});
 });
 
+// on scroll nav appear
 $(function($) {
 	$(document).ready(function(){
 		$(window).scroll(function(){
@@ -26,6 +28,33 @@ $(function($) {
 	});
 });
 
+
+/*
+
+matt, my gitbud, help me pls.
+
+everything works as expected, EXCEPT:
+
+when you go into mobile and click on a section in faq to make the text show up then
+click it again to make disappear, resizing the window into tablet or desktop makes the thing still disappear
+
+the p element in .q-text needs to be display: block when you resize out of
+570px (the phone media query i have for the site)
+
+*/
+
+//mobile faq dropdown
+jQuery(document).ready(function(){
+		if($(window).width() < 570) {
+			jQuery('.collapse').on('click', function(event) {
+				jQuery(this).find('p').slideToggle('show');
+			});
+		} else {
+
+		}
+});
+
+//svg editing capabilities
 $(function(){
 	jQuery('img.svg').each(function(){
 		var $img = jQuery(this);
