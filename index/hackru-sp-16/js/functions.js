@@ -31,27 +31,34 @@ $(function($) {
 
 /*
 
-matt, my gitbud, help me pls.
+Gitbud PJ, I have solved your problem.
+The toggle sets the display property in the element style
+(AKA the highest priority style, overriding the display:block of the normal .q-text p)
+To fix, I'm reseting each p's element display property on resize above the breakpoint
 
-everything works as expected, EXCEPT:
-
-when you go into mobile and click on a section in faq to make the text show up then
-click it again to make disappear, resizing the window into tablet or desktop makes the thing still disappear
-
-the p element in .q-text needs to be display: block when you resize out of
-570px (the phone media query i have for the site)
+Cheerio
 
 */
 
 //mobile faq dropdown
-jQuery(document).ready(function(){
-		if($(window).width() < 570) {
-			jQuery('.collapse').on('click', function(event) {
-				jQuery(this).find('p').slideToggle('show');
-			});
-		} else {
-
-		}
+$(function(){
+    
+    var mobile_width = 570;
+    
+    // If window is small enough, allow clicking to toggle the FAQ
+    $('.collapse').on('click', function(event) {
+        if($(window).width() < mobile_width) {
+            $(this).find('p').slideToggle('show');
+        }
+    });
+    
+    // If window resizes to greater than mobile width, reset element FAQ display
+    $(window).on('resize', function(event) {
+        if($(window).width() >= mobile_width) {
+           $('.collapse').find('p').css('display', '');
+        }
+    });
+    
 });
 
 //svg editing capabilities
