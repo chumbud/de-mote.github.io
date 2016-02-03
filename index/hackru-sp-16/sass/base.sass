@@ -612,32 +612,39 @@ nav
 		display: flex
 		flex-wrap: wrap
 		justify-content: center
-		margin-bottom: 40px
 		transition: all .2s ease-in-out
+		padding-bottom: 30px
 		@media #{$small}
-			font-size: 3vw
+			font-size: 3.5vw
 		h1
-			margin: 0 45px 20px
+			margin: 0 0 20px
 			font-family: $head
 			color: white
 			font-size: 2em
 			margin-bottom: 20px
+			@media #{$small}
+				text-align: center
 		.sat
 			margin-bottom: 20px
 			display: inline-block
+			width: 350px
+			margin: 20px
 		.sun
 			display: inline-block
+			width: 350px
+			margin: 20px
 		.schedule-wrapper
+			@media #{$med}
+				width: 100%
 			li
-				margin: 0 45px
 				font-family: $body
 				list-style: none
 				font-size: 1.4em
 				transition: all .2s ease-in-out
 				@media #{$small}
+					text-align: center
 					width: 100%
 					margin: 10px 0
-					padding: 0 45px
 				span
 					&:first-child
 						display: inline-block

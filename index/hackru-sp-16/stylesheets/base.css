@@ -992,66 +992,81 @@ nav .items li a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 40px;
   transition: all 0.2s ease-in-out;
+  padding-bottom: 30px;
 }
 @media only screen and (max-width: 570px) {
   /* line 611, ../sass/base.sass */
   #schedule .dates {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 }
 /* line 619, ../sass/base.sass */
 #schedule .dates h1 {
-  margin: 0 45px 20px;
+  margin: 0 0 20px;
   font-family: "Montserrat";
   color: white;
   font-size: 2em;
   margin-bottom: 20px;
 }
-/* line 625, ../sass/base.sass */
+@media only screen and (max-width: 570px) {
+  /* line 619, ../sass/base.sass */
+  #schedule .dates h1 {
+    text-align: center;
+  }
+}
+/* line 627, ../sass/base.sass */
 #schedule .dates .sat {
   margin-bottom: 20px;
   display: inline-block;
+  width: 350px;
+  margin: 20px;
 }
-/* line 628, ../sass/base.sass */
+/* line 632, ../sass/base.sass */
 #schedule .dates .sun {
   display: inline-block;
+  width: 350px;
+  margin: 20px;
 }
-/* line 631, ../sass/base.sass */
+@media only screen and (max-width: 720px) {
+  /* line 636, ../sass/base.sass */
+  #schedule .dates .schedule-wrapper {
+    width: 100%;
+  }
+}
+/* line 639, ../sass/base.sass */
 #schedule .dates .schedule-wrapper li {
-  margin: 0 45px;
   font-family: "Work Sans";
   list-style: none;
   font-size: 1.4em;
   transition: all 0.2s ease-in-out;
 }
 @media only screen and (max-width: 570px) {
-  /* line 631, ../sass/base.sass */
+  /* line 639, ../sass/base.sass */
   #schedule .dates .schedule-wrapper li {
+    text-align: center;
     width: 100%;
     margin: 10px 0;
-    padding: 0 45px;
   }
 }
-/* line 642, ../sass/base.sass */
+/* line 649, ../sass/base.sass */
 #schedule .dates .schedule-wrapper li span:first-child {
   display: inline-block;
   width: 120px;
   color: #ffc933;
 }
 @media only screen and (max-width: 570px) {
-  /* line 642, ../sass/base.sass */
+  /* line 649, ../sass/base.sass */
   #schedule .dates .schedule-wrapper li span:first-child {
     width: 100%;
   }
 }
-/* line 648, ../sass/base.sass */
+/* line 655, ../sass/base.sass */
 #schedule .dates .schedule-wrapper li span:last-child {
   color: white;
 }
 
-/* line 651, ../sass/base.sass */
+/* line 658, ../sass/base.sass */
 #sponsors {
   background-image: url("../assets/img/sponsors.jpg");
   background-attachment: fixed;
@@ -1060,7 +1075,7 @@ nav .items li a:hover {
   position: relative;
   z-index: 1;
 }
-/* line 659, ../sass/base.sass */
+/* line 666, ../sass/base.sass */
 #sponsors:before {
   content: "";
   position: absolute;
@@ -1068,49 +1083,49 @@ nav .items li a:hover {
   height: 100%;
   background-color: rgba(214, 214, 214, 0.8);
 }
-/* line 665, ../sass/base.sass */
+/* line 672, ../sass/base.sass */
 #sponsors .container {
   position: relative;
   z-index: 2;
   padding: 45px;
 }
-/* line 669, ../sass/base.sass */
+/* line 676, ../sass/base.sass */
 #sponsors .title {
   margin-bottom: 50px;
   color: #9b1010;
   font-family: "Montserrat";
   text-align: center;
 }
-/* line 674, ../sass/base.sass */
+/* line 681, ../sass/base.sass */
 #sponsors .title .one {
   font-size: 0.8em;
   display: block;
 }
-/* line 677, ../sass/base.sass */
+/* line 684, ../sass/base.sass */
 #sponsors .title .two {
   font-size: 4.0625em;
   line-height: 1em;
 }
 @media only screen and (max-width: 570px) {
-  /* line 677, ../sass/base.sass */
+  /* line 684, ../sass/base.sass */
   #sponsors .title .two {
     text-align: center;
     font-size: 2.5em;
   }
 }
-/* line 683, ../sass/base.sass */
+/* line 690, ../sass/base.sass */
 #sponsors .title img {
   margin: 0 0 0 10;
   width: 40px;
   translation: all 0.2s ease-in-out;
 }
 @media only screen and (max-width: 570px) {
-  /* line 683, ../sass/base.sass */
+  /* line 690, ../sass/base.sass */
   #sponsors .title img {
     width: 25px;
   }
 }
-/* line 690, ../sass/base.sass */
+/* line 697, ../sass/base.sass */
 #sponsors .first {
   display: block;
   width: 100%;
@@ -1118,18 +1133,18 @@ nav .items li a:hover {
   margin: 0 auto 50px;
   transition: all 0.2s ease-in-out;
 }
-/* line 696, ../sass/base.sass */
+/* line 703, ../sass/base.sass */
 #sponsors .first:hover {
   opacity: 0.7;
 }
-/* line 698, ../sass/base.sass */
+/* line 705, ../sass/base.sass */
 #sponsors .second {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-/* line 703, ../sass/base.sass */
+/* line 710, ../sass/base.sass */
 #sponsors .second a {
   margin: 50px;
   min-height: 100px;
@@ -1140,22 +1155,22 @@ nav .items li a:hover {
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* line 712, ../sass/base.sass */
+/* line 719, ../sass/base.sass */
 #sponsors .second a:hover {
   opacity: 0.7;
 }
-/* line 714, ../sass/base.sass */
+/* line 721, ../sass/base.sass */
 #sponsors .second a img {
   width: 100%;
   max-height: 200px;
 }
-/* line 717, ../sass/base.sass */
+/* line 724, ../sass/base.sass */
 #sponsors .third {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-/* line 721, ../sass/base.sass */
+/* line 728, ../sass/base.sass */
 #sponsors .third a {
   margin: 20px;
   min-height: 100px;
@@ -1166,22 +1181,22 @@ nav .items li a:hover {
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* line 730, ../sass/base.sass */
+/* line 737, ../sass/base.sass */
 #sponsors .third a:hover {
   opacity: 0.7;
 }
-/* line 732, ../sass/base.sass */
+/* line 739, ../sass/base.sass */
 #sponsors .third a img {
   width: 100%;
   max-height: 100px;
 }
 
-/* line 736, ../sass/base.sass */
+/* line 743, ../sass/base.sass */
 #footer {
   height: 75px;
   background-color: #dd2626;
 }
-/* line 742, ../sass/base.sass */
+/* line 749, ../sass/base.sass */
 #footer span:first-child a {
   padding: 0 20px;
   display: inline-block;
@@ -1194,16 +1209,16 @@ nav .items li a:hover {
   transition: all 0.2s ease-in-out;
 }
 @media only screen and (max-width: 570px) {
-  /* line 742, ../sass/base.sass */
+  /* line 749, ../sass/base.sass */
   #footer span:first-child a {
     width: 50%;
   }
 }
-/* line 754, ../sass/base.sass */
+/* line 761, ../sass/base.sass */
 #footer span:first-child a:hover {
   background-color: #f43434;
 }
-/* line 756, ../sass/base.sass */
+/* line 763, ../sass/base.sass */
 #footer span:first-child img {
   padding: 13px 0;
   width: 150px;
@@ -1211,16 +1226,16 @@ nav .items li a:hover {
   float: left;
 }
 @media only screen and (max-width: 570px) {
-  /* line 756, ../sass/base.sass */
+  /* line 763, ../sass/base.sass */
   #footer span:first-child img {
     width: 100%;
   }
 }
-/* line 764, ../sass/base.sass */
+/* line 771, ../sass/base.sass */
 #footer span:last-child {
   float: right;
 }
-/* line 765, ../sass/base.sass */
+/* line 772, ../sass/base.sass */
 #footer span:last-child a {
   padding: 20px 0;
   display: inline-block;
@@ -1231,25 +1246,25 @@ nav .items li a:hover {
   float: left;
 }
 @media only screen and (max-width: 570px) {
-  /* line 765, ../sass/base.sass */
+  /* line 772, ../sass/base.sass */
   #footer span:last-child a {
     opacity: 0;
     position: absolute;
     left: 0;
   }
 }
-/* line 777, ../sass/base.sass */
+/* line 784, ../sass/base.sass */
 #footer span:last-child a img {
   margin: 0 auto;
   width: 100%;
   height: 35px;
 }
-/* line 781, ../sass/base.sass */
+/* line 788, ../sass/base.sass */
 #footer span:last-child a:hover {
   background-color: #f43434;
 }
 
-/* line 784, ../sass/base.sass */
+/* line 791, ../sass/base.sass */
 .banner {
   height: 270px;
   background-size: cover;
@@ -1258,7 +1273,7 @@ nav .items li a:hover {
   padding: 45px;
   position: relative;
 }
-/* line 791, ../sass/base.sass */
+/* line 798, ../sass/base.sass */
 .banner:after {
   height: 270px;
   width: 100%;
@@ -1268,7 +1283,7 @@ nav .items li a:hover {
   content: "";
   background-color: rgba(216, 31, 31, 0.7);
 }
-/* line 799, ../sass/base.sass */
+/* line 806, ../sass/base.sass */
 .banner .icon {
   display: block;
   position: relative;
@@ -1276,14 +1291,14 @@ nav .items li a:hover {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 805, ../sass/base.sass */
+/* line 812, ../sass/base.sass */
 .banner .wrapper {
   width: 180px;
   height: 190px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 810, ../sass/base.sass */
+/* line 817, ../sass/base.sass */
 .banner h1 {
   position: relative;
   z-index: 10;
@@ -1292,19 +1307,19 @@ nav .items li a:hover {
   font-size: 2.0625em;
   text-align: center;
 }
-/* line 818, ../sass/base.sass */
+/* line 825, ../sass/base.sass */
 .banner .schedule .icon {
   margin-top: 23px;
   margin-top: 23px;
   width: 85px;
   margin-bottom: 10px;
 }
-/* line 824, ../sass/base.sass */
+/* line 831, ../sass/base.sass */
 .banner .faq .icon {
   width: 65px;
 }
 
-/* line 826, ../sass/base.sass */
+/* line 833, ../sass/base.sass */
 ::selection {
   background-color: #ffc933;
   color: #f43434;
