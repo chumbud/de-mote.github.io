@@ -16,8 +16,9 @@ $head: "Montserrat"
 $body: "Work Sans"
 
 $med: "only screen and (max-width : 720px)"
+$med-large: "only screen and (max-width : 950px)"
 $small: "only screen and (max-width : 570px)"
-$short: "only screen and (max-height : 630px)"
+$short: "only screen and (max-height : 700px)"
 $ichi: "only screen and (max-width : 1200px)"
 
 
@@ -69,18 +70,20 @@ nav
 	@media #{$small}
 		display: none
 	.logo
-		margin-left: 23px
+		margin: 0 auto
 		transition: opacity .2s ease-in-out
 		height: 75px
-		float: left
+		width: 150px
 		@media #{$med}
+			margin-left: 40%
 			opacity: 0
 			position: fixed
 		img
-			height: 30px
+			margin: 0 auto
+			height: 106px
 			width: 160px
 		a
-			padding-top: 23px
+			padding-top: 5px
 			position: absolute
 			height: 75px
 			transition: opacity .2s ease-in-out
@@ -88,9 +91,22 @@ nav
 				opacity: .7
 	.items
 		height: 75px
-		float: right
-		position: relative
+		float: left
+		position: fixed
+		top: 0
+		right: 0
+		z-index: 20
 		transition: all .2s ease-in-out
+		@media #{$med-large}
+			.divide
+				left: 0
+				position: fixed
+				display: inline-block
+		@media #{$med}
+			.divide
+				left: auto
+				position: relative
+				display: block
 		@media #{$med}
 			width: 100%
 		li
@@ -119,7 +135,7 @@ nav
 #landing
 	width: 100%
 	height: 100%
-	min-height: 550px
+	min-height: 680px
 	background-image: url("../assets/img/landing.jpg")
 	background-repeat: no-repeat
 	background-position: center
@@ -144,24 +160,6 @@ nav
 	z-index: 10
 	@media #{$small}
 		position: fixed
-	.logo
-		padding-left: 12%
-		transition: opacity .2s ease-in-out
-		height: 75px
-		float: left
-		@media #{$med}
-			opacity: 0
-			position: fixed
-		img
-			height: 30px
-			width: 160px
-		a
-			padding-top: 20px
-			position: absolute
-			height: 75px
-			transition: opacity .2s ease-in-out
-			&:hover
-				opacity: .7
 	.items
 		height: 75px
 		float: right
@@ -344,7 +342,7 @@ nav
 	background-color: $fadedred
 	width: 100%
 	height: 100%
-	min-height: 550px
+	min-height: 680px
 	position: absolute
 	z-index: 1
 	border-bottom: 1px solid $fadedwhite
