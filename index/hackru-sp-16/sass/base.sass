@@ -29,10 +29,6 @@ $ichi: "only screen and (max-width : 1200px)"
 	box-sizing: border-box
 textarea, input 
 	outline: none
-a
-	&target
-		top: -50px
-
 body
 	width: 100%
 	height: 100%
@@ -53,6 +49,7 @@ body
 	display: block
 	z-index: 10000
 	transition: left 0.2s ease-in-out
+	left: 20px
 	@media #{$small}
 		top: 75px
 		z-index: 1
@@ -326,7 +323,7 @@ nav
 				background-color: $yellow
 				border-radius: 8px
 				text-decoration: none
-				line-height: 50px
+				line-height: 44px
 				border: 3px solid $yellow
 				transition: all 0.2s ease-in-out
 				@media #{$small}
@@ -343,6 +340,11 @@ nav
 							fill: $yellow
 				img
 					margin-right: 10px
+		.inactive
+			a
+				pointer-events: none
+				background-color: rgba(0, 0, 0, 0)
+				color: $yellow
 	.bottom-landing
 		position: absolute
 		width: 100%
@@ -798,7 +800,33 @@ nav
 			img
 				width: 100%
 				max-height: 100px
-
+	.subtext
+		color: $med-red
+		font-size: 24px
+		margin-bottom: 20px
+		a
+			color: $med-red
+			border-bottom-color: $med-red
+			border-bottom-width: 3px
+			&:hover
+				color: white
+		a[data-email]
+			&:before
+				top: 150%
+				border-bottom-width: 10px 
+				border-left-width: 10px
+				border-right-width: 10px
+		a[data-email]
+			&:after
+				top: 180%
+		a[data-email]
+			&:hover
+				&:after
+					top: 150%
+		a[data-email]
+			&:hover
+				&:before
+					top: 120%
 #footer
 	height: 75px
 	background-color: $med-red
@@ -828,7 +856,7 @@ nav
 				&:nth-child(2)
 		&:last-child
 			a
-				padding: 20px 0
+				padding: 25px 0
 				display: inline-block
 				position: relative
 				width: 75px
@@ -842,7 +870,7 @@ nav
 				img
 					margin: 0 auto
 					width: 100%
-					height: 35px
+					height: 25px
 				&:hover
 					background-color: $red
 			float: right
