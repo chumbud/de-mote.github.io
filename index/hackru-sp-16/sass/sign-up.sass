@@ -2,6 +2,7 @@ $red: #f43434
 $med-red: #dd2626
 $fadedred: rgba(181, 22, 22, 0.7)
 $faq-faded: rgba(216, 31, 31, 0.7)
+$navred: rgba(186, 29, 29, 0.7)
 
 $dark-grey: #898989
 $light-grey: #eaeaea
@@ -35,7 +36,7 @@ html
 button
 	background: none
 	border: 0px
-textarea, input 
+textarea, input
 	border: 0px
 	padding-left: 20px
 	font-family: $body
@@ -102,12 +103,13 @@ nav
 				width: 25%
 				float: left
 			a
-				line-height: 75px
+				line-height: 74px
 				height: 100%
 				padding: 0 20px
 				float: right
 				color: white
 				text-decoration: none
+				border-bottom: 1px solid rgba(255, 255, 255, 0)
 				transition: all 0.2s ease-in-out
 				@media #{$med}
 					font-size: 0.9em
@@ -116,7 +118,8 @@ nav
 					text-align: center
 				&:hover
 					color: $hover-white
-					background-color: $fadedred
+					background-color: $navred
+					border-bottom: 1px solid rgba(255, 255, 255, .6)
 .banner
 	height: 270px
 	background-size: cover
@@ -167,6 +170,14 @@ nav
 #active-area
 	height: 100%
 	padding: 50px 10px
+	a
+		color: $med-red
+		text-decoration: none
+		padding-bottom: 4px
+		border-bottom: 1px solid $med-red
+		transition: color .2s ease-in-out
+		&:hover
+		color: #a51717
 .inpt
 	margin: 0 auto
 	height: 100%
@@ -235,14 +246,6 @@ nav
 	left: 0
 	float: left
 	position: relative
-a
-	color: $med-red
-	text-decoration: none
-	padding-bottom: 4px
-	border-bottom: 1px solid $med-red
-	transition: color .2s ease-in-out
-	&:hover
-		color: #a51717
 input
 	border-radius: 8px
 	border: 0px solid #BFBFBF
@@ -266,7 +269,7 @@ h1
 	margin: 0 auto
 	width: 100%
 	max-width: 500px
-	@media #{$small} 
+	@media #{$small}
 		width: 100%
 		max-wdith: 100%
 .green
@@ -274,7 +277,7 @@ h1
 	border-color: $green
 	&:hover
 		background-color: rgba(30, 158, 58, 0)
-		color: $green 
+		color: $green
 img
 	height: 75px
 	display: block
