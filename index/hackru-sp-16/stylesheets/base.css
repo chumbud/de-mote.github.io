@@ -795,7 +795,7 @@ nav .items li a:hover {
 /* line 461, ../sass/base.sass */
 #about {
   position: relative;
-  top: 100%;
+  top: 100vh;
   width: 100%;
   height: auto;
   background-color: #d42323;
