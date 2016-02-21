@@ -19,10 +19,7 @@ $body: "Work Sans"
 $med: "only screen and (max-width : 720px)"
 $med-large: "only screen and (max-width : 950px)"
 $small: "only screen and (max-width : 570px)"
-$very-short: "only screen and (max-height : 570px)"
 $short: "only screen and (max-height : 800px)"
-$short-long: "only screen and (max-height : 900px)"
-$short-break: "only screen and (max-width : 900px)"
 $ichi: "only screen and (max-width : 1200px)"
 
 *
@@ -146,7 +143,7 @@ nav
 #landing
 	width: 100%
 	height: 100%
-	min-height: 480px
+	min-height: 640px
 	background-image: url("../assets/img/landing.jpg")
 	background-repeat: no-repeat
 	background-position: center
@@ -216,19 +213,14 @@ nav
 	text-align: center
 	.logo
 		width: 100%
-		max-width: 330px
+		max-width: 530px
 		margin-bottom: 4.6%
 		margin-left: auto
 		margin-right: auto
 		position: relative
-		transition: all 0.2s ease-in-out
+		transition: margin 0.2s ease-in-out
 		@media #{$med}
 			margin-bottom: 8%
-		@media #{$short}
-			display: inline-block
-		@media #{$very-short}
-			@media #{$short-break}
-				max-width: 150px
 		img
 			max-width: 100%
 		.spacer
@@ -239,19 +231,8 @@ nav
 			width: 100%
 			transition: all 0.2s ease-in-out
 			@media #{$small}
-				min-height: 100px
-			@media #{$short}
-				min-height: 50px
+				min-height: 150px
 	.landing-text
-		@media #{$short-long}
-			margin-left: 30px
-			position: relative
-			top: -60px
-			display: inline-block
-			@media #{$short-break}
-				display: block
-				margin-left: 0
-				top: 0px
 		p
 			&:nth-child(1)
 				font-weight: 400
@@ -332,7 +313,7 @@ nav
 			height: 50px
 			margin-top: 15px
 			@media #{$small}
-				margin-bottom: 2%
+				margin-bottom: 3%
 			a
 				display: inline-block
 				margin-left: auto
@@ -425,7 +406,7 @@ nav
 	background-color: $fadedred
 	width: 100%
 	height: 100%
-	min-height: 480px
+	min-height: 640px
 	position: absolute
 	z-index: 1
 	border-bottom: 1px solid $fadedwhite
