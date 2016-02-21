@@ -461,7 +461,8 @@ nav
 #about
 	@extend line
 	position: relative
-	top: 100vh
+	padding-top: 100vh
+	z-index: -1
 	width: 100%
 	height: auto
 	background-color: $med-red
@@ -615,6 +616,7 @@ nav
 
 #faq
 	background-color: $med-red
+	position: relative
 	@extend line
 	.container
 		padding: 50px 0
@@ -705,6 +707,7 @@ nav
 #schedule
 	@extend line
 	background-color: $med-red
+	position: relative
 	.container
 		padding: 45px
 		@media #{$small}
