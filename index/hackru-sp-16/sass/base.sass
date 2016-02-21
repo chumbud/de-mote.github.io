@@ -9,6 +9,7 @@ $yellow: #ffc933
 $hover-white: #ffc933
 $fadedwhite: rgba(255, 255, 255, 0.2)
 $fadedred: rgba(208, 37, 37, 0.8)
+$navred: rgba(186, 29, 29, 0.7)
 $darkred: rgba(196, 8, 8, 0.5)
 $sponsors-bg: rgba(214, 214, 214, 0.9)
 
@@ -127,6 +128,7 @@ nav
 				float: right
 				color: white
 				text-decoration: none
+				border-bottom: 1px solid rgba(255, 255, 255, 0)
 				transition: all 0.2s ease-in-out
 				@media #{$med}
 					font-size: 0.9em
@@ -135,7 +137,8 @@ nav
 					text-align: center
 				&:hover
 					color: $hover-white
-					background-color: $fadedred
+					background-color: $navred
+					border-bottom: 1px solid rgba(255, 255, 255, .6)
 
 #landing
 	width: 100%
@@ -779,7 +782,7 @@ nav
 		display: flex
 		flex-wrap: wrap
 		justify-content: center
-		border-bottom: 1px solid #a8a8a8
+		border-bottom: 1px solid #b7b7b7
 		border-radius: 8px
 		a
 			margin: 50px
@@ -801,7 +804,7 @@ nav
 		display: flex
 		flex-wrap: wrap
 		justify-content: center
-		border-bottom: 1px solid #a8a8a8
+		border-bottom: 1px solid #b7b7b7
 		border-radius: 8px
 		a
 			margin: 20px
