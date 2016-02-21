@@ -275,7 +275,7 @@ nav .items li a:hover {
 /* line 150, ../sass/base.sass */
 #landing {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   min-height: 400px;
   background-image: url("../assets/img/landing.jpg");
   background-repeat: no-repeat;
@@ -784,7 +784,7 @@ nav .items li a:hover {
 .red-fill {
   background-color: rgba(208, 37, 37, 0.8);
   width: 100%;
-  height: 100%;
+  height: 100vh;
   min-height: 400px;
   position: absolute;
   z-index: 1;
