@@ -262,9 +262,10 @@ nav .items li a:hover {
   font-size: 14px;
   font-family: "Work Sans";
   top: -24px;
+  left: 0;
 }
 
-/* line 205, ../sass/sign-up.sass */
+/* line 206, ../sass/sign-up.sass */
 .btn-wrapper {
   margin: 0 auto;
   position: relative;
@@ -274,7 +275,7 @@ nav .items li a:hover {
   height: 45px;
   margin-bottom: 30px;
 }
-/* line 213, ../sass/sign-up.sass */
+/* line 214, ../sass/sign-up.sass */
 .btn-wrapper::after {
   content: attr(label);
   height: 20px;
@@ -288,7 +289,7 @@ nav .items li a:hover {
   left: 0;
 }
 
-/* line 224, ../sass/sign-up.sass */
+/* line 225, ../sass/sign-up.sass */
 .btn {
   margin: 0 auto;
   margin-bottom: 30px;
@@ -305,13 +306,13 @@ nav .items li a:hover {
   font-family: "Work Sans";
   border: 3px solid #dd2626;
 }
-/* line 239, ../sass/sign-up.sass */
+/* line 240, ../sass/sign-up.sass */
 .btn:hover {
   color: #dd2626;
   background-color: rgba(181, 22, 22, 0);
 }
 
-/* line 242, ../sass/sign-up.sass */
+/* line 243, ../sass/sign-up.sass */
 .small {
   width: 100px;
   height: 30px;
@@ -321,18 +322,18 @@ nav .items li a:hover {
   position: relative;
 }
 
-/* line 249, ../sass/sign-up.sass */
+/* line 250, ../sass/sign-up.sass */
 input {
   border-radius: 8px;
   border: 0px solid #BFBFBF;
   transition: border 0.2s ease-in-out;
 }
-/* line 253, ../sass/sign-up.sass */
+/* line 254, ../sass/sign-up.sass */
 input:focus {
   border: 3px solid #BFBFBF;
 }
 
-/* line 255, ../sass/sign-up.sass */
+/* line 256, ../sass/sign-up.sass */
 p {
   line-height: 1.5em;
   font-size: 0.9em;
@@ -342,7 +343,7 @@ p {
   padding-bottom: 40px;
 }
 
-/* line 262, ../sass/sign-up.sass */
+/* line 263, ../sass/sign-up.sass */
 h1 {
   text-align: center;
   font-size: 1.7em;
@@ -351,39 +352,39 @@ h1 {
   color: #dd2626;
 }
 
-/* line 268, ../sass/sign-up.sass */
+/* line 269, ../sass/sign-up.sass */
 .main-container {
   margin: 0 auto;
   width: 100%;
   max-width: 500px;
 }
 @media only screen and (max-width: 570px) {
-  /* line 268, ../sass/sign-up.sass */
+  /* line 269, ../sass/sign-up.sass */
   .main-container {
     width: 100%;
     max-wdith: 100%;
   }
 }
 
-/* line 275, ../sass/sign-up.sass */
+/* line 276, ../sass/sign-up.sass */
 .green {
   background-color: #1e9e3a;
   border-color: #1e9e3a;
 }
-/* line 278, ../sass/sign-up.sass */
+/* line 279, ../sass/sign-up.sass */
 .green:hover {
   background-color: rgba(30, 158, 58, 0);
   color: #1e9e3a;
 }
 
-/* line 281, ../sass/sign-up.sass */
+/* line 282, ../sass/sign-up.sass */
 img {
   height: 75px;
   display: block;
   margin: 20px auto;
 }
 
-/* line 285, ../sass/sign-up.sass */
+/* line 286, ../sass/sign-up.sass */
 ::selection {
   background-color: #ffc933;
   color: #f43434;
