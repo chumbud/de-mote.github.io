@@ -229,6 +229,9 @@ nav .items li a:hover {
   padding-bottom: 4px;
   border-bottom: 1px solid #dd2626;
   transition: color 0.2s ease-in-out;
+}
+/* line 179, ../sass/sign-up.sass */
+#active-area a:hover {
   color: #a51717;
 }
 
@@ -378,13 +381,113 @@ h1 {
 }
 
 /* line 282, ../sass/sign-up.sass */
+.check-wrapper {
+  width: 100%;
+}
+
+/* line 284, ../sass/sign-up.sass */
+input[type=checkbox] {
+  visibility: hidden;
+}
+
+/* line 286, ../sass/sign-up.sass */
+.checkbox {
+  margin: 0 auto;
+  width: 460px;
+  height: auto;
+  padding-left: 20px;
+  display: inline-block;
+  text-align: left;
+}
+@media only screen and (max-width: 570px) {
+  /* line 286, ../sass/sign-up.sass */
+  .checkbox {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+}
+
+/* line 297, ../sass/sign-up.sass */
+.squaredThree {
+  width: 20px;
+  top: -12px;
+  margin: 0px auto;
+  position: relative;
+  display: inline-block;
+  left: -10px;
+}
+@media only screen and (max-width: 570px) {
+  /* line 297, ../sass/sign-up.sass */
+  .squaredThree {
+    display: block;
+  }
+}
+
+/* line 306, ../sass/sign-up.sass */
+.squaredThree label {
+  cursor: pointer;
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top: 0;
+  background-color: #d3d3d3;
+  border-radius: 4px;
+  border: 3px solid #BFBFBF;
+  transition: border-color 0.2s ease-in-out;
+}
+
+/* line 317, ../sass/sign-up.sass */
+.squaredThree label:hover {
+  border: 3px solid #9d9d9d;
+}
+
+/* line 320, ../sass/sign-up.sass */
+.squaredThree label:after {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 4px;
+  background: transparent;
+  top: 4px;
+  left: 4px;
+  border: 3px solid #dd2626;
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* line 343, ../sass/sign-up.sass */
+.squaredThree label:hover::after {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
+  opacity: 0.3;
+}
+
+/* line 348, ../sass/sign-up.sass */
+.squaredThree input[type=checkbox]:checked + label:after {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+  border-color: 3px solid #898989;
+}
+
+/* line 354, ../sass/sign-up.sass */
 img {
   height: 75px;
   display: block;
   margin: 20px auto;
 }
 
-/* line 286, ../sass/sign-up.sass */
+/* line 358, ../sass/sign-up.sass */
 ::selection {
   background-color: #ffc933;
   color: #f43434;
