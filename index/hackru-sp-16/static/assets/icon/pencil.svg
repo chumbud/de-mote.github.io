@@ -1,0 +1,15 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="20.95035" height="20.97139" viewBox="0 0 20.95035 20.97139">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f43434;
+      }
+    </style>
+  </defs>
+  <title>pencil</title>
+  <g>
+    <rect class="cls-1" x="4.72192" y="10.57035" width="10.31015" height="4.98875" transform="translate(-6.34525 10.81066) rotate(-45)"/>
+    <path class="cls-1" d="M7.28375,19.15677L3.89906,19.26a0.22621,0.22621,0,0,1-.233-0.2192h0q-0.00025-.0069,0-0.0138L3.76927,15.6423Z"/>
+    <path class="cls-1" d="M14.50382,5.81527L17.097,8.4085a0.6399,0.6399,0,0,1,0,.905h0L15.93275,10.4778h0L12.43449,6.97954h0l1.16438-1.16429a0.6399,0.6399,0,0,1,.905,0h0v0Z"/>
+  </g>
+</svg>
