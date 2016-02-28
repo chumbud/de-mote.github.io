@@ -515,3 +515,82 @@ img {
   background-color: #ffc933;
   color: #f43434;
 }
+
+/* line 376, ../sass/sign-up.sass */
+.subtext {
+  text-align: center;
+  font-family: "Work Sans";
+  font-size: 0.9em;
+  display: block;
+  transition: all 0.2s ease-in-out;
+}
+@media only screen and (max-width: 570px) {
+  /* line 376, ../sass/sign-up.sass */
+  .subtext {
+    font-size: 3vw;
+  }
+}
+/* line 384, ../sass/sign-up.sass */
+.subtext a {
+  text-decoration: none;
+  color: #dd2626;
+  padding-bottom: 3px;
+  transition: all 0.2s ease-in-out;
+  cursor: help;
+}
+/* line 390, ../sass/sign-up.sass */
+.subtext a:hover {
+  color: white;
+}
+/* line 392, ../sass/sign-up.sass */
+.subtext a[data-hover] {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+/* line 397, ../sass/sign-up.sass */
+.subtext a[data-hover]:after {
+  width: 300px;
+  pointer-events: none;
+  content: attr(data-hover);
+  position: absolute;
+  top: 170%;
+  right: -50%;
+  background: #dd2626;
+  padding: 8px 15px;
+  color: white;
+  border-radius: 8px;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  z-index: 10;
+}
+/* line 412, ../sass/sign-up.sass */
+.subtext a[data-hover]:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: 6px solid #dd2626;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  left: 50%;
+  top: 150%;
+}
+/* line 426, ../sass/sign-up.sass */
+.subtext a[data-hover]:hover:after {
+  top: 140%;
+}
+/* line 430, ../sass/sign-up.sass */
+.subtext a[data-hover]:hover:before {
+  top: 120%;
+}
+/* line 434, ../sass/sign-up.sass */
+.subtext a[data-hover]:hover:after {
+  opacity: 1;
+}
+/* line 438, ../sass/sign-up.sass */
+.subtext a[data-hover]:hover:before {
+  opacity: 1;
+}
