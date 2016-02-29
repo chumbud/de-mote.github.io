@@ -39,6 +39,11 @@
 		</section>
 		<section id="active-area">
 			<div class="main-container">
+				<p>
+				{% if error %}
+				      {{ error }}
+				{% endif %}
+				</p>
 				<a href="{{ url_for('dash') }}">
 					<button class="btn-ru">Back</button>
 				</a>
