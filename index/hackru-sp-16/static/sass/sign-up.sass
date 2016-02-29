@@ -29,8 +29,12 @@ $short: "only screen and (max-height : 700px)"
 	-moz-box-sizing: border-box
 	-webkit-box-sizing: border-box
 	box-sizing: border-box
-html
+html, body
 	background-color: $light-grey
+	font-family: $body
+	font-size: 16px
+a 
+	cursor: pointer
 #main
 	margin-top: 50px
 button
@@ -152,9 +156,9 @@ nav
 		z-index: 10
 		color: white
 		font-family: $head
-		font-size: 3.0625em
+		font-size: 2.5em
 		text-align: center
-		padding-top: 60px
+		padding-top: 70px
 		@media #{$small}
 			transition: padding-top .2s ease-in-out, font-size .2s ease-in-out
 			padding-top: 70px
@@ -222,7 +226,7 @@ nav
 		text-align: left
 		top: -24px
 		left: 0
-.btn
+.btn-ru
 	margin: 0 auto
 	margin-bottom: 30px
 	position: relative
@@ -237,6 +241,7 @@ nav
 	font-size: 16px
 	font-family: $body
 	border: 3px solid $med-red
+	cursor: pointer
 	&:hover
 		color: $med-red
 		background-color: rgba(181, 22, 22, 0)
@@ -328,7 +333,7 @@ input[type="checkbox"]
 	border-radius: 4px
 	border: 3px solid #BFBFBF
 	transition: border-color .2s ease-in-out
-
+	max-width: auto
 .squaredThree label:hover
 	border: 3px solid #9d9d9d
 
@@ -346,6 +351,7 @@ input[type="checkbox"]
 	border: 3px solid $med-red
 	border-top: none
 	border-right: none
+	box-sizing: initial
 
 	-webkit-transform: rotate(-45deg)
 	-moz-transform: rotate(-45deg)
@@ -437,3 +443,12 @@ img
 		&:hover
 			&:before
 				opacity: 1
+.buttonText, .glyphicon, .btn-default
+	transition: all .2s ease-in-out
+	color: $med-red
+.btn-default
+	background-color: $light-grey
+.form-control, .form-control[disabled]
+	background-color: white
+h1
+	margin: 0

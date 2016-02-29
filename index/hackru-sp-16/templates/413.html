@@ -33,13 +33,15 @@
 		<section id="main">
 			<div class="banner" style="background-image: url('../static/assets/img/faq.jpg')">
 				<div class="wrapper faq">
-					<h1>413: File to large</h1>
+					<h1>413: File too large</h1>
 				</div>
 			</div>
 		</section>
 		<section id="active-area">
 			<div class="main-container">
-				<button class="btn">Back</button>
+				<a href="{{ url_for('dash') }}">
+					<button class="btn-ru">Back</button>
+				</a>
 			</div>
 		</section>
 	</body>

@@ -1,10 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-
-<!--Connie is the best. She wasn't here-->
-
-
+	<!--Connie is the best. She wasn't here-->
 	<head lang="en">
 		<meta name="description" content="Sign up for Rutgers University Spring 2016 hackathon, HackRU! April 16th to 17th.">
 		<meta name="title" content="HackRU">
@@ -21,34 +18,30 @@
 		<nav>
 			<div class="container">
 				<ul class="logo">
-					<a href="./index.html#landing"><img src="../static/assets/img/hack-ru-logo-rel.svg"></a>
+					<a href="{{ url_for('index') }}"><img src="../static/assets/img/hack-ru-logo-rel.svg"></a>
 				</ul>
 				<ul class="items">
 					<span class="divide">
-						<li><a href="./#1">about</a></li>
-						<li><a href="./#2">faq</a></li>
+						<li><a href="./index.html#1">about</a></li>
+						<li><a href="./index.html#2">faq</a></li>
 					</span>
-					<li><a href="./#3">schedule</a></li>
-					<li><a href="./#4">sponsors</a></li>
+					<li><a href="./index.html#3">schedule</a></li>
+					<li><a href="./index.html#4">sponsors</a></li>
 				</ul>
 			</div>
 		</nav>
 		<section id="main">
 			<div class="banner" style="background-image: url('../static/assets/img/faq.jpg')">
 				<div class="wrapper faq">
-					<h1>You're all good!</h1>
+					<h1>500: Internal Server Error</h1>
 				</div>
 			</div>
 		</section>
 		<section id="active-area">
 			<div class="main-container">
-				<img src="../static/assets/img/happy.svg">
-				<h1>Thanks for signing up for HackRU!</h1>
-				<br>
-				<br>
-				<p>In the meantime, visit your dashboard if you need to change any information or view your confirmation status.</p>
-        <a href="{{ url_for('dash') }}"><button class="btn-ru">My Dashboard</button></a>
-			
+				<a href="{{ url_for('dash') }}">
+					<button class="btn-ru">Back</button>
+				</a>
 			</div>
 		</section>
 	</body>
