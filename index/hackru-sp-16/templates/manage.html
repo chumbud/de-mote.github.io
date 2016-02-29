@@ -58,7 +58,9 @@
 						<input id="resume" type="file" class="filestyle" name="resume" data-placeholder="{{ resume }}" data-buttonBefore="true"/>
 						<p class="fine-print">We accept any .pdf, .txt, .doc and .docx under 2MB.</p>
 					</div>
-
+                    {% if error %}
+                    <p><b>{{ error }}</b></p>
+                    {% endif %}
 					<button class="btn-ru" value="Submit" type="submit">Save</button>
 
 				</form>
