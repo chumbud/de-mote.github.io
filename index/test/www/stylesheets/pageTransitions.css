@@ -1,0 +1,27 @@
+/* line 1, ../sass/pageTransitions.sass */
+.m-scene .scene_element {
+  position: relative;
+  top: 75px;
+  animation-duration: 1s;
+  transition-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+
+/* line 8, ../sass/pageTransitions.sass */
+.m-scene .scene_element--fadein {
+  animation-name: fadeIn;
+}
+
+/* line 12, ../sass/pageTransitions.sass */
+.m-scene.is-exiting .scene_element {
+  animation-direction: alternate-reverse;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
