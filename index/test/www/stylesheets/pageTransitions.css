@@ -3,7 +3,7 @@
   position: relative;
   top: 75px;
   animation-duration: 1s;
-  transition-timing-function: ease-in-out;
+  transition-timing-function: ease;
   animation-fill-mode: both;
 }
 
@@ -12,7 +12,12 @@
   animation-name: fadeIn;
 }
 
-/* line 12, ../sass/pageTransitions.sass */
+/* line 10, ../sass/pageTransitions.sass */
+.m-scene .scene_element--fadeinup {
+  animation-name: fadeInUp;
+}
+
+/* line 14, ../sass/pageTransitions.sass */
 .m-scene.is-exiting .scene_element {
   animation-direction: alternate-reverse;
 }
@@ -23,5 +28,15 @@
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
   }
 }

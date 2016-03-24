@@ -1,31 +1,4 @@
-/* line 1, ../sass/pageTransitions.sass */
-.m-scene .scene_element {
-  position: relative;
-  top: 75px;
-  animation-duration: 1s;
-  transition-timing-function: ease-in-out;
-  animation-fill-mode: both;
-}
-
-/* line 8, ../sass/pageTransitions.sass */
-.m-scene .scene_element--fadein {
-  animation-name: fadeIn;
-}
-
-/* line 12, ../sass/pageTransitions.sass */
-.m-scene.is-exiting .scene_element {
-  animation-direction: alternate-reverse;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-/* line 17, ../sass/base.sass */
+/* line 16, ../sass/base.sass */
 * {
   margin: 0px;
   padding: 0px;
@@ -34,24 +7,24 @@
   box-sizing: border-box;
 }
 
-/* line 23, ../sass/base.sass */
+/* line 22, ../sass/base.sass */
 html {
   width: 100%;
   height: 100%;
 }
 
-/* line 26, ../sass/base.sass */
+/* line 25, ../sass/base.sass */
 body {
   width: 100%;
   height: 100%;
 }
 
-/* line 29, ../sass/base.sass */
+/* line 28, ../sass/base.sass */
 section {
   width: 100%;
 }
 
-/* line 31, ../sass/base.sass */
+/* line 30, ../sass/base.sass */
 nav {
   background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
@@ -59,17 +32,17 @@ nav {
   position: fixed;
   border-bottom: 1px solid #242424;
 }
-/* line 37, ../sass/base.sass */
+/* line 36, ../sass/base.sass */
 nav ul {
   float: right;
 }
 @media only screen and (max-width: 620px) {
-  /* line 37, ../sass/base.sass */
+  /* line 36, ../sass/base.sass */
   nav ul {
     display: none;
   }
 }
-/* line 41, ../sass/base.sass */
+/* line 40, ../sass/base.sass */
 nav li {
   display: inline-block;
   height: 100%;
@@ -83,7 +56,7 @@ nav li {
   list-style: outside none none;
   float: left;
 }
-/* line 53, ../sass/base.sass */
+/* line 52, ../sass/base.sass */
 nav li a {
   text-align: center;
   display: inline-block;
@@ -95,7 +68,7 @@ nav li a {
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
-/* line 63, ../sass/base.sass */
+/* line 62, ../sass/base.sass */
 nav .logo {
   height: 100%;
   float: left;
@@ -110,19 +83,19 @@ nav .logo {
   transition: all 0.2s ease-in-out;
   padding: 0 20px;
 }
-/* line 76, ../sass/base.sass */
+/* line 75, ../sass/base.sass */
 nav .logo:hover {
   color: white;
   background: rgba(255, 255, 255, 0.1);
 }
 
-/* line 82, ../sass/base.sass */
+/* line 81, ../sass/base.sass */
 nav ul a:before, nav ul a:after {
   position: absolute;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 86, ../sass/base.sass */
+/* line 85, ../sass/base.sass */
 nav ul a:before {
   bottom: 0;
   display: block;
@@ -131,28 +104,28 @@ nav ul a:before {
   content: "";
   background-color: #8bffee;
 }
-/* line 93, ../sass/base.sass */
+/* line 92, ../sass/base.sass */
 nav ul a:hover:before,
 nav ul .current a:before {
   opacity: 1;
   width: 100%;
 }
-/* line 97, ../sass/base.sass */
+/* line 96, ../sass/base.sass */
 nav ul a:hover:after,
 nav ul .current a:after {
   max-width: 100%;
 }
-/* line 100, ../sass/base.sass */
+/* line 99, ../sass/base.sass */
 nav ul a:hover {
   color: white;
   background-color: rgba(139, 255, 238, 0.1);
 }
-/* line 104, ../sass/base.sass */
+/* line 103, ../sass/base.sass */
 nav ul .current a {
   color: white;
 }
 
-/* line 107, ../sass/base.sass */
+/* line 106, ../sass/base.sass */
 .container {
   max-width: 1200px;
   width: 100%;

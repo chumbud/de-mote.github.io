@@ -2,12 +2,14 @@
 	position: relative
 	top: 75px
 	animation-duration: 1.0s
-	transition-timing-function: ease-in-out
+	transition-timing-function: ease
 	animation-fill-mode: both
 
 .m-scene .scene_element--fadein
 	animation-name: fadeIn
-	
+.m-scene .scene_element--fadeinup
+	animation-name: fadeInUp
+
 
 .m-scene.is-exiting .scene_element
 	animation-direction: alternate-reverse
@@ -17,3 +19,11 @@
 		opacity: 0
 	100%
 		opacity: 1
+@keyframes fadeInUp
+	0%
+		opacity: 0
+		transform: translate3d(0, 100%, 0)
+
+	100%
+		opacity: 1
+		transform: none

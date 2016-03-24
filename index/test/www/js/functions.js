@@ -7,7 +7,7 @@
 			// Runs when a link has been activated
 			prefetch: true,
 			pageCacheSize: 4,
-			onStart: {
+			onStart : {
 				duration: 250, // Duration of our animation
 				render: function (url, $container) {
 					// toggleAnimationClass() is a public method
